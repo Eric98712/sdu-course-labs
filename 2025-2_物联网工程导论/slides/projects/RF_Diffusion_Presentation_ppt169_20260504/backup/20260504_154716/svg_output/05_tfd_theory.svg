@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">Time-Frequency Diffusion 理论</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <rect x="60" y="135" width="560" height="260" rx="10" fill="#E3F2FD"/>
+  <text x="85" y="170" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#1565C0">传统扩散模型</text>
+  <text x="85" y="200" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">前向：x₀ → x₁ → ... → x_T（只加高斯噪声）</text>
+  <text x="85" y="225" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">反向：x_T → ... → x₁ → x₀（去噪恢复）</text>
+  <text x="85" y="260" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">问题：只破坏幅度，忽略频域</text>
+  <rect x="60" y="420" width="560" height="210" rx="10" fill="#E8F5E9"/>
+  <text x="85" y="455" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">RF-Diffusion TFD 理论</text>
+  <text x="85" y="485" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">前向破坏：时域加噪 + 频域模糊</text>
+  <text x="85" y="510" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">  - 时域：复数高斯噪声 → 破坏幅度精度</text>
+  <text x="85" y="535" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">  - 频域：高斯卷积核模糊频谱 → 破坏频谱分辨率</text>
+  <text x="85" y="565" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">反向恢复：去噪(Denoise) + 去模糊(Deblur)</text>
+  <rect x="660" y="135" width="560" height="495" rx="10" fill="#F5F7FA"/>
+  <text x="940" y="170" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">TFD 数学直观</text>
+  <rect x="690" y="190" width="500" height="200" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="700" y="220" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">前向过程 (第 t 步)：</text>
+  <text x="700" y="250" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">x_t = √α_t · ℱ⁻¹(G_t ∗ ℱ(x_{t-1})) + √(1-α_t) · ε</text>
+  <text x="700" y="280" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">  频域模糊        时域加噪</text>
+  <text x="700" y="320" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">根据卷积定理可简化为：</text>
+  <text x="700" y="350" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#1565C0">x_t = √ᾱ_t · x₀ + √(1-ᾱ_t) · ε</text>
+  <text x="700" y="380" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">（与标准扩散形式一致，但 ᾱ_t 包含频域模糊信息）</text>
+  <text x="700" y="420" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">条件生成：</text>
+  <text x="700" y="450" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">支持条件向量 c 引导（房间 / 设备 / 动作）</text>
+  <text x="700" y="475" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">p(x₀ | c) 条件分布建模</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">05 / 12</text>
+</svg>

@@ -1,0 +1,25 @@
+ ORG 0000H
+ AJMP MAIN
+ ORG 0030H
+MAIN:
+ MOV SP,#60H
+ MOV R0,#0FFH ;num
+
+ MOV A,R0
+ MOV B,#64H
+ DIV AB
+
+ MOV 32H,A
+ 
+ MOV A,B
+ MOV B,#0AH
+ DIV AB
+ 
+ SWAP A
+ ADD A,B
+ MOV 31H,A
+ SJMP $
+ END
+
+ 
+ 

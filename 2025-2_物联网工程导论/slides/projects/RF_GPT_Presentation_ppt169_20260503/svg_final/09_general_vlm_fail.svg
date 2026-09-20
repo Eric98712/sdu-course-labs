@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">通用VLM毫无RF先验</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  <path fill="#FFEBEE" d="M70,135 H610 A10,10 0 0 1 620,145 V325 A10,10 0 0 1 610,335 H70 A10,10 0 0 1 60,325 V145 A10,10 0 0 1 70,135 Z" />
+  <path fill="#C62828" d="M62.50,135 H617.50 A2.50,2.50 0 0 1 620,137.50 V137.50 A2.50,2.50 0 0 1 617.50,140 H62.50 A2.50,2.50 0 0 1 60,137.50 V137.50 A2.50,2.50 0 0 1 62.50,135 Z" />
+  <text x="340" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#C62828">Qwen2.5-VL-7B（通用VLM）</text>
+  <text x="80" y="205" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">"这个频谱图显示了多种射频信号。中央区域有几条突出的</text>
+  <text x="80" y="225" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">垂直线…可能是业余电台或雷达系统的窄带传输…右侧有</text>
+  <text x="80" y="245" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">较弱的弥散线条…"</text>
+  <text x="80" y="280" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#C62828">→ 输出笼统、无RF具体信息</text>
+
+  
+  <text x="656" y="235" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="29" font-weight="bold" fill="#FF6F00">vs</text>
+
+  
+  <path fill="#E8F5E9" d="M670,135 H1210 A10,10 0 0 1 1220,145 V325 A10,10 0 0 1 1210,335 H670 A10,10 0 0 1 660,325 V145 A10,10 0 0 1 670,135 Z" />
+  <path fill="#2E7D32" d="M662.50,135 H1217.50 A2.50,2.50 0 0 1 1220,137.50 V137.50 A2.50,2.50 0 0 1 1217.50,140 H662.50 A2.50,2.50 0 0 1 660,137.50 V137.50 A2.50,2.50 0 0 1 662.50,135 Z" />
+  <text x="940" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">RF-GPT-7B</text>
+  <text x="680" y="205" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">"该频谱图为5G NR下行链路，FR2频段。SSB采用Case D</text>
+  <text x="680" y="225" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">传输模式，PDCCH活跃。未检测到CSI-RS。数据载荷占用</text>
+  <text x="680" y="245" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">一个连续的PRB块，占用的带宽中等…"</text>
+  <text x="680" y="280" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">→ 准确的RF-grounded回答</text>
+
+  
+  <text x="80" y="380" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">五大基准任务概览</text>
+
+  <path fill="#F5F7FA" d="M68,400 H422 A8,8 0 0 1 430,408 V482 A8,8 0 0 1 422,490 H68 A8,8 0 0 1 60,482 V408 A8,8 0 0 1 68,400 Z" />
+  <circle cx="90" cy="445" r="16" fill="#1565C0" />
+  <text x="90" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="120" y="430" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">WBMC</text>
+  <text x="120" y="455" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">宽带调制分类（Easy/Medium/Hard）</text>
+
+  <path fill="#F5F7FA" d="M463,400 H817 A8,8 0 0 1 825,408 V482 A8,8 0 0 1 817,490 H463 A8,8 0 0 1 455,482 V408 A8,8 0 0 1 463,400 Z" />
+  <circle cx="485" cy="445" r="16" fill="#1565C0" />
+  <text x="485" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="515" y="430" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">WBOD</text>
+  <text x="515" y="455" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">宽带重叠检测（时域/频域）</text>
+
+  <path fill="#F5F7FA" d="M858,400 H1212 A8,8 0 0 1 1220,408 V482 A8,8 0 0 1 1212,490 H858 A8,8 0 0 1 850,482 V408 A8,8 0 0 1 858,400 Z" />
+  <circle cx="880" cy="445" r="16" fill="#1565C0" />
+  <text x="880" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="910" y="430" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">WTR</text>
+  <text x="910" y="455" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">无线技术识别（6种技术）</text>
+
+  <path fill="#F5F7FA" d="M68,510 H422 A8,8 0 0 1 430,518 V592 A8,8 0 0 1 422,600 H68 A8,8 0 0 1 60,592 V518 A8,8 0 0 1 68,510 Z" />
+  <circle cx="90" cy="555" r="16" fill="#1565C0" />
+  <text x="90" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">4</text>
+  <text x="120" y="540" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">WNUC</text>
+  <text x="120" y="565" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">WLAN用户数估计</text>
+
+  <path fill="#F5F7FA" d="M463,510 H817 A8,8 0 0 1 825,518 V592 A8,8 0 0 1 817,600 H463 A8,8 0 0 1 455,592 V518 A8,8 0 0 1 463,510 Z" />
+  <circle cx="485" cy="555" r="16" fill="#1565C0" />
+  <text x="485" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">5</text>
+  <text x="515" y="540" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">NRIE</text>
+  <text x="515" y="565" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">5G NR信息提取</text>
+
+  
+  <path fill="#FFF3E0" stroke="#FF6F00" stroke-width="1" d="M858,510 H1212 A8,8 0 0 1 1220,518 V592 A8,8 0 0 1 1212,600 H858 A8,8 0 0 1 850,592 V518 A8,8 0 0 1 858,510 Z" />
+  <text x="1035" y="545" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#E65100">通用VLM表现</text>
+  <text x="1035" y="575" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">全部接近随机猜测（&lt;10%）</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">09 / 15</text>
+</svg>

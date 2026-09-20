@@ -1,0 +1,3 @@
+- **Comparison read**: 直接读这两个回答——左边 Qwen 的回答多么笼统，右边 RF-GPT 多么精确
+- **Key finding**: 通用 VLM 在 RF 任务上≈随机猜测
+- **Five benchmarks**: 然后进入正式评测

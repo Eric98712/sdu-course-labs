@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">消融实验要点</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  <path fill="#F5F7FA" d="M70,135 H420 A10,10 0 0 1 430,145 V645 A10,10 0 0 1 420,655 H70 A10,10 0 0 1 60,645 V145 A10,10 0 0 1 70,135 Z" />
+  <path fill="#1565C0" d="M70,135 H420 A10,10 0 0 1 430,145 V255 A10,10 0 0 1 420,265 H70 A10,10 0 0 1 60,255 V145 A10,10 0 0 1 70,135 Z" />
+  <rect x="60" y="255" width="370" height="10" fill="#1565C0" />
+  <text x="245" y="185" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">鲁棒性分析</text>
+  <text x="245" y="218" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#BBDEFB">对常见RF损伤的抵抗力</text>
+  <text x="85" y="295" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">测试 4 种损伤类型</text>
+  <path fill="#E8F5E9" d="M89,320 H401 A4,4 0 0 1 405,324 V351 A4,4 0 0 1 401,355 H89 A4,4 0 0 1 85,351 V324 A4,4 0 0 1 89,320 Z" />
+  <text x="100" y="344" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">CFO（载波频偏）</text>
+  <text x="380" y="344" text-anchor="end" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">几乎无影响</text>
+  <path fill="#E8F5E9" d="M89,360 H401 A4,4 0 0 1 405,364 V391 A4,4 0 0 1 401,395 H89 A4,4 0 0 1 85,391 V364 A4,4 0 0 1 89,360 Z" />
+  <text x="100" y="384" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">PA（功放非线性）</text>
+  <text x="380" y="384" text-anchor="end" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">微降</text>
+  <path fill="#FFF3E0" d="M89,400 H401 A4,4 0 0 1 405,404 V431 A4,4 0 0 1 401,435 H89 A4,4 0 0 1 85,431 V404 A4,4 0 0 1 89,400 Z" />
+  <text x="100" y="424" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#E65100">TDL（多径信道）</text>
+  <text x="380" y="424" text-anchor="end" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#E65100">中等下降</text>
+  <path fill="#FFEBEE" d="M89,440 H401 A4,4 0 0 1 405,444 V471 A4,4 0 0 1 401,475 H89 A4,4 0 0 1 85,471 V444 A4,4 0 0 1 89,440 Z" />
+  <text x="100" y="464" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">IQ 不平衡</text>
+  <text x="380" y="464" text-anchor="end" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">最严重 (-6pp)</text>
+  <text x="85" y="510" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">IQ不平衡产生镜像频率成分，直接</text>
+  <text x="85" y="528" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">干扰视觉结构计数能力</text>
+
+  
+  <path fill="#F5F7FA" d="M465,135 H815 A10,10 0 0 1 825,145 V645 A10,10 0 0 1 815,655 H465 A10,10 0 0 1 455,645 V145 A10,10 0 0 1 465,135 Z" />
+  <path fill="#0D47A1" d="M465,135 H815 A10,10 0 0 1 825,145 V255 A10,10 0 0 1 815,265 H465 A10,10 0 0 1 455,255 V145 A10,10 0 0 1 465,135 Z" />
+  <rect x="455" y="255" width="370" height="10" fill="#0D47A1" />
+  <text x="640" y="185" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">vs CNN/Transformer</text>
+  <text x="640" y="218" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#BBDEFB">与非LLM基线的对比</text>
+
+  <path fill="#1565C0" d="M486,280 H794 A6,6 0 0 1 800,286 V324 A6,6 0 0 1 794,330 H486 A6,6 0 0 1 480,324 V286 A6,6 0 0 1 486,280 Z" />
+  <text x="640" y="308" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">RF-GPT-7B (3 epoch)</text>
+  <text x="640" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1565C0">76.96% NRIE</text>
+
+  <path fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1" d="M486,365 H794 A6,6 0 0 1 800,371 V409 A6,6 0 0 1 794,415 H486 A6,6 0 0 1 480,409 V371 A6,6 0 0 1 486,365 Z" />
+  <text x="640" y="393" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">ViT-H (30 epoch)</text>
+  <text x="640" y="413" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#546E7A">76.39%</text>
+
+  <path fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1" d="M486,425 H794 A6,6 0 0 1 800,431 V469 A6,6 0 0 1 794,475 H486 A6,6 0 0 1 480,469 V431 A6,6 0 0 1 486,425 Z" />
+  <text x="640" y="453" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">ViT-B (30 epoch)</text>
+  <text x="640" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#546E7A">72.34%</text>
+
+  <path fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1" d="M486,485 H794 A6,6 0 0 1 800,491 V529 A6,6 0 0 1 794,535 H486 A6,6 0 0 1 480,529 V491 A6,6 0 0 1 486,485 Z" />
+  <text x="640" y="513" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">EfficientNet (30 epoch)</text>
+  <text x="640" y="533" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#546E7A">70.85%</text>
+
+  <text x="480" y="580" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#1565C0">RF-GPT-7B 仅用 3 epoch 即超越</text>
+  <text x="480" y="598" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#1565C0">ViT-H 30 epoch，数据效率极高</text>
+
+  
+  <path fill="#F5F7FA" d="M860,135 H1210 A10,10 0 0 1 1220,145 V645 A10,10 0 0 1 1210,655 H860 A10,10 0 0 1 850,645 V145 A10,10 0 0 1 860,135 Z" />
+  <path fill="#FF6F00" d="M860,135 H1210 A10,10 0 0 1 1220,145 V255 A10,10 0 0 1 1210,265 H860 A10,10 0 0 1 850,255 V145 A10,10 0 0 1 860,135 Z" />
+  <rect x="850" y="255" width="370" height="10" fill="#FF6F00" />
+  <text x="1035" y="185" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">分辨率影响</text>
+  <text x="1035" y="218" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#FFF8E1">频谱图分辨率实验</text>
+
+  <path fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1" d="M881,280 H1189 A6,6 0 0 1 1195,286 V319 A6,6 0 0 1 1189,325 H881 A6,6 0 0 1 875,319 V286 A6,6 0 0 1 881,280 Z" />
+  <text x="890" y="305" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">224 × 224</text>
+  <text x="1170" y="305" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#546E7A">72.9%</text>
+
+  <path fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1" d="M881,335 H1189 A6,6 0 0 1 1195,341 V374 A6,6 0 0 1 1189,380 H881 A6,6 0 0 1 875,374 V341 A6,6 0 0 1 881,335 Z" />
+  <text x="890" y="360" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">384 × 384</text>
+  <text x="1170" y="360" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#1565C0">78.7%</text>
+
+  <path fill="#E3F2FD" d="M881,390 H1189 A6,6 0 0 1 1195,396 V429 A6,6 0 0 1 1189,435 H881 A6,6 0 0 1 875,429 V396 A6,6 0 0 1 881,390 Z" />
+  <text x="890" y="415" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#1565C0">512 × 512（选用）</text>
+  <text x="1170" y="415" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1565C0">82.4%</text>
+
+  
+  <text x="1035" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FF6F00">+9.5 pp</text>
+  <path d="M960 480 L1035 465 L1110 480" fill="none" stroke="#FF6F00" stroke-width="2" />
+  <polygon points="1110,477 1120,480 1110,483" fill="#FF6F00" />
+
+  <text x="875" y="530" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">更高分辨率保留更多判别性时频细节</text>
+  <text x="875" y="550" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">但 token 数增加，推理成本更高</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">12 / 15</text>
+</svg>

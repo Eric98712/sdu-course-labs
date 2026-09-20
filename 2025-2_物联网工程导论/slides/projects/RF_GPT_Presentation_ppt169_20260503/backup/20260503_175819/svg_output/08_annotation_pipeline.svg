@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">自动化标注与指令合成管线</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+
+  <!-- Pipeline flow -->
+  <!-- Step 1 -->
+  <rect x="60" y="140" width="220" height="120" rx="10" fill="#E3F2FD"/>
+  <text x="170" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#1565C0">波形生成</text>
+  <text x="170" y="200" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">MATLAB Toolbox</text>
+  <text x="170" y="220" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">6种无线技术</text>
+  <text x="170" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">标准符合验证</text>
+
+  <line x1="280" y1="200" x2="330" y2="200" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="330,194 342,200 330,206" fill="#1565C0"/>
+
+  <!-- Step 2 -->
+  <rect x="345" y="140" width="220" height="120" rx="10" fill="#E8F5E9"/>
+  <text x="455" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">确定性标注</text>
+  <text x="455" y="200" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">元数据提取</text>
+  <text x="455" y="220" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">SNR / 带宽 / 调制</text>
+  <text x="455" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">完美 ground truth</text>
+
+  <line x1="565" y1="200" x2="615" y2="200" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="615,194 627,200 615,206" fill="#1565C0"/>
+
+  <!-- Step 3 -->
+  <rect x="630" y="140" width="220" height="120" rx="10" fill="#FFF3E0"/>
+  <text x="740" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#E65100">结构化描述</text>
+  <text x="740" y="200" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">5个信息层级</text>
+  <text x="740" y="220" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">摘要 / 视觉 / 上下文</text>
+  <text x="740" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">密集技术描述</text>
+
+  <line x1="850" y1="200" x2="900" y2="200" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="900,194 912,200 900,206" fill="#1565C0"/>
+
+  <!-- Step 4 -->
+  <rect x="915" y="140" width="240" height="120" rx="10" fill="#E3F2FD"/>
+  <text x="1035" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#1565C0">LLM 指令合成</text>
+  <text x="1035" y="200" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">GPT-OSS-120B</text>
+  <text x="1035" y="220" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">多样化 QA 对</text>
+  <text x="1035" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">计数/分类/重叠/JSON</text>
+
+  <!-- 5 information levels -->
+  <text x="80" y="310" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">5 个信息层级</text>
+
+  <rect x="60" y="330" width="220" height="100" rx="8" fill="#E3F2FD"/>
+  <text x="170" y="360" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">摘要</text>
+  <text x="170" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">场景级高层描述</text>
+  <text x="170" y="405" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">"5G NR下行链路…"</text>
+
+  <rect x="295" y="330" width="220" height="100" rx="8" fill="#E3F2FD"/>
+  <text x="405" y="360" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">全局视觉</text>
+  <text x="405" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">SSB / CSI-RS / 占用</text>
+
+  <rect x="530" y="330" width="220" height="100" rx="8" fill="#E8F5E9"/>
+  <text x="640" y="360" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">全局上下文</text>
+  <text x="640" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">带宽 / SCS / 时长</text>
+
+  <rect x="765" y="330" width="220" height="100" rx="8" fill="#FFF3E0"/>
+  <text x="875" y="360" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#E65100">信号视觉</text>
+  <text x="875" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">SNR / 时频占用</text>
+
+  <rect x="1000" y="330" width="220" height="100" rx="8" fill="#FFF3E0"/>
+  <text x="1110" y="360" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#E65100">信号上下文</text>
+  <text x="1110" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#546E7A">DM-RS / PTRS 等</text>
+
+  <!-- Future work note -->
+  <rect x="60" y="460" width="1160" height="50" rx="8" fill="#F5F7FA"/>
+  <text x="80" y="490" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#90A4AE">* 本文主要使用摘要、全局视觉、信号视觉三个层级；细粒度信号上下文（DM-RS/PTRS/CORESET）留待未来工作</text>
+
+  <!-- Footer -->
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">08 / 15</text>
+</svg>

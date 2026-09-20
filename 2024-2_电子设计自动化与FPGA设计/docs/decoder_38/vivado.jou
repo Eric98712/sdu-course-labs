@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 16 21:02:07 2025
+# Process ID: 9008
+# Current directory: C:/Users/Eric/Desktop/FPGA/decoder_38
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6796 C:\Users\Eric\Desktop\FPGA\decoder_38\decoder_38.xpr
+# Log file: C:/Users/Eric/Desktop/FPGA/decoder_38/vivado.log
+# Journal file: C:/Users/Eric/Desktop/FPGA/decoder_38\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Eric/Desktop/FPGA/decoder_38/decoder_38.xpr
+update_compile_order -fileset sources_1

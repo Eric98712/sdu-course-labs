@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">参考文献</text>
+  <text x="80" y="125" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">路线A：VLM内化感知</text>
+  <rect x="60" y="140" width="560" height="100" rx="6" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="75" y="168" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[1] Zou et al. RF-GPT: Teaching AI to See the Wireless World.</text>
+  <text x="75" y="188" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2602.14833, 2026.</text>
+  <text x="75" y="212" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[2] Zou et al. Seeing Radio: From Zero RF Priors to Explainable</text>
+  <text x="80" y="230" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Modulation Recognition with VLM. arXiv:2601.13157, 2026.</text>
+  <rect x="660" y="140" width="560" height="100" rx="6" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="675" y="168" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[3] Multimodal Wireless Foundation Models.</text>
+  <text x="675" y="188" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2511.15162, 2025.</text>
+  <text x="675" y="220" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[4] When Does Multimodal AI Help? Diagnostic Complementarity</text>
+  <text x="680" y="238" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">of VLMs and CNNs for Spectrum Management. 2026.</text>
+  <text x="80" y="285" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#CC0000">路线B：智能体协同</text>
+  <rect x="60" y="300" width="560" height="140" rx="6" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="75" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[5] Popescu &amp; Stanescu. AICEBERG: Agentic AI for Autonomous</text>
+  <text x="80" y="346" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Radio Monitoring. MDPI Smart Cities, 2026.</text>
+  <text x="75" y="372" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[6] WirelessAgent: LLM Agents for Intelligent Wireless Networks.</text>
+  <text x="80" y="390" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2505.01074, 2025.</text>
+  <text x="75" y="416" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[7] WirelessAgent R1: Unified Agent for Resource Allocation.</text>
+  <text x="80" y="434" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2604.17440, 2026.</text>
+  <rect x="660" y="300" width="560" height="140" rx="6" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="675" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[8] Li et al. Multi-LLM Agent DRL for Next-Generation</text>
+  <text x="680" y="346" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Wireless Communication Systems. KTH/NAISS, 2025-2026.</text>
+  <text x="675" y="372" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[9] Aircom. raNora: Agentic AI for Autonomous Radio Planning.</text>
+  <text x="680" y="390" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">商用平台, 2026.03.</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">13 / 14</text>
+</svg>

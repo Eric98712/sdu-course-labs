@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">路线A：RF-GPT 实验结果</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">五大基准 · RF-GPT vs 通用VLM（Qwen2.5-VL / GPT-5）</text>
+  <rect x="60" y="150" width="560" height="42" rx="4" fill="#003366"/>
+  <text x="200" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">基准任务</text>
+  <text x="400" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">RF-GPT-7B</text>
+  <text x="560" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">通用VLM</text>
+  <rect x="60" y="192" width="560" height="35" rx="4" fill="#E8F4FC"/>
+  <text x="200" y="215" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">WBMC（调制分类）</text>
+  <text x="400" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">82.4%</text>
+  <text x="560" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">7.0%</text>
+  <rect x="60" y="227" width="560" height="35" rx="4" fill="#F5F7FA"/>
+  <text x="200" y="250" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">WBOD（重叠检测）</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">91.5%</text>
+  <text x="560" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">~25%</text>
+  <rect x="60" y="262" width="560" height="35" rx="4" fill="#E8F4FC"/>
+  <text x="200" y="285" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">WTR（技术识别）</text>
+  <text x="400" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">99.64%</text>
+  <text x="560" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">~5%</text>
+  <rect x="60" y="297" width="560" height="35" rx="4" fill="#F5F7FA"/>
+  <text x="200" y="320" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">WNUC（用户计数）</text>
+  <text x="400" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">70.17%</text>
+  <text x="560" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">~23%</text>
+  <rect x="60" y="332" width="560" height="35" rx="4" fill="#E8F4FC"/>
+  <text x="200" y="355" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">NRIE（NR信息提取）</text>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#003366" font-weight="bold">~80%</text>
+  <text x="560" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">~20%</text>
+  <rect x="60" y="390" width="1160" height="60" rx="8" fill="#E8F4FC"/>
+  <text x="640" y="418" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">信号数量识别准确率：RF-GPT ~98% vs 通用VLM &lt;5%</text>
+  <text x="640" y="440" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">VLM在RF任务上表现≈随机猜测，证明RF grounding是必需的</text>
+  <text x="80" y="495" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#003366">消融实验亮点</text>
+  <rect x="60" y="510" width="360" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="80" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="bold" fill="#333333">鲁棒性</text>
+  <text x="80" y="565" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">对CFO/PA/TDL鲁棒</text>
+  <text x="80" y="585" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">IQ不平衡最具破坏性</text>
+  <rect x="455" y="510" width="360" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="475" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="bold" fill="#333333">vs CNN/Transformer</text>
+  <text x="475" y="565" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">RF-GPT (3 epoch) > ViT-H (30 epoch)</text>
+  <text x="475" y="585" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">数据效率更高</text>
+  <rect x="850" y="510" width="370" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="870" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="bold" fill="#333333">分辨率</text>
+  <text x="870" y="565" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">224→512 分辨率提升 +9pp</text>
+  <text x="870" y="585" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">但token数增加，推理成本更高</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 路线A</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">06 / 15</text>
+</svg>

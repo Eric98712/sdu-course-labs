@@ -1,0 +1,35 @@
+# 仅本地归档，不进入公开仓库
+courseware/
+media/
+archives/
+
+# 大体积 / 二进制
+*.apk
+*.mp4
+*.m4a
+*.mp3
+*.avi
+*.mov
+*.exe
+*.rar
+*.zip
+*.7z
+
+# Office 临时文件
+~$*
+*.tmp
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 构建产物
+node_modules/
+dist/
+.wrangler/
+__pycache__/
+*.o
+*.obj
+*.lst
+*.hex

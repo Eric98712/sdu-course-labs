@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">Hierarchical Diffusion Transformer</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">分层架构 · Attention扩散块 · 复数算子 —— 三层协同设计</text>
+  <rect x="60" y="150" width="370" height="460" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="370" height="40" rx="8" fill="#003366"/>
+  <rect x="60" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="245" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">① 分层架构</text>
+  <rect x="80" y="210" width="330" height="100" rx="6" fill="#FFFFFF" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="95" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">解耦 RF 的时空维度</text>
+  <text x="95" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">层次化多尺度时频特征</text>
+  <text x="95" y="290" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">捕捉长时间序列依赖</text>
+  <rect x="80" y="325" width="330" height="50" rx="6" fill="#E8F4FC"/>
+  <text x="245" y="355" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#003366">全局 → 局部 → 细节</text>
+  <rect x="455" y="150" width="370" height="460" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="455" y="150" width="370" height="40" rx="8" fill="#003366"/>
+  <rect x="455" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="640" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">② Attention扩散块</text>
+  <rect x="475" y="210" width="330" height="100" rx="6" fill="#FFFFFF" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="490" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">基于 Transformer 设计</text>
+  <text x="490" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">自注意力提取 RF 特征</text>
+  <text x="490" y="290" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">优于传统 U-Net 架构</text>
+  <rect x="475" y="325" width="330" height="50" rx="6" fill="#E8F4FC"/>
+  <text x="640" y="355" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#003366">时序建模能力更强</text>
+  <rect x="850" y="150" width="370" height="460" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="850" y="150" width="370" height="40" rx="8" fill="#CC0000"/>
+  <rect x="850" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="1035" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">③ 复数算子</text>
+  <rect x="870" y="210" width="330" height="100" rx="6" fill="#FFFFFF" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="885" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">同时编码幅度 + 相位</text>
+  <text x="885" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">复数域神经网络运算</text>
+  <text x="885" y="290" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">区别于实值模型</text>
+  <rect x="870" y="325" width="330" height="50" rx="6" fill="#FFF0F0"/>
+  <text x="1035" y="355" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#CC0000">相位对无线系统至关重要</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">06 / 12</text>
+</svg>

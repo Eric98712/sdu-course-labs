@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">技术识别 / 用户计数 / NR信息提取</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  <path fill="#F5F7FA" d="M70,135 H420 A10,10 0 0 1 430,145 V645 A10,10 0 0 1 420,655 H70 A10,10 0 0 1 60,645 V145 A10,10 0 0 1 70,135 Z" />
+  <path fill="#E3F2FD" d="M70,135 H420 A10,10 0 0 1 430,145 V305 A10,10 0 0 1 420,315 H70 A10,10 0 0 1 60,305 V145 A10,10 0 0 1 70,135 Z" />
+  <rect x="60" y="305" width="370" height="10" fill="#E3F2FD" />
+  <text x="245" y="195" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">WTR</text>
+  <text x="245" y="225" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">无线技术识别</text>
+  <text x="245" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#1565C0">99.64%</text>
+
+  <text x="85" y="345" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">6种技术 + 上下行</text>
+  <text x="85" y="375" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">5G NR / LTE / UMTS</text>
+  <text x="85" y="398" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">WLAN / DVB-S2 / Bluetooth</text>
+  <text x="85" y="435" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">混淆矩阵近乎完美对角</text>
+  <text x="85" y="458" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">各类别间几乎无混淆</text>
+  <text x="85" y="495" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">通用VLM: 仅 ~5% 准确率</text>
+  <text x="85" y="515" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">（严重偏向 LTE DL 预测）</text>
+
+  
+  <path fill="#F5F7FA" d="M465,135 H815 A10,10 0 0 1 825,145 V645 A10,10 0 0 1 815,655 H465 A10,10 0 0 1 455,645 V145 A10,10 0 0 1 465,135 Z" />
+  <path fill="#FFF3E0" d="M465,135 H815 A10,10 0 0 1 825,145 V305 A10,10 0 0 1 815,315 H465 A10,10 0 0 1 455,305 V145 A10,10 0 0 1 465,135 Z" />
+  <rect x="455" y="305" width="370" height="10" fill="#FFF3E0" />
+  <text x="640" y="195" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#E65100">WNUC</text>
+  <text x="640" y="225" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">WLAN用户数估计</text>
+  <text x="640" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#E65100">70.17%</text>
+
+  <text x="480" y="345" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">11be 优于 11ax</text>
+  <text x="480" y="375" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">11ax 使用 MU-MIMO</text>
+  <text x="480" y="398" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">用户视觉重叠严重</text>
+  <text x="480" y="435" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">Easy: 88.1% (11be)</text>
+  <text x="480" y="458" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">Hard: 74.3% (11be)</text>
+  <text x="480" y="495" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">通用VLM: 仅 ~23%</text>
+  <text x="480" y="515" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">（依赖简单启发式）</text>
+
+  
+  <path fill="#F5F7FA" d="M860,135 H1210 A10,10 0 0 1 1220,145 V645 A10,10 0 0 1 1210,655 H860 A10,10 0 0 1 850,645 V145 A10,10 0 0 1 860,135 Z" />
+  <path fill="#E8F5E9" d="M860,135 H1210 A10,10 0 0 1 1220,145 V305 A10,10 0 0 1 1210,315 H860 A10,10 0 0 1 850,305 V145 A10,10 0 0 1 860,135 Z" />
+  <rect x="850" y="305" width="370" height="10" fill="#E8F5E9" />
+  <text x="1035" y="195" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#2E7D32">NRIE</text>
+  <text x="1035" y="225" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">5G NR信息提取</text>
+
+  <text x="875" y="345" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">关键指标</text>
+  <path fill="#E8F5E9" d="M879,360 H1191 A4,4 0 0 1 1195,364 V391 A4,4 0 0 1 1191,395 H879 A4,4 0 0 1 875,391 V364 A4,4 0 0 1 879,360 Z" />
+  <text x="890" y="384" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">SCS 识别</text>
+  <text x="1160" y="384" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">99.1%</text>
+  <path fill="#E8F5E9" d="M879,400 H1191 A4,4 0 0 1 1195,404 V431 A4,4 0 0 1 1191,435 H879 A4,4 0 0 1 875,431 V404 A4,4 0 0 1 879,400 Z" />
+  <text x="890" y="424" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">SSB 模式识别</text>
+  <text x="1160" y="424" text-anchor="end" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">98.2%</text>
+  <path fill="#F5F7FA" d="M879,440 H1191 A4,4 0 0 1 1195,444 V471 A4,4 0 0 1 1191,475 H879 A4,4 0 0 1 875,471 V444 A4,4 0 0 1 879,440 Z" />
+  <text x="890" y="464" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">UE 计数</text>
+  <text x="1160" y="464" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#1565C0">69.1%</text>
+  <path fill="#F5F7FA" d="M879,480 H1191 A4,4 0 0 1 1195,484 V511 A4,4 0 0 1 1191,515 H879 A4,4 0 0 1 875,511 V484 A4,4 0 0 1 879,480 Z" />
+  <text x="890" y="504" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">CSI-RS 计数</text>
+  <text x="1160" y="504" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#1565C0">57.2%</text>
+  <path fill="#F5F7FA" d="M879,520 H1191 A4,4 0 0 1 1195,524 V551 A4,4 0 0 1 1191,555 H879 A4,4 0 0 1 875,551 V524 A4,4 0 0 1 879,520 Z" />
+  <text x="890" y="544" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">SRS 计数</text>
+  <text x="1160" y="544" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#1565C0">59.2%</text>
+
+  <text x="875" y="585" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">通用VLM: 平均 ~20%</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">11 / 15</text>
+</svg>

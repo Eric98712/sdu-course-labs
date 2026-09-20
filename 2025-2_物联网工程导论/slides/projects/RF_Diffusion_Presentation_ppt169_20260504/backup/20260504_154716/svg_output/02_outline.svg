@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">汇报提纲</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <!-- 3x2 grid -->
+  <rect x="60" y="140" width="360" height="240" rx="10" fill="#F5F7FA"/><rect x="60" y="140" width="360" height="6" rx="3" fill="#1565C0"/>
+  <text x="85" y="180" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">01</text>
+  <text x="85" y="218" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">背景与动机</text>
+  <text x="85" y="250" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">AIGC浪潮 &amp; RF信号生成的需求</text>
+  <text x="85" y="278" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">现有方法的不足</text>
+  <rect x="460" y="140" width="360" height="240" rx="10" fill="#F5F7FA"/><rect x="460" y="140" width="360" height="6" rx="3" fill="#1565C0"/>
+  <text x="485" y="180" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">02</text>
+  <text x="485" y="218" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">三大挑战与核心思路</text>
+  <text x="485" y="250" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">RF信号的独特性（时序/频域/复数）</text>
+  <text x="485" y="278" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">扩散模型的三层改造</text>
+  <rect x="860" y="140" width="360" height="240" rx="10" fill="#F5F7FA"/><rect x="860" y="140" width="360" height="6" rx="3" fill="#FF6F00"/>
+  <text x="885" y="180" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#FF6F00">03</text>
+  <text x="885" y="218" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">TFD理论 &amp; HDT架构</text>
+  <text x="885" y="250" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">时域加噪 + 频域模糊</text>
+  <text x="885" y="278" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">分层Diffusion Transformer</text>
+  <rect x="60" y="410" width="360" height="240" rx="10" fill="#F5F7FA"/><rect x="60" y="410" width="360" height="6" rx="3" fill="#1565C0"/>
+  <text x="85" y="450" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">04</text>
+  <text x="85" y="488" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">实验评估</text>
+  <text x="85" y="520" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">Wi-Fi + FMCW信号生成质量</text>
+  <text x="85" y="548" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">手势识别增强 + 5G信道估计</text>
+  <rect x="460" y="410" width="360" height="240" rx="10" fill="#F5F7FA"/><rect x="460" y="410" width="360" height="6" rx="3" fill="#1565C0"/>
+  <text x="485" y="450" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">05</text>
+  <text x="485" y="488" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">相关工作对比</text>
+  <text x="485" y="520" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">与RF-GPT等对比</text>
+  <text x="485" y="548" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">为什么这篇更有分量</text>
+  <rect x="860" y="410" width="360" height="240" rx="10" fill="#F5F7FA"/><rect x="860" y="410" width="360" height="6" rx="3" fill="#FF6F00"/>
+  <text x="885" y="450" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#FF6F00">06</text>
+  <text x="885" y="488" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">总结</text>
+  <text x="885" y="520" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">贡献 + 局限 + 未来方向</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">02 / 12</text>
+</svg>

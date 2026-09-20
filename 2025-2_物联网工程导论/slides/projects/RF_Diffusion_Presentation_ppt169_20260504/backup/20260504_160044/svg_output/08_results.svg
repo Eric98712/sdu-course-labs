@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">生成质量对比（Table 1）</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">Wi-Fi 与 FMCW 信号的生成质量 —— SSIM 与 FID 指标</text>
+  <rect x="60" y="150" width="560" height="42" rx="4" fill="#003366"/>
+  <text x="200" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">模型</text>
+  <text x="390" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Wi-Fi SSIM</text>
+  <text x="540" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Wi-Fi FID</text>
+  <rect x="60" y="192" width="560" height="42" rx="4" fill="#E8F4FC"/>
+  <text x="200" y="220" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">RF-Diffusion</text>
+  <text x="390" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">0.81</text>
+  <text x="540" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">4.42</text>
+  <rect x="60" y="234" width="560" height="36" rx="4" fill="#F5F7FA"/><text x="200" y="258" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">DDPM</text><text x="390" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">0.65</text><text x="540" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">7.68</text>
+  <rect x="60" y="270" width="560" height="36" rx="4" fill="#F5F7FA"/><text x="200" y="294" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">DCGAN</text><text x="390" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">0.68</text><text x="540" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">11.95</text>
+  <rect x="60" y="306" width="560" height="36" rx="4" fill="#F5F7FA"/><text x="200" y="330" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">CVAE</text><text x="390" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">0.47</text><text x="540" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">10.35</text>
+  <rect x="60" y="365" width="560" height="42" rx="4" fill="#003366"/>
+  <text x="200" y="393" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">模型</text>
+  <text x="390" y="393" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">FMCW SSIM</text>
+  <text x="540" y="393" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">FMCW FID</text>
+  <rect x="60" y="407" width="560" height="42" rx="4" fill="#E8F4FC"/>
+  <text x="200" y="435" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">RF-Diffusion</text>
+  <text x="390" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">0.75</text>
+  <text x="540" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">6.89</text>
+  <rect x="60" y="449" width="560" height="36" rx="4" fill="#F5F7FA"/><text x="200" y="473" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">DDPM</text><text x="390" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">0.58</text><text x="540" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">10.28</text>
+  <rect x="60" y="485" width="560" height="36" rx="4" fill="#F5F7FA"/><text x="200" y="509" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">DCGAN</text><text x="390" y="509" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">0.61</text><text x="540" y="509" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">13.46</text>
+  <rect x="60" y="521" width="560" height="36" rx="4" fill="#F5F7FA"/><text x="200" y="545" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">CVAE</text><text x="390" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">0.40</text><text x="540" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">14.39</text>
+  <rect x="660" y="150" width="560" height="480" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="940" y="185" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">数据说明</text>
+  <rect x="680" y="200" width="520" height="160" rx="6" fill="#FFFFFF" stroke="#D0D7E0" stroke-width="1"/>
+  <text x="695" y="230" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">SSIM（结构相似性）</text>
+  <text x="695" y="255" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">衡量生成信号与真实信号的相似度</text>
+  <text x="695" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">范围 [0, 1]，越接近 1 越好</text>
+  <text x="695" y="305" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">FID（Fréchet Inception Distance）</text>
+  <text x="695" y="330" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">衡量生成分布与真实分布的差异</text>
+  <text x="695" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">越低越好</text>
+  <rect x="680" y="380" width="520" height="110" rx="6" fill="#E8F4FC"/>
+  <text x="695" y="408" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">关键发现</text>
+  <text x="695" y="435" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">• Wi-Fi SSIM 超越 DDPM 25.4%、DCGAN 18.6%</text>
+  <text x="695" y="458" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">• FID 指标全面领先，生成质量显著更高</text>
+  <text x="695" y="481" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">• 两种信号类型均表现优异，通用性强</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">08 / 12</text>
+</svg>

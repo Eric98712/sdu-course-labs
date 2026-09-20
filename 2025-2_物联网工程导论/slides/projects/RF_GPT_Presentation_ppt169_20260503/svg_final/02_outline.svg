@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0" />
+      <stop offset="100%" stop-color="#0D47A1" />
+    </linearGradient>
+  </defs>
+
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect width="1280" height="720" fill="url(#bgDecor)" />
+
+  
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+
+  
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">汇报提纲</text>
+  <text x="80" y="100" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#90A4AE">OUTLINE</text>
+
+  
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  
+  <path fill="#F5F7FA" d="M70,140 H410 A10,10 0 0 1 420,150 V370 A10,10 0 0 1 410,380 H70 A10,10 0 0 1 60,370 V150 A10,10 0 0 1 70,140 Z" />
+  <path fill="#1565C0" d="M63,140 H417 A3,3 0 0 1 420,143 V143 A3,3 0 0 1 417,146 H63 A3,3 0 0 1 60,143 V143 A3,3 0 0 1 63,140 Z" />
+  <text x="85" y="180" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">01</text>
+  <text x="85" y="215" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">背景与动机</text>
+  <text x="85" y="245" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">大模型的成功与射频缺席</text>
+  <text x="85" y="270" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">传统射频智能的四重困境</text>
+  <text x="85" y="295" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">RFLM愿景</text>
+
+  
+  <path fill="#F5F7FA" d="M470,140 H810 A10,10 0 0 1 820,150 V370 A10,10 0 0 1 810,380 H470 A10,10 0 0 1 460,370 V150 A10,10 0 0 1 470,140 Z" />
+  <path fill="#1565C0" d="M463,140 H817 A3,3 0 0 1 820,143 V143 A3,3 0 0 1 817,146 H463 A3,3 0 0 1 460,143 V143 A3,3 0 0 1 463,140 Z" />
+  <text x="485" y="180" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">02</text>
+  <text x="485" y="215" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">RF-GPT 核心思路</text>
+  <text x="485" y="245" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">三大组件架构</text>
+  <text x="485" y="270" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">为何选择频谱图</text>
+  <text x="485" y="295" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">类比：RF全科医生</text>
+
+  
+  <path fill="#F5F7FA" d="M870,140 H1210 A10,10 0 0 1 1220,150 V370 A10,10 0 0 1 1210,380 H870 A10,10 0 0 1 860,370 V150 A10,10 0 0 1 870,140 Z" />
+  <path fill="#FF6F00" d="M863,140 H1217 A3,3 0 0 1 1220,143 V143 A3,3 0 0 1 1217,146 H863 A3,3 0 0 1 860,143 V143 A3,3 0 0 1 863,140 Z" />
+  <text x="885" y="180" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#FF6F00">03</text>
+  <text x="885" y="215" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">数据合成管线</text>
+  <text x="885" y="245" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">六种无线技术波形生成</text>
+  <text x="885" y="270" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">自动化标注与指令合成</text>
+  <text x="885" y="295" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">零人工标注：62.5万指令对</text>
+
+  
+  <path fill="#F5F7FA" d="M70,410 H410 A10,10 0 0 1 420,420 V640 A10,10 0 0 1 410,650 H70 A10,10 0 0 1 60,640 V420 A10,10 0 0 1 70,410 Z" />
+  <path fill="#1565C0" d="M63,410 H417 A3,3 0 0 1 420,413 V413 A3,3 0 0 1 417,416 H63 A3,3 0 0 1 60,413 V413 A3,3 0 0 1 63,410 Z" />
+  <text x="85" y="450" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">04</text>
+  <text x="85" y="485" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">实验评估</text>
+  <text x="85" y="515" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">五大基准任务全面评测</text>
+  <text x="85" y="540" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">通用VLM vs RF-GPT对比</text>
+  <text x="85" y="565" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">消融与鲁棒性分析</text>
+
+  
+  <path fill="#F5F7FA" d="M470,410 H810 A10,10 0 0 1 820,420 V640 A10,10 0 0 1 810,650 H470 A10,10 0 0 1 460,640 V420 A10,10 0 0 1 470,410 Z" />
+  <path fill="#1565C0" d="M463,410 H817 A3,3 0 0 1 820,413 V413 A3,3 0 0 1 817,416 H463 A3,3 0 0 1 460,413 V413 A3,3 0 0 1 463,410 Z" />
+  <text x="485" y="450" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#1565C0">05</text>
+  <text x="485" y="485" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">相关工作对比</text>
+  <text x="485" y="515" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">RF基础模型对比</text>
+  <text x="485" y="540" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">Telecom LLMs对比</text>
+  <text x="485" y="565" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">与VLA模型的联系</text>
+
+  
+  <path fill="#F5F7FA" d="M870,410 H1210 A10,10 0 0 1 1220,420 V640 A10,10 0 0 1 1210,650 H870 A10,10 0 0 1 860,640 V420 A10,10 0 0 1 870,410 Z" />
+  <path fill="#FF6F00" d="M863,410 H1217 A3,3 0 0 1 1220,413 V413 A3,3 0 0 1 1217,416 H863 A3,3 0 0 1 860,413 V413 A3,3 0 0 1 863,410 Z" />
+  <text x="885" y="450" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#FF6F00">06</text>
+  <text x="885" y="485" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">总结与展望</text>
+  <text x="885" y="515" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">三大贡献总结</text>
+  <text x="885" y="540" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">当前局限</text>
+  <text x="885" y="565" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">未来方向</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">02 / 15</text>
+</svg>

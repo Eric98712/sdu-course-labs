@@ -1,0 +1,3 @@
+- **Robustness**: IQ 不平衡最有破坏性——它产生镜像频率
+- **vs CNN/Transformer**: RF-GPT 3 epoch 超越 ViT-H 30 epoch——数据效率是亮点
+- **Resolution**: 512 最佳但有成本权衡

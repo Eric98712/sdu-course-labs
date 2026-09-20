@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">生成质量对比（Wi-Fi 信号）</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="640" y="155" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">论文 Table 1 ‒ Wi-Fi 频谱图直观对比</text>
+  <rect x="60" y="175" width="1160" height="420" rx="10" fill="#F5F7FA"/>
+  <rect x="80" y="195" width="160" height="40" rx="4" fill="#1565C0"/>
+  <text x="160" y="222" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">模型</text>
+  <rect x="270" y="195" width="400" height="40" rx="4" fill="#1565C0"/>
+  <text x="470" y="222" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Wi-Fi 频谱图</text>
+  <rect x="700" y="195" width="160" height="40" rx="4" fill="#1565C0"/>
+  <text x="780" y="222" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">SSIM</text>
+  <rect x="890" y="195" width="160" height="40" rx="4" fill="#1565C0"/>
+  <text x="970" y="222" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">FID</text>
+  <rect x="80" y="235" width="160" height="60" rx="4" fill="#E8F5E9"/>
+  <text x="160" y="272" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">Ground Truth</text>
+  <rect x="270" y="235" width="400" height="60" rx="4" fill="#F5F7FA"/>
+  <rect x="700" y="235" width="160" height="60" rx="4" fill="#F5F7FA"/>
+  <rect x="890" y="235" width="160" height="60" rx="4" fill="#F5F7FA"/>
+  <rect x="80" y="295" width="160" height="60" rx="4" fill="#E8F5E9"/>
+  <text x="160" y="332" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">RF-Diffusion</text>
+  <rect x="270" y="295" width="400" height="60" rx="4" fill="#E8F5E9"/>
+  <rect x="700" y="295" width="160" height="60" rx="4" fill="#E8F5E9"/>
+  <text x="780" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">0.81</text>
+  <rect x="890" y="295" width="160" height="60" rx="4" fill="#E8F5E9"/>
+  <text x="970" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">4.42</text>
+
+  <rect x="80" y="355" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="160" y="387" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">DDPM</text>
+  <rect x="270" y="355" width="400" height="50" rx="4" fill="#F5F7FA"/>
+  <rect x="700" y="355" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="780" y="387" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">0.65</text>
+  <rect x="890" y="355" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="970" y="387" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">7.68</text>
+  <rect x="80" y="405" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="160" y="437" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">DCGAN</text>
+  <rect x="270" y="405" width="400" height="50" rx="4" fill="#F5F7FA"/>
+  <rect x="700" y="405" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="780" y="437" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">0.68</text>
+  <rect x="890" y="405" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="970" y="437" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">11.95</text>
+  <rect x="80" y="455" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="160" y="487" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">CVAE</text>
+  <rect x="270" y="455" width="400" height="50" rx="4" fill="#F5F7FA"/>
+  <rect x="700" y="455" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="780" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">0.47</text>
+  <rect x="890" y="455" width="160" height="50" rx="4" fill="#F5F7FA"/>
+  <text x="970" y="487" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">10.35</text>
+  <text x="85" y="550" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">SSIM: Structural Similarity (越高越好)    FID: Fréchet Inception Distance (越低越好)</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">08 / 12</text>
+</svg>

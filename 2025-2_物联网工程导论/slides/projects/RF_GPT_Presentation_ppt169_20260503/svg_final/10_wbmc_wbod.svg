@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">调制分类与重叠检测结果</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  <text x="80" y="155" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">WBMC — 宽带调制分类</text>
+
+  <path fill="#1565C0" d="M64,175 H616 A4,4 0 0 1 620,179 V213 A4,4 0 0 1 616,217 H64 A4,4 0 0 1 60,213 V179 A4,4 0 0 1 64,175 Z" />
+  <text x="340" y="202" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">任务</text>
+  <text x="480" y="202" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">通用VLM</text>
+  <text x="580" y="202" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">RF-GPT-7B</text>
+
+  <path fill="#F5F7FA" d="M64,217 H616 A4,4 0 0 1 620,221 V255 A4,4 0 0 1 616,259 H64 A4,4 0 0 1 60,255 V221 A4,4 0 0 1 64,217 Z" />
+  <text x="140" y="244" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">Easy（识别调制族）</text>
+  <text x="480" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">7.0%</text>
+  <text x="580" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">82.4%</text>
+
+  <path fill="#F5F7FA" d="M64,259 H616 A4,4 0 0 1 620,263 V297 A4,4 0 0 1 616,301 H64 A4,4 0 0 1 60,297 V263 A4,4 0 0 1 64,259 Z" />
+  <text x="140" y="286" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">Medium（精确调制类）</text>
+  <text x="480" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">5.3%</text>
+  <text x="580" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">74.2%</text>
+
+  <path fill="#F5F7FA" d="M64,301 H616 A4,4 0 0 1 620,305 V339 A4,4 0 0 1 616,343 H64 A4,4 0 0 1 60,339 V305 A4,4 0 0 1 64,301 Z" />
+  <text x="140" y="328" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">Hard（全列表识别）</text>
+  <text x="480" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">3.0%</text>
+  <text x="580" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">47.8%</text>
+
+  
+  <text x="80" y="365" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">RF-GPT识别信号数量准确率 ≈ 98%，通用VLM几乎全部失败</text>
+
+  
+  <rect x="640" y="140" width="1" height="510" fill="#ECEFF1" />
+
+  
+  <text x="680" y="155" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">WBOD — 宽带重叠检测</text>
+
+  <path fill="#1565C0" d="M664,175 H1216 A4,4 0 0 1 1220,179 V213 A4,4 0 0 1 1216,217 H664 A4,4 0 0 1 660,213 V179 A4,4 0 0 1 664,175 Z" />
+  <text x="940" y="202" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">任务</text>
+  <text x="1080" y="202" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">通用VLM</text>
+  <text x="1180" y="202" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">RF-GPT-7B</text>
+
+  <path fill="#F5F7FA" d="M664,217 H1216 A4,4 0 0 1 1220,221 V255 A4,4 0 0 1 1216,259 H664 A4,4 0 0 1 660,255 V221 A4,4 0 0 1 664,217 Z" />
+  <text x="740" y="244" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">Easy（全局重叠类别）</text>
+  <text x="1080" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">~25%</text>
+  <text x="1180" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">91.5%</text>
+
+  <path fill="#F5F7FA" d="M664,259 H1216 A4,4 0 0 1 1220,263 V297 A4,4 0 0 1 1216,301 H664 A4,4 0 0 1 660,297 V263 A4,4 0 0 1 664,259 Z" />
+  <text x="740" y="286" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">Medium（成对重叠类别）</text>
+  <text x="1080" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">~30%</text>
+  <text x="1180" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">87.6%</text>
+
+  <path fill="#F5F7FA" d="M664,301 H1216 A4,4 0 0 1 1220,305 V339 A4,4 0 0 1 1216,343 H664 A4,4 0 0 1 660,339 V305 A4,4 0 0 1 664,301 Z" />
+  <text x="740" y="328" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">Hard（重叠程度量化）</text>
+  <text x="1080" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#C62828">~12%</text>
+  <text x="1180" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">71.7%</text>
+
+  
+  <text x="680" y="365" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">通用VLM倾向于预测"无重叠"造成偏低分数</text>
+
+  
+  <path fill="#E3F2FD" d="M68,600 H1212 A8,8 0 0 1 1220,608 V652 A8,8 0 0 1 1212,660 H68 A8,8 0 0 1 60,652 V608 A8,8 0 0 1 68,600 Z" />
+  <text x="640" y="635" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#1565C0">RF-GPT 在两大基准上全面超越通用 VLM，且在信号数量识别上近乎完美</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">10 / 15</text>
+</svg>

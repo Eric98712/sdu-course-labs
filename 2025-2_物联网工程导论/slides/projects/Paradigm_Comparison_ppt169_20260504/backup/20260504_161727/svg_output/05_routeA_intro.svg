@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">路线A：基于 VLM 的内化感知</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">核心假设：让 LLM 本身"学会"看频谱图，将 RF 知识内化到模型参数中</text>
+  <rect x="60" y="150" width="560" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="40" fill="#003366"/>
+  <text x="85" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">RF-GPT 架构</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">IQ信号 → STFT频谱图 → ViT编码器</text>
+  <text x="85" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">→ 线性投影 → Qwen2.5-VL LLM</text>
+  <text x="85" y="270" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">基座：Qwen2.5-VL (3B/7B)</text>
+  <text x="85" y="290" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">数据：625K合成指令对，零人工标注</text>
+  <text x="85" y="310" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">训练：3 epoch, 8×H200, BF16</text>
+  <rect x="660" y="150" width="560" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="150" width="6" height="40" fill="#003366"/>
+  <text x="685" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">RF-GPT 五大基准结果</text>
+  <rect x="680" y="200" width="520" height="35" rx="4" fill="#E8F4FC"/>
+  <text x="695" y="224" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366" font-weight="bold">任务</text>
+  <text x="1030" y="224" text-anchor="end" font-family="Arial, sans-serif" font-size="15" fill="#003366" font-weight="bold">RF-GPT-7B</text>
+  <text x="1160" y="224" text-anchor="end" font-family="Arial, sans-serif" font-size="15" fill="#003366" font-weight="bold">通用VLM</text>
+  <rect x="680" y="240" width="520" height="28" rx="4" fill="#FFFFFF"/>
+  <text x="695" y="260" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">WBMC（调制分类）</text>
+  <text x="1030" y="260" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#003366">82.4%</text>
+  <text x="1160" y="260" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">7.0%</text>
+  <rect x="680" y="270" width="520" height="28" rx="4" fill="#FFFFFF"/>
+  <text x="695" y="290" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">WTR（技术识别）</text>
+  <text x="1030" y="290" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#003366">99.64%</text>
+  <text x="1160" y="290" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">~5%</text>
+  <rect x="680" y="300" width="520" height="28" rx="4" fill="#FFFFFF"/>
+  <text x="695" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">WBOD（重叠检测）</text>
+  <text x="1030" y="320" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#003366">91.5%</text>
+  <text x="1160" y="320" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#CC0000">~25%</text>
+  <text x="80" y="400" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">同一团队的前序工作：Seeing Radio</text>
+  <rect x="60" y="420" width="560" height="120" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="420" width="6" height="120" fill="#003366"/>
+  <text x="85" y="450" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 三种可视化方式：时域轨迹 / 幅度谱图 / 联合表示</text>
+  <text x="85" y="475" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 57类调制识别：VLM基模~10% → 微调后~90%</text>
+  <text x="85" y="500" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 证明了VLM从零学会RF感知的可能性</text>
+  <rect x="660" y="420" width="560" height="120" rx="8" fill="#FFF0F0" stroke="#CC0000" stroke-width="1"/>
+  <rect x="660" y="420" width="6" height="120" fill="#CC0000"/>
+  <text x="685" y="450" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#CC0000">路线A的劣势</text>
+  <text x="685" y="475" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">• 合成→真实的泛化鸿沟（仅MATLAB，无空口）</text>
+  <text x="685" y="495" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">• 仅与基模对比（没和专用RF模型比）</text>
+  <text x="685" y="515" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">• 黑箱推理、无硬件控制、仅限"识别"</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">05 / 14</text>
+</svg>

@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fnil\fcharset0 Tahoma;}{\f2\fnil Tahoma;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red0\green77\blue187;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\qc\b\f0\fs20 FlashFXP 4.2\par
+\b0 OpenSight Software, LLC.\par
+Copyright \'a9 1998-2012\par
+March 2nd, 2012\par
+\pard\par
+\pard\sl276\slmult1\cf1\b\f1 New and Improved features\par
+\cf0\b0\par
+\pard\fi-363\li720\sa144\cf2\f2 1.\tab\f1 Added: [preferences/view and edit file] New option to include "View and Edit" in edit history, previously local edits were included and this was not desirable for everyone. The default value is unchecked.\par
+\f2 2.\tab\cf0\f1 Added: [live update] integrity check of the downloaded setup and on failure the ability to use an alternative download location.\par
+\pard\fi-363\li720\sa144\sl276\slmult1\cf2\f2 3.\tab\f1 Added: [session/speed limits] You can now set/adjust the session speed limits via the session menu, or by right-clicking the speed limit icon in the status-bar.\par
+\f2 4.\tab\f1 Added: Holding down the shift key while selecting Copy to clipboard > HTTP URL will open the url in your default web browser.\par
+\f2 5.\tab\f1 Added: [sftp] A fallback solution for sftp servers where the sftp-subsystem is not enabled, but the sftp-server binary is installed.\par
+\f2 6.\tab\f1 Added: [queue/list] The ability to hide/show the columns (Target, Size, and Remark) in the queue window, right-click on the column header for the menu.\par
+\f2 7.\tab\f1 Improved: [Server File Search] These improvements were made to the error handling, command execution, and sub-search filtering.\par
+\f2 8.\tab\f1 Improved Implicit SSL connection handshaking and auto switching from Implicit SSL to Explicit SSL if a standard plain text FTP server reply is received.\par
+\f2 9.\tab\f1 Improved CPU usage when connecting to two servers at the same time.\par
+\f2 10.\tab\f1 Improved the speed in which FlashFXP exits, depending on what FlashFXP was doing there were situations where FlashFXP might take a minute or more to actually exit.\par
+\f2 11.\tab\f1 Improved: [Site Manager] Loading and saving site profiles is now faster.\par
+\f2 12.\tab\cf0\f1 Improved: [file transfer rules/validation] In certain cases a file transfer rule could be considered invalid with a prior rule taking priority, however there was no indication if this.\par
+\cf2\f2 13.\tab\f1 Changed: [file transfers] When the "remove failed transfers from queue" setting was enabled it bypassed the "retry failed transfers" feature, To resolve this issue a failed item is kept in the queue until the retry limit has been reached and then it is removed.\par
+\f2 14.\tab\f1 Changed: The connection status icons (encryption, speed limiting, compression) are now always displayed on the status-bar.\par
+\f2 15.\tab\cf0\f1 Changed: [folder bookmarks/synchronized browsing] Previous versions of FlashFXP had a setting named "Use synchronized browsing" on the bookmark dialog, this has been replaced with a drop-down box allowing 3 different states. Default - uses the current synchronized browsing mode. \line Enabled - turns on synchronized browsing, if it isn't already on. \line Disabled - turns off synchronized browsing, if it is already on.\par
+\cf2\f2 16.\tab\f1 Changed: [local browser/drag&drop] All drag/drop operations between local browser windows now correctly support the ctrl and shift keyboard modifiers.\par
+\f2 17.\tab\f1 Changed: [local browser/local to local/drag&drop] The behavior of the "local to local" drag/drop option has changed, Now this option will only change the default behavior for drag/drop between the local browsers, it will not effect drag/drop between the tree navigation and the file list within the local browser pane.\par
+\f2 18.\tab\f1 Changed [tool-bars]: Eliminated unnecessary repainting when toggling tool-bar buttons.\par
+\f2 19.\tab\f1 Changed: [network/sockets] The way we use TCP keep-alives has changed. Now TCP keep-alives are only enabled on the control channel when a data channel is active.\par
+\f2 20.\tab\f1 Changed: [tool bar/background] Changes to the way the tool-bar background is rendered, eliminating some unnecessary erasing/drawing.\par
+\f2 21.\tab\f1 Changed: [sftp] When using public key authentication FlashFXP will skip any keyboard-interactive password prompts and use the public key.\par
+\f2 22.\tab\f1 Changed: [on transfer complete/shutdown computer] The original design didn't allow FlashFXP to shut down the computer if the user session was locked. This has been changed, FlashFXP will now try the normal way first and if windows reports that the session is locked it will attempt to force the shutdown.\par
+\f2 23.\tab\f1 Changed: [remote edit] FlashFXP uses the last write file date/time stamp to determine if the file is modified, this value is only accurate to the nearest 2 seconds, as a result a quick edit and save could occur without detection. To address the problem we now set the file date/time stamp to an earlier time.\par
+\f2 24.\tab\f1 Changed: [remote edit/upload prompt] The site name is now displayed in the caption of the remote edit upload prompt.\par
+\f2 25.\tab\f1 Changed: [remote/navigation tree] The sort order now matches the file list which uses a natural word based sort.\par
+\f2 26.\tab\f1 Improved: [download/transfers] I eliminated a couple unnecessary file operations.\par
+\f2 27.\tab\f1 Updated OpenSSL to 1.0.0g\par
+\f2 28.\tab\f1 Minor improvements to the setup installer script, The installer now uses a new method to detect if FlashFXP is running.\par
+\f2 29.\tab\f1 Improved: [tool-bar/backgrounds] Using a custom background with certain display layouts. In some cases the end result wasn't what you might expect.\par
+\f2 30.\tab\f1 Improved [sftp/server specific]: Addressed a compatibility issue with JSCAPE SFTP server. This issue resulted in random disconnects.\par
+\f2 31.\tab\f1 Updated SFTP engine to latest version. \par
+32\f2 .\tab\f1 Improved: [socket/connections] the way socket connections are established. \par
+\pard\li360\sl276\slmult1\cf0\par
+\pard\sl276\slmult1\cf3\b Bug Fixes\par
+\pard\li360\sl276\slmult1\cf0\b0\par
+\pard\fi-363\li720\sa144\sl276\slmult1\cf2\f2 1.\tab\f1 Fixed: [Buffer Overflow Vulnerability] Discovered by vulnerability-lab.com, A flaw in the VCL components (TListbox and TComboBox) resulted in a buffer overflow. I have resolved the issue in the components and added additional input validation.\par
+\f2 2.\tab\cf0\f1 Fixed: [file transfers] If the retry failed transfer count was set to retry 0 times and the connection is lost, FlashFXP made no attempt to reconnect and transfer any files remaining in the queue.\par
+\cf2\f2 3.\tab\f1 Fixed: [file list/columns] The remote file browser was not properly sizing the columns when only the name column is visible and the auto size column setting was off.\par
+\f2 4.\tab\cf0\f1 Fixed: [tool-bar/states] The queue/transfer selected buttons are no longer enabled when just the parent directory entry is selected. Since this is not a valid selection.\par
+\cf2\f2 5.\tab\cf0\f1 Fixed: [Server file search] Searching by date incorrectly used the server date/time and was not adjusting for any server time zone offset.\par
+\cf2\f2 6.\tab\cf0\f1 Fixed: [Portable Installer] In some cases the portable installer was failing when run via from the update check.\par
+\cf2\f2 7.\tab\f1 Fixed: [local browser/drag&drop] The state of the drag cursor did not reflect the actual operation that was performed on drop between local browser panes.\par
+\f2 8.\tab\f1 Fixed: [logging] When disk logging was disabled there was still an attempt to log the session summary on transfer queue completion.\par
+\f2 9.\tab\f1 Fixed: [file transfers] The "retry failed transfers" setting was counting the first failure as 1 and as a result a retry count of 1 would not retry the transfer.\par
+\f2 10.\tab\f1 Fixed: [file transfers] The "remove failed transfers from queue" setting wasn't working as intended and when this option was enabled a directory failure could result in an end-less loop.\par
+\f2 11.\tab\f1 Fixed: [local browser] Drive/device error when attempting to read the icon from a shortcut that points to an invalid location.\par
+\f2 12.\tab\f1 Fixed: [local browser/tree navigation] shift and ctrl key modifiers for drag and drop operations.\par
+\f2 13.\tab\f1 Fixed: [server/connect] In some cases the connection failure error message was incorrectly reporting "connection refused" as "connection timeout".\par
+\f2 14.\tab\f1 Fixed: [server/connect] The IP address list from a DNS lookup was not cleared between connection attempts. This was an issue when connected to Site A via a host-name, disconnecting, then connecting to Site B via an IP. If the connection attempt to Site B failed a the retry was attempted using the IP from Site A.\par
+\f2 15.\tab\f1 Fixed: [tray icon] Rapidly hiding and showing the main window could result in a race condition where the main window became hidden and the tray icon is removed.\par
+\f2 16.\tab\f1 Fixed: Closing FlashFXP while minimized to the system tray could cause FlashFXP to crash while exiting.\par
+\f2 17.\tab\f1 Fixed: [scheduled tasks/logging/email] If the task was configured to send an email and include the log for say failed transfers but logging of failed transfers was disabled, a empty log of the failed transfers was included in the email. Now if logging is disabled there is no reference to the log file in the email.\par
+\f2 1\f1 8\f2 .\tab\f1 Fixed: [local browser/menu] The local browser/file list control menu on the right pane decided to stop working for us. Its now back in action.\par
+19\f2 .\tab\f1 Fixed: [remote edit/upload] If the user disconnects from site A while a prompt for upload is active, then connects to site B and clicks Yes on the upload prompt this could result in a crash or an unpredictable result.\par
+\f2 2\f1 0\f2 .\tab\f1 Fixed: [remote browser/file list] When renaming an item the item selection state was lost, the item with the new name is now re-selected.\par
+\f2 2\f1 1\f2 .\tab\f1 Fixed: [update/installer] When updating FlashFXP portable edition the update installer might install the update into the wrong folder if the pathname contained a space due to a missing double-quote.\par
+\f2 2\f1 2\f2 .\tab\f1 Fixed: [site manager/statistics] A defect was discovered resulting in incorrect stats.\par
+\f2 2\f1 3\f2 .\tab\f1 Fixed: [active edits dialog] hovering the mouse over an entry in the list could result in a range-check error while displaying the entry tool-tip if the time of the download was more than a couple weeks.\par
+\f2 2\f1 4\f2 .\tab\f1 Fixed: [remote/move folder dialog] More fixes, en-queue > move was broken and when entering a non-cached folder the path shown in the box did not match the folder selection.\par
+\f2 2\f1 5\f2 .\tab\f1 Fixed: [ftp/download] One of the fixes in our previous release re-introduced an issue that caused FlashFXP to hang on zero byte files.\par
+\f2 2\f1 6\f2 .\tab\f1 Fixed: [active edits dialog] Delete was disabled after de-selecting an entry from the list.\par
+\f2 2\f1 7\f2 .\tab\f1 Fixed: [console/ANSI parser] The ANSI color parser used in the status window contained a flaw that attempted to read past the end of the string resulting in unpredictable crashes.\par
+\pard\li360\sa144\sl276\slmult1\cf0\par
+\pard\f0\par
+}
+ 

@@ -1,0 +1,549 @@
+\documentclass[UTF8,fontset=windows,zihao=-4]{ctexart}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.7cm,right=2.7cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc,decorations.pathreplacing}
+\pgfplotsset{compat=1.18}
+
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{2em}
+\renewcommand{\baselinestretch}{1.25}
+\captionsetup{font=small,labelsep=quad}
+\makeatletter
+\renewcommand{\@cite}[2]{\textsuperscript{[{#1\if@tempswa , #2\fi}]}}
+\makeatother
+\ctexset{
+  section = {
+    format = \raggedright\heiti\zihao{3},
+    name = {},
+    number = \arabic{section},
+    aftername = \quad,
+    beforeskip = 1.5ex plus .2ex,
+    afterskip = 1.2ex plus .2ex
+  },
+  subsection = {
+    format = \raggedright\heiti\zihao{4},
+    aftername = \quad
+  }
+}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\kw}[1]{\textbf{#1}}
+
+\title{\heiti\zihao{2} 面向6G物联网的频谱认知技术演进研究\\[0.4em]
+\Large ——从传统调制识别到无线基础模型}
+\author{\zihao{-4} 物联网工程课程结课论文}
+\date{}
+
+\begin{document}
+\pagestyle{plain}
+\maketitle
+
+\begin{center}
+{\heiti\zihao{4} 摘要}
+\end{center}
+
+\noindent 随着6G、工业物联网、车联网、低空通信和智能终端的快速发展，无线通信环境正在呈现设备密集、协议多样、频谱共享和干扰复杂等特征。传统通信系统主要依赖固定规则和人工配置进行频谱管理，难以适应未来高动态、高异构的电磁环境。频谱认知技术的目标是使通信系统能够自动感知无线环境，识别频段占用状态、调制方式、通信协议、干扰特征和信道质量，并将感知结果反馈给动态频谱接入、资源调度和网络自优化模块。本文围绕频谱认知这一关键技术，梳理其从传统信号处理、机器学习、深度学习到无线基础模型的发展脉络，重点分析各阶段的基本原理、技术优势和局限性。在此基础上，本文以LWM-Spectro为代表案例，介绍无线基础模型中频谱图表示、Patch Embedding、Transformer编码、自监督预训练和迁移学习等核心机制，并结合实验结果讨论其在跨域泛化和边缘部署方面面临的问题。最后，本文从动态频谱共享、工业物联网干扰监测、无人机通信、应急通信和AI原生网络自优化等角度分析频谱认知技术的应用前景。研究认为，频谱认知正在从“人工特征驱动的单任务识别”走向“预训练驱动的通用频谱理解”，但真实数据获取、跨场景泛化、模型轻量化、可解释性和安全鲁棒性仍是未来落地的关键挑战。
+
+\noindent\textbf{关键词：6G；物联网；频谱认知；调制识别；无线基础模型；Transformer；LWM-Spectro；动态频谱共享}
+
+\clearpage
+\tableofcontents
+\clearpage
+\section{引言}
+\subsection{6G物联网带来的频谱挑战}
+物联网的核心目标是实现人与物、物与物之间的泛在连接。进入5G之后，移动通信系统已经开始支持增强移动宽带、超可靠低时延通信和海量机器类通信等典型场景；而面向2030年前后的6G网络，连接对象将进一步扩展到工业机器人、无人机、车联网终端、低空飞行器、智能传感器、卫星节点以及各类可穿戴设备\cite{itu2030}。与传统蜂窝通信相比，未来物联网系统不仅终端数量更大，而且通信场景更加复杂：工业园区中大量传感器和自动导引车同时工作，低空经济场景中无人机快速移动，城市空间中WiFi、蜂窝网络、蓝牙、卫星通信和专用无线系统共存。这些变化使频谱资源管理从相对静态的问题转变为高动态、高密度和高异构的问题。
+
+频谱资源本身具有稀缺性。虽然毫米波、太赫兹等高频段为6G提供了新的频谱空间，但低频和中频频段仍然承担广覆盖、稳定连接和室内穿透等重要任务。与此同时，越来越多业务希望在有限频段中获得可靠传输能力，仅依靠传统的固定频谱分配方式难以充分利用空闲频段，也难以及时应对突发干扰和业务负载变化。未来通信系统需要从“按规则配置”走向“按环境自适应”，即能够观察当前电磁环境，理解频谱状态，并据此调整通信策略。
+
+\subsection{频谱认知的概念与意义}
+频谱认知并不是简单地判断某个频段“有没有信号”。从工程角度看，它是一组面向无线环境理解的关键能力，包括频谱占用检测、调制识别、协议识别、干扰检测、信噪比估计、信道状态感知和动态频谱接入决策等。一个具备频谱认知能力的通信系统，应当能够回答以下问题：当前频段是否空闲？接收到的信号更可能属于WiFi、LTE还是5G NR？信号采用何种调制方式？是否存在异常干扰或恶意占用？当前链路质量是否足以支撑高阶调制？是否需要切换信道、调整发射功率或改变波束方向？
+
+在认知无线电思想中，频谱认知是动态频谱接入的前提\cite{mitola,haykin}；在AI原生6G网络中，频谱认知则进一步成为网络智能决策的感知入口。它向下连接天线、射频前端和物理层信号处理，向上支撑MAC层资源调度、网络层频谱接入、边缘智能和应用层服务质量保障。对于物联网而言，频谱认知的意义尤其突出：大量低功耗终端无法长期维持复杂人工配置，复杂工业场景也不允许频繁停机排查无线干扰，因此通信系统本身必须具备一定的自动感知和自我调整能力。
+
+
+
+\clearpage
+\section{频谱认知的基本原理}
+\subsection{无线信号的表示方式}
+无线接收机获得的原始数据通常不是人眼可直接理解的“图像”或“文本”，而是复数基带信号。复数基带信号一般表示为IQ序列，其中I分量表示同相分量，Q分量表示正交分量，二者共同保留信号的幅度和相位信息。许多调制识别方法直接处理IQ序列，因为它包含了最接近物理层的原始信息；但IQ序列在直观表达上较弱，尤其当信号存在多载波、循环前缀、时变信道和噪声干扰时，仅从时域波形中识别协议结构并不容易。
+
+为了观察信号在频率维度上的特征，可以对IQ序列进行傅里叶变换得到频谱图。频谱图能够反映信号能量在不同频率位置上的分布，对于判断频段占用、带宽大小、子载波结构和窄带干扰具有直接意义。进一步地，若将信号切分为多个短时间窗口，并分别进行傅里叶变换，就可以得到时频谱图。时频谱图的横轴通常表示时间，纵轴表示频率，颜色或亮度表示能量强弱。它同时刻画了信号随时间和频率变化的结构，因此非常适合用于AI模型识别无线信号模式。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex]
+\tikzstyle{block}=[draw,rounded corners,align=center,minimum width=2.4cm,minimum height=0.8cm,fill=blue!6]
+\node[block] (rf) {射频信号};
+\node[block,right=1.0cm of rf] (iq) {IQ基带采样\\幅度/相位};
+\node[block,right=1.0cm of iq] (stft) {短时傅里叶变换\\STFT};
+\node[block,right=1.0cm of stft] (spec) {时频谱图\\时间$\times$频率};
+\draw[->] (rf) -- (iq);
+\draw[->] (iq) -- (stft);
+\draw[->] (stft) -- (spec);
+\end{tikzpicture}
+\caption{无线信号从射频接收到时频谱图的基本转换流程}
+\label{fig:signal-flow}
+\end{figure}
+
+图\ref{fig:signal-flow}概括了频谱认知中常见的数据表示转换过程。实际系统中，频谱图可以来自软件无线电平台、基站射频前端、频谱监测设备或边缘网关。对AI模型而言，时频谱图具有两个优点：一是它将一维信号转换为二维结构，使卷积网络和视觉Transformer等成熟模型可以被迁移到无线信号处理\cite{dosovitskiy}；二是它保留了协议、调制和信道变化在时频平面上的结构差异，便于模型学习可区分特征。
+
+\subsection{频谱认知的典型任务}
+频谱认知包含多个层次的任务。较低层次的任务关注信号是否存在、能量分布如何；较高层次的任务关注信号属于哪类协议、是否存在干扰以及网络应采取什么策略。表\ref{tab:tasks}总结了常见频谱认知任务及其作用。
+
+\begin{table}[H]
+\centering
+\caption{频谱认知的典型任务及应用价值}
+\label{tab:tasks}
+\begin{tabularx}{\textwidth}{p{2.8cm}YY}
+\toprule
+任务 & 技术目标 & 典型应用价值 \\
+\midrule
+频谱占用检测 & 判断某一频段是否存在有效信号或空闲频谱 & 支持动态频谱接入，提高频谱利用率 \\
+调制识别 & 判断BPSK、QPSK、QAM、OFDM等调制方式 & 辅助信号解调、干扰分析和非合作通信识别 \\
+协议识别 & 判断WiFi、LTE、5G NR等通信协议类型 & 支持多网络共存管理和频谱监管 \\
+干扰检测 & 发现异常信号、非法占用或恶意干扰 & 提升工业物联网和应急通信的可靠性 \\
+SNR估计 & 估计信号与噪声之间的功率比例 & 支持链路自适应、调制编码选择和功率控制 \\
+信道感知 & 分析多径、衰落、遮挡和移动性影响 & 支持波束控制、资源调度和网络优化 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+这些任务之间并非彼此孤立。例如，动态频谱接入首先需要判断频段是否空闲，同时还要识别潜在干扰和相邻系统协议；工业物联网干扰监测不仅要知道有无异常能量，还要判断干扰源是否来自同类设备、外部网络或非授权发射；SNR估计虽然看似是回归任务，但它会影响调制阶数选择、发射功率控制和链路重传策略。因此，未来频谱认知系统更可能是多任务融合的智能模块，而不是多个互不关联的单点算法。
+
+\subsection{频谱认知的一般处理流程}
+从系统工程角度看，频谱认知可以抽象为“感知—表示—理解—决策”的闭环。首先，天线和射频前端接收无线信号；其次，基带处理模块完成IQ采样、滤波、同步和时频变换；随后，传统算法或AI模型从信号表示中提取特征，完成占用检测、协议识别、调制分类或SNR估计；最后，识别结果被送入频谱接入、功率控制、链路切换或网络调度模块。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex,node distance=0.75cm]
+\tikzstyle{box}=[draw,rounded corners,align=center,minimum width=3.2cm,minimum height=0.75cm,fill=green!6]
+\node[box] (env) {复杂无线环境};
+\node[box,below=of env] (recv) {天线接收与IQ采样};
+\node[box,below=of recv] (rep) {频谱图/时频谱图生成};
+\node[box,below=of rep] (model) {特征提取或模型编码};
+\node[box,below=of model] (task) {占用检测/调制识别/协议分类/SNR估计};
+\node[box,below=of task] (decision) {动态频谱接入与网络优化};
+\draw[->] (env) -- (recv);
+\draw[->] (recv) -- (rep);
+\draw[->] (rep) -- (model);
+\draw[->] (model) -- (task);
+\draw[->] (task) -- (decision);
+\draw[->,bend right=75,dashed] (decision.east) to node[right]{反馈调整} (env.east);
+\end{tikzpicture}
+\caption{频谱认知的一般处理闭环}
+\label{fig:cognition-loop}
+\end{figure}
+
+图\ref{fig:cognition-loop}体现了频谱认知与传统离线信号分析的区别。传统分析往往只关注“识别结果”，而物联网中的频谱认知更强调结果对网络行为的反馈。例如，若模型判断某工业信道受到强干扰，网关可以自动切换至备用信道；若系统检测到某频段长期空闲，认知无线电终端可以临时接入；若SNR下降，链路可以降低调制阶数以保持可靠性。这种闭环思想正是6G AI原生网络的重要特征。
+
+\clearpage
+\section{频谱认知技术的演进路线}
+\subsection{传统信号处理方法}
+早期频谱认知主要依赖通信理论和信号处理方法\cite{haykin}。典型方法包括能量检测、匹配滤波、循环平稳特征、高阶累积量和星座图特征分析等。能量检测是最基础的方法，它通过计算某一频段内的接收功率并与阈值比较，判断该频段是否被占用。其优点是实现简单、计算量小，不需要预先知道信号结构；但缺点也很明显：当噪声功率估计不准或信号很弱时，阈值选择会变得困难，容易出现漏检或误检。
+
+能量检测的基本判决可写为：
+\begin{equation}
+T(y)=\frac{1}{N}\sum_{n=1}^{N}|y[n]|^2,\qquad
+\begin{cases}
+T(y)>\gamma, & H_1:\text{信号存在},\\
+T(y)\leq\gamma, & H_0:\text{仅有噪声},
+\end{cases}
+\end{equation}
+其中$y[n]$为接收采样，$N$为观测窗口长度，$\gamma$为判决阈值。这个公式体现了传统方法的特点：判断逻辑清晰，但性能高度依赖噪声估计和阈值设置。
+
+匹配滤波方法利用已知信号模板与接收信号进行相关运算，若相关峰值明显，则认为目标信号存在。这类方法在已知协议、同步较好且信道条件稳定时效果较好，但需要掌握先验信号结构，不适合未知信号和非合作场景。循环平稳特征方法利用调制信号中由载波、符号率或循环前缀产生的周期统计特性，能够在一定程度上区分通信信号与噪声。高阶累积量则通过分析信号的高阶统计特征识别调制类型，对部分调制识别任务有效。
+
+传统信号处理方法的共同特点是可解释性强。研究者能够明确说明某个特征对应信号的哪种物理结构，也能估计方法的计算复杂度和适用条件。然而，这些方法高度依赖专家经验和人工特征设计。当无线环境从单一协议、固定信道发展到多协议共存、强干扰、快速移动和频谱共享时，人工设计的规则很难覆盖所有情况。尤其在6G物联网中，设备种类、频段、带宽和业务模式不断变化，传统方法的泛化能力受到明显限制。
+
+\subsection{机器学习方法}
+随着无线数据集和计算能力的发展，研究者开始将机器学习方法用于调制识别和频谱分类。机器学习方法通常仍然需要人工提取特征，例如瞬时幅度、瞬时相位、频谱熵、高阶累积量、循环谱特征等，然后使用支持向量机、K近邻、随机森林或浅层神经网络完成分类。与固定阈值或人工规则相比，机器学习分类器可以从样本中学习更复杂的判别边界，因此在中小规模数据集上往往取得更好的识别效果。
+
+以调制识别为例，传统方法可能通过某个高阶累积量阈值区分QPSK和16QAM，而机器学习方法可以同时利用多个特征维度，由分类器综合判断信号类别。这种方式降低了单一特征失效带来的风险，也使模型能够适应一定范围内的噪声和信道变化。对于早期认知无线电系统而言，机器学习方法在性能和复杂度之间提供了较好的折中。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex,node distance=0.9cm]
+\tikzstyle{mlbox}=[draw,rounded corners,align=center,minimum width=2.45cm,minimum height=0.8cm,fill=blue!6]
+\node[mlbox] (iqml) {IQ序列/频谱图};
+\node[mlbox,right=of iqml] (feat) {人工特征\\累积量/频谱熵};
+\node[mlbox,right=of feat] (clf) {分类器\\SVM/RF/KNN};
+\node[mlbox,right=of clf] (out) {识别结果\\调制/协议};
+\draw[->] (iqml) -- (feat);
+\draw[->] (feat) -- (clf);
+\draw[->] (clf) -- (out);
+\end{tikzpicture}
+\caption{机器学习阶段的典型处理流程}
+\label{fig:ml-pipeline}
+\end{figure}
+
+但是，机器学习方法没有从根本上摆脱人工特征依赖。特征工程的质量决定了模型上限，分类器只是学习特征空间中的边界。如果信道条件、采样率、载波频偏或协议结构发生明显变化，原有特征可能不再稳定，模型性能也会下降。此外，每增加一个新任务，往往需要重新设计特征、重新采集样本和重新训练分类器。对于6G中跨频段、跨协议、跨场景的复杂需求，这种方式的维护成本较高。
+
+\subsection{深度学习方法}
+深度学习方法的出现推动频谱认知进入自动特征学习阶段\cite{oshea,rajendran}。与机器学习依赖人工特征不同，深度学习模型可以直接从IQ序列、星座图、频谱图或时频谱图中学习判别特征。卷积神经网络适合从频谱图中提取局部纹理和空间结构，循环神经网络及LSTM、GRU适合处理时间序列依赖，残差网络可以训练更深的特征提取器，而Transformer能够通过自注意力机制捕捉长距离依赖和全局关系\cite{vaswani}。
+
+在自动调制识别任务中，CNN可以把星座图或时频谱图视为图像，学习不同调制方式在几何分布或频谱纹理上的差异；LSTM可以从IQ序列中捕捉符号随时间变化的模式；CNN-Transformer混合模型则可以同时利用局部纹理和全局结构。深度学习方法显著减少了人工特征设计工作，在公开数据集和仿真数据上取得了较高准确率。
+
+从形式上看，深度学习把人工设计特征$f(x)$替换为可学习的多层映射：
+\begin{equation}
+\hat{c}=\arg\max_c\;p(c\mid x;\theta)=\arg\max_c\;\mathrm{softmax}\bigl(W\Phi_\theta(x)+b\bigr)_c,
+\end{equation}
+其中$x$可以是IQ序列、星座图或时频谱图，$\Phi_\theta(\cdot)$表示由CNN、RNN或Transformer学习到的特征编码器。其核心变化在于：特征不再完全由专家手工指定，而是由数据和损失函数共同驱动学习。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex,node distance=0.75cm]
+\tikzstyle{dlbox}=[draw,rounded corners,align=center,minimum width=2.35cm,minimum height=0.8cm,fill=green!7]
+\node[dlbox] (inputdl) {IQ/频谱图};
+\node[dlbox,right=of inputdl] (conv) {卷积/注意力\\自动提特征};
+\node[dlbox,right=of conv] (embed) {高维表示\\$\Phi_\theta(x)$};
+\node[dlbox,right=of embed] (headdl) {任务头\\分类/回归};
+\draw[->] (inputdl) -- (conv);
+\draw[->] (conv) -- (embed);
+\draw[->] (embed) -- (headdl);
+\end{tikzpicture}
+\caption{深度学习阶段的端到端频谱认知流程}
+\label{fig:dl-pipeline}
+\end{figure}
+
+然而，深度学习方法也带来了新的问题。首先，它通常需要大量标注数据，而真实无线信号的采集和标注成本远高于普通图像或文本。其次，许多模型仍然是“一任务一模型”：调制识别训练一个模型，协议识别训练另一个模型，信道估计再训练第三个模型。第三，模型对训练数据分布较敏感，当测试场景出现未见过的协议、频段、信道或干扰时，性能可能显著下降。最后，深度模型的可解释性不足，在频谱监管、应急通信和安全场景中，工程人员不仅关心结果是否正确，也关心模型为什么得出该判断。
+
+\subsection{无线基础模型}
+无线基础模型是近年出现的新方向，其思想受到大语言模型和视觉基础模型的启发\cite{rf-gpt,wirelessgpt}。大语言模型通常先在大规模文本上预训练，再通过少量样本或指令适配完成翻译、问答、摘要等多种任务；视觉基础模型也通过大规模图像预训练获得通用视觉表征。类似地，无线基础模型希望先在大规模无线信号数据上学习通用频谱表示，再迁移到调制识别、协议分类、信道估计、SNR估计、干扰检测等下游任务。
+
+这种“预训练—微调”的范式与传统单任务模型的核心区别在于：模型不再只为某个具体分类任务学习特征，而是试图学习无线信号中更通用的结构规律。例如，频谱图中的子载波分布、功率变化、时频纹理、噪声形态和协议边界，都可以成为预训练模型学习的对象\cite{lwm}。预训练完成后，下游任务只需要增加轻量分类头或回归头，便能在较少标注样本下完成适配。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex,node distance=0.65cm]
+\tikzstyle{fmbox}=[draw,rounded corners,align=center,minimum width=2.7cm,minimum height=0.82cm,fill=orange!10]
+\node[fmbox] (datafm) {大规模未标注\\无线信号};
+\node[fmbox,right=of datafm] (prefm) {自监督预训练\\掩码/对比学习};
+\node[fmbox,right=of prefm] (encfm) {通用频谱编码器\\Foundation Encoder};
+\node[fmbox,below=of encfm] (tasksfm) {下游任务头\\分类/估计/检测};
+\node[fmbox,left=of tasksfm] (smallfm) {少量标注数据\\快速适配};
+\draw[->] (datafm) -- (prefm);
+\draw[->] (prefm) -- (encfm);
+\draw[->] (encfm) -- (tasksfm);
+\draw[->] (smallfm) -- (tasksfm);
+\end{tikzpicture}
+\caption{无线基础模型的预训练与下游适配范式}
+\label{fig:foundation-paradigm}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex,node distance=0.85cm]
+\tikzstyle{stage}=[draw,rounded corners,minimum width=8.8cm,minimum height=0.85cm,align=center]
+\node[stage,fill=gray!8] (s1) {传统信号处理：能量检测 / 循环平稳特征 / 高阶累积量};
+\node[stage,fill=blue!6,below=of s1] (s2) {机器学习：人工特征 + SVM / 随机森林 / 浅层网络};
+\node[stage,fill=green!7,below=of s2] (s3) {深度学习：CNN / LSTM / ResNet / Transformer};
+\node[stage,fill=orange!12,below=of s3] (s4) {无线基础模型：RF-GPT / WirelessGPT / LWM-Spectro / ContraWiMAE};
+\draw[->,thick] (s1) -- node[right]{数据驱动增强} (s2);
+\draw[->,thick] (s2) -- node[right]{自动特征学习} (s3);
+\draw[->,thick] (s3) -- node[right]{预训练与迁移} (s4);
+\end{tikzpicture}
+\caption{频谱认知技术的演进路线}
+\label{fig:evolution}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{不同阶段频谱认知技术对比}
+\label{tab:evolution}
+\begin{tabularx}{\textwidth}{p{2.2cm}p{3.0cm}YY}
+\toprule
+阶段 & 代表方法 & 核心思想 & 主要不足 \\
+\midrule
+传统信号处理 & 能量检测、循环平稳特征、高阶累积量 & 人工设计信号特征，依据阈值或统计规律判断 & 对噪声敏感，依赖专家经验，复杂场景泛化差 \\
+机器学习 & SVM、KNN、随机森林 & 人工特征结合数据驱动分类器 & 特征工程仍是瓶颈，跨场景迁移能力有限 \\
+深度学习 & CNN、LSTM、ResNet、Transformer & 直接从IQ或频谱图中自动学习特征 & 依赖大量标注数据，通常一任务一模型 \\
+无线基础模型 & RF-GPT、WirelessGPT、LWM-Spectro等 & 大规模预训练学习通用频谱表征，再迁移到下游任务 & 数据、算力、部署成本和可解释性仍待解决 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{代表性无线基础模型思路对比}
+\label{tab:wfm}
+\begin{tabularx}{\textwidth}{p{2.4cm}p{2.3cm}p{2.9cm}p{2.5cm}Y}
+\toprule
+模型 & 输入形式 & 架构思路 & 主要任务 & 特点 \\
+\midrule
+RF-GPT & IQ序列或无线信号表示 & GPT类自回归建模 & 信号理解、调制识别 & 借鉴语言模型序列建模思想 \\
+WirelessGPT & 信道或无线网络特征 & Transformer编码与任务适配 & 信道预测、无线感知 & 面向网络级无线任务 \\
+LWM-Spectro & 时频谱图 & Transformer/MoE与自监督预训练 & 协议分类、SNR估计、调制识别 & 以频谱图为核心输入，适合视觉化频谱表征 \\
+ContraWiMAE & 信道矩阵或无线特征 & 掩码自编码器与对比学习 & 信道表征学习、波束预测 & 强调自监督和鲁棒表征 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+表\ref{tab:evolution}和表\ref{tab:wfm}表明，频谱认知技术演进的主线是从“人工规则”走向“数据学习”，再走向“通用表征”。这种演进并不意味着传统方法完全失效。相反，在算力受限、任务明确、可解释性要求高的场景中，传统方法仍具有价值；而无线基础模型更适合处理协议复杂、任务多样和数据规模较大的未来网络场景。
+
+\clearpage
+\section{典型技术原理分析：以LWM-Spectro为例}
+\subsection{从IQ信号到频谱图}
+LWM-Spectro代表了一类以频谱图为核心输入的无线基础模型\cite{lwm}。其基本思路是将无线信号转换为二维时频谱图，再借鉴视觉Transformer处理图像的方式学习频谱表示。相比直接处理IQ序列，频谱图的优势在于能够直观呈现信号在时间和频率上的能量变化，使协议结构和调制差异在二维空间中表现为可学习的纹理。
+
+以OFDM信号为例，WiFi、LTE和5G NR虽然都可能采用多载波思想，但子载波数量、导频结构、循环前缀长度、带宽配置和时频资源分布存在差异。这些差异会反映在频谱图的纹理、边界和能量分布中。对于人类观察者来说，某些差异可能并不明显；但对深度模型而言，只要训练数据足够，模型可以从大量样本中提取稳定的结构特征。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small]
+\begin{axis}[
+width=0.86\textwidth,height=5.2cm,
+xlabel={时间片},ylabel={频率索引},
+colormap/viridis,colorbar,
+tick label style={font=\scriptsize},label style={font=\small},
+title={示意性OFDM时频谱图},
+title style={font=\small},
+]
+\addplot3[surf,shader=flat,domain=0:30,domain y=0:30,samples=31,samples y=31]
+{(y<10)*0.05 + (y>=10)*(0.45 + 0.25*sin(deg(x*0.8))*sin(deg(y*0.9)) + 0.12*cos(deg(x*1.7+y*0.4)))};
+\end{axis}
+\end{tikzpicture}
+\caption{OFDM时频谱图示意：横轴为时间，纵轴为频率，颜色表示能量强弱}
+\label{fig:spectrogram-demo}
+\end{figure}
+
+图\ref{fig:spectrogram-demo}是一个示意性时频谱图。真实系统中的频谱图会受到噪声、信道衰落、频偏、同步误差和硬件非理想影响，但其基本思想一致：通过把一维信号映射到二维时频平面，模型可以同时观察局部纹理和全局结构。这也是LWM-Spectro选择频谱图作为输入的重要原因。
+
+\subsection{Patch Embedding：频谱图如何进入Transformer}
+Transformer最初被广泛用于自然语言处理，其输入通常是一串token。视觉Transformer将图像切分为若干patch，每个patch映射为一个token，再输入Transformer编码器\cite{dosovitskiy}。LWM-Spectro采用类似思路处理频谱图：例如将$128\times128$的频谱图切分成多个$4\times4$的小块，每个小块经过线性映射后得到固定维度的向量，并加入位置编码以保留其在时频平面中的位置。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex]
+\draw[fill=blue!5] (0,0) rectangle (3,3);
+\foreach \x in {0.375,0.75,...,2.625}{\draw[gray!55] (\x,0) -- (\x,3);}
+\foreach \y in {0.375,0.75,...,2.625}{\draw[gray!55] (0,\y) -- (3,\y);}
+\node at (1.5,-0.35) {128$\times$128频谱图};
+\draw[->,thick] (3.4,1.5) -- (4.6,1.5) node[midway,above]{切分};
+\foreach \i in {0,...,4}{
+  \draw[fill=green!10] (5,0.3+0.5*\i) rectangle (6.6,0.65+0.5*\i);
+}
+\node at (5.8,-0.35) {Patch序列};
+\draw[->,thick] (7.0,1.5) -- (8.2,1.5) node[midway,above]{线性映射};
+\foreach \i in {0,...,4}{
+  \draw[fill=orange!12] (8.6,0.3+0.5*\i) rectangle (10.8,0.65+0.5*\i);
+}
+\node at (9.7,-0.35) {Token + 位置编码};
+\end{tikzpicture}
+\caption{频谱图Patch Embedding原理示意}
+\label{fig:patch}
+\end{figure}
+
+图\ref{fig:patch}展示了频谱图进入Transformer前的转换过程。Patch大小的选择会影响模型性能和计算复杂度。Patch过大时，序列长度较短、计算效率较高，但可能丢失子载波边界和窄带干扰等细节；Patch过小时，局部结构保留更充分，但token数量增加，自注意力计算开销上升。因此，在频谱图建模中，Patch大小需要在频率分辨率、时间分辨率和计算成本之间折中。
+
+\subsection{Transformer编码器：学习全局频谱结构}
+Transformer编码器的核心是自注意力机制\cite{vaswani}。对于频谱图而言，自注意力的意义在于：模型不仅可以观察某个局部时间片或频率区域，还可以建模不同频率区域、不同时间位置之间的关系。OFDM信号中多个子载波并非孤立存在，导频、数据子载波、循环前缀和保护带共同形成协议结构。若只依赖局部卷积，模型可能更关注局部纹理；而自注意力能够帮助模型捕捉更长范围的结构关联。
+
+在LWM-Spectro中，多层Transformer编码器将patch token逐层转换为更抽象的频谱表征。浅层可能关注局部边界、能量变化和纹理；深层则可能关注协议级结构、噪声模式和全局功率分布。最终，模型可以通过池化得到一个固定长度的特征向量，用于协议分类、调制识别或SNR估计等下游任务。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex,node distance=0.45cm]
+\tikzstyle{layer}=[draw,rounded corners,minimum width=6.3cm,minimum height=0.55cm,align=center,fill=blue!5]
+\node[layer] (in) {Patch Tokens + Position Embedding};
+\node[layer,below=of in] (l1) {Transformer Encoder Layer 1：MSA + FFN};
+\node[layer,below=of l1] (l2) {Transformer Encoder Layer 2：MSA + FFN};
+\node[below=0.1cm of l2] (dots) {$\vdots$};
+\node[layer,below=0.1cm of dots] (l12) {Transformer Encoder Layer 12：MSA + FFN};
+\node[layer,below=of l12,fill=orange!12] (pool) {全局池化得到频谱表征向量};
+\node[layer,below=of pool,fill=green!8] (head) {分类头/回归头：协议识别、调制分类、SNR估计};
+\foreach \a/\b in {in/l1,l1/l2,l12/pool,pool/head}{\draw[->] (\a) -- (\b);}
+\draw[->] (l2) -- (dots); \draw[->] (dots) -- (l12);
+\end{tikzpicture}
+\caption{LWM-Spectro编码器结构示意}
+\label{fig:encoder}
+\end{figure}
+
+图\ref{fig:encoder}给出了简化的编码流程。这里不需要像实验报告那样详细展开每层参数，而应关注其工程意义：Transformer提供了从局部频谱patch到全局频谱理解的建模能力，使模型能够从复杂时频纹理中提取适合多任务迁移的表示。
+
+\subsection{自监督预训练：降低人工标注依赖}
+无线基础模型的关键不只是模型结构，更重要的是训练范式。传统深度学习通常依赖大量人工标签，例如每段信号对应某个调制类别或协议类型。但真实无线数据标注成本高，且很多场景无法提前获得完整标签。自监督预训练试图利用未标注数据本身构造训练任务，让模型在没有人工标签的情况下学习通用表征。
+
+LWM-Spectro中可采用的一个典型策略是掩码频谱建模。其思想类似自然语言处理中的BERT和视觉领域的掩码自编码器\cite{devlin,mae}：训练时随机遮住频谱图中的一部分patch，只保留部分可见区域，然后要求模型根据上下文恢复被遮蔽区域。为了完成恢复任务，模型必须理解频谱图的全局结构，而不能只记住局部像素。因此，掩码频谱建模有助于模型学习信号的时频连续性、子载波结构和噪声分布规律。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex]
+\tikzstyle{img}=[draw,minimum width=2.2cm,minimum height=2.2cm,align=center]
+\node[img,fill=blue!8] (a) at (0,0) {原始\\频谱图};
+\node[img,fill=gray!25] (b) at (3.1,0) {随机遮蔽\\70\% patch};
+\node[img,fill=green!10] (c) at (6.2,0) {编码器\\学习上下文};
+\node[img,fill=orange!12] (d) at (9.3,0) {重建\\频谱图};
+\draw[->,thick] (a) -- (b);
+\draw[->,thick] (b) -- (c);
+\draw[->,thick] (c) -- (d);
+\end{tikzpicture}
+\caption{掩码频谱建模（MSM）自监督预训练示意}
+\label{fig:msm}
+\end{figure}
+
+除掩码建模外，对比学习也是重要的自监督策略。对比学习的目标是让相似信号样本在特征空间中更接近，让不同信号样本更远。例如，同一协议在不同SNR条件下的频谱图应具有一定一致性，而不同协议或不同调制方式之间应形成可分结构。通过这类训练，模型可以获得更稳定、更鲁棒的频谱表示。
+
+\subsection{迁移学习与下游任务适配}
+预训练完成后，编码器可以被视为“频谱特征提取器”。面对具体下游任务时，只需在编码器之后接入轻量分类头或回归头。例如，协议识别任务可使用softmax分类头输出WiFi、LTE或5G NR类别；调制识别任务可输出BPSK、QPSK、16QAM、64QAM等类别；SNR估计任务则可以使用回归头输出信噪比数值。
+
+这种方式体现了无线基础模型的核心价值：将大量计算和数据消耗集中在预训练阶段，而下游任务只需较少样本和较少参数即可适配。对于物联网部署而言，如果边缘设备只需要加载经过压缩的编码器和轻量任务头，就有可能在频谱监测、干扰识别和链路质量估计中实现较低时延的本地推理。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+width=0.82\textwidth,height=6cm,
+xlabel={SNR/dB},ylabel={协议分类准确率/\%},
+ymin=50,ymax=105,xmin=-5,xmax=25,
+grid=both,legend pos=south east,
+tick label style={font=\small},label style={font=\small}
+]
+\addplot[color=blue,mark=square*,thick] coordinates {(-5,93.6) (0,100) (5,100) (10,100) (15,100) (20,100) (25,100)};
+\addlegendentry{冻结编码器}
+\addplot[color=orange,mark=*,thick] coordinates {(-5,63.0) (0,98.3) (5,100) (10,100) (15,100) (20,100) (25,100)};
+\addlegendentry{部分微调}
+\end{axis}
+\end{tikzpicture}
+\caption{不同SNR条件下协议分类准确率示意（根据技术报告结果重绘）}
+\label{fig:snr-acc}
+\end{figure}
+
+图\ref{fig:snr-acc}反映了一个有启发性的现象：在域匹配的OFDM协议分类场景中，冻结预训练编码器已经可以取得较高准确率，说明预训练表征对该任务有效；但部分微调在低SNR条件下反而可能下降，说明小规模下游数据和不恰当微调可能破坏预训练权重中的稳健特征。这提示我们，无线基础模型不是简单地“越微调越好”，迁移策略、数据规模和任务匹配程度都会影响最终效果。
+
+\clearpage
+\section{频谱认知在6G物联网中的应用}
+\subsection{动态频谱共享}
+动态频谱共享是频谱认知最直接的应用之一。在传统授权频谱管理中，某些频段虽然被分配给特定系统，但在时间和空间上可能存在大量空闲。认知无线电设备如果能够准确检测频段占用状态，就可以在不干扰主用户的前提下临时接入空闲频谱。对于6G物联网而言，动态频谱共享能够缓解海量终端带来的频谱压力，尤其适合突发业务、临时部署网络和局部热点场景。
+
+频谱认知在此场景中的作用不仅是能量检测，还包括协议识别和干扰判断。系统需要知道某个频段中是否存在通信信号，该信号属于哪类系统，以及接入后是否会造成冲突。无线基础模型若能提供更通用的频谱理解能力，就可能减少针对每个协议单独设计检测器的工作量。
+
+\subsection{工业物联网干扰监测}
+工业物联网场景对可靠性和低时延要求较高。智能工厂中通常部署大量无线传感器、工业网关、机器人、AGV、摄像头和控制终端，不同设备可能同时使用WiFi、5G专网、蓝牙或其他工业无线协议。金属结构、机器运动和电磁设备还会带来复杂反射和干扰。若无线链路不稳定，可能导致控制指令延迟、生产数据丢失甚至安全风险。
+
+频谱认知系统可以部署在工业网关或边缘服务器上，持续监测频谱状态，发现异常干扰源，并辅助网络自动切换信道、调整功率或改变传输策略。相比人工排查，自动频谱认知可以更快定位问题，也更适合长期运行的工业环境。
+
+\subsection{低空通信与无人机网络}
+低空经济和无人机应用的发展使无线通信面临新的动态性。无人机移动速度快、高度变化大，可能在地面蜂窝网络、无人机自组网和卫星通信之间切换。低空空域中还可能出现遥控链路、图传链路、导航信号和其他无线业务共存的情况。频谱认知可以帮助无人机或地面控制系统识别当前无线环境，判断链路质量、发现干扰并选择合适通信频段。
+
+在无人机集群中，频谱认知还可以支持协同通信。多个无人机节点可以共享局部频谱感知结果，形成对区域电磁环境的整体理解，从而减少相互干扰，提高链路稳定性。这与6G中“通信、感知、计算一体化”的趋势高度一致。
+
+\subsection{应急通信}
+灾害场景下，固定通信基础设施可能受损，传统基站覆盖不足，频谱环境也可能因临时救援设备接入而变得混乱。应急通信系统需要快速建立临时网络，并自动寻找可用频段。频谱认知可以帮助救援设备识别空闲频谱、避开强干扰，并在多种通信方式之间进行选择。
+
+在此类场景中，系统不能依赖复杂人工配置，也不能假定频谱环境稳定。具有一定泛化能力的频谱认知模型可以提升应急网络的自组织能力，使救援通信更快恢复。
+
+\subsection{AI原生网络自优化}
+6G网络的重要趋势之一是AI原生，即AI能力不再只是外挂工具，而是嵌入网络架构和协议栈。频谱认知可以作为AI原生网络的底层感知模块，为资源管理、波束控制、功率分配、链路切换和业务调度提供输入。网络可以根据频谱认知结果形成“感知—决策—执行—反馈”的闭环。
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,>=Latex]
+\node[draw,ellipse,fill=orange!15,minimum width=3.0cm,minimum height=1.0cm] (center) {频谱认知技术};
+\node[draw,rounded corners,fill=blue!6,above left=1.1cm and 1.2cm of center] (a) {动态频谱共享};
+\node[draw,rounded corners,fill=blue!6,above right=1.1cm and 1.2cm of center] (b) {工业物联网干扰监测};
+\node[draw,rounded corners,fill=blue!6,right=1.7cm of center] (c) {低空通信与无人机网络};
+\node[draw,rounded corners,fill=blue!6,below right=1.1cm and 1.2cm of center] (d) {应急通信};
+\node[draw,rounded corners,fill=blue!6,below left=1.1cm and 1.2cm of center] (e) {AI原生网络自优化};
+\foreach \x in {a,b,c,d,e}{\draw[->] (center) -- (\x);}
+\end{tikzpicture}
+\caption{频谱认知在6G物联网中的典型应用场景}
+\label{fig:apps}
+\end{figure}
+
+图\ref{fig:apps}总结了频谱认知在6G物联网中的主要应用方向。可以看到，频谱认知并非单一算法，而是连接物理层信号处理、边缘智能和网络决策的重要桥梁。
+
+\clearpage
+\section{存在问题与发展方向}
+\subsection{真实无线数据获取困难}
+无线基础模型的发展依赖大规模数据，但无线信号数据的获取和标注比图像、文本更困难。首先，真实无线环境不可控，同一协议在不同频段、不同设备、不同信道和不同移动速度下会呈现不同特征；其次，标注无线信号需要专业设备和通信知识，难以像普通图像那样由大量人工快速标注；再次，频谱数据可能涉及隐私、安全和监管问题，公开共享存在限制。
+
+因此，目前许多研究仍依赖仿真数据或受控实验数据。仿真数据便于控制变量，但可能无法覆盖真实环境中的硬件非理想、复杂干扰和非标准信号。未来需要构建更高质量的开放无线数据集，同时发展少样本学习、半监督学习和自监督学习，以降低对人工标注的依赖。
+
+\subsection{跨场景泛化能力不足}
+跨场景泛化是无线基础模型落地的核心挑战之一。我们复现了LWM-Spectro相关实验，在本地重新生成裸调制信号对其微调后进行识别分类实验；实验现象显示\cite{lwm}：当预训练域与下游任务匹配时（预训练为识别协议栈信号），模型在OFDM协议分类中可以取得很高准确率；但当测试数据变为裸调制信号时，准确率会明显下降。这说明模型虽然具备一定迁移能力，但仍然强烈依赖预训练数据分布。
+
+\begin{table}[H]
+\centering
+\caption{LWM-Spectro相关复现实验结果概括}
+\label{tab:results}
+\begin{tabularx}{\textwidth}{p{4.1cm}p{3.6cm}Y}
+\toprule
+任务/配置 & 结果 & 启示 \\
+\midrule
+域匹配：OFDM协议分类，冻结编码器 & 准确率约99.12\% & 预训练频谱表征对匹配域任务有效 \\
+域匹配：OFDM协议分类，部分微调 & 准确率约94.65\% & 有限数据微调可能破坏稳健表征 \\
+域不匹配：裸调制分类，冻结编码器 & 准确率约20.80\% & 跨域泛化困难，接近随机水平 \\
+SNR估计：裸调制信号 & MAE约1.16 dB & 全局功率统计类任务对域偏移更鲁棒 \\
+联合训练：调制分类与SNR估计 & 分类约37.3\%，SNR MAE约1.60 dB & 多任务目标之间可能存在梯度冲突 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+表\ref{tab:results}说明，不同频谱认知任务对特征的依赖并不相同。协议分类需要识别结构化纹理，如子载波排列和导频位置；SNR估计更依赖整体功率与噪声水平，因此对某些域偏移更鲁棒。未来模型需要更好地区分“任务相关特征”和“场景偶然特征”，避免把预训练数据中的特定协议结构误当作通用规律。
+
+\subsection{边缘部署成本}
+物联网系统中大量设备处于边缘侧，算力、功耗和存储空间有限。无线基础模型虽然能力强，但若参数量过大、推理延迟过高，就难以部署在工业网关、无人机、传感器节点或便携式频谱监测设备上。因此，模型轻量化是频谱认知实际应用必须解决的问题。
+
+\begin{table}[H]
+\centering
+\caption{模型效率对比示例（根据技术报告整理）}
+\label{tab:efficiency}
+\begin{tabular}{lccc}
+\toprule
+指标 & LWM-Spectro & ResNet-18 & ViT-B/16 \\
+\midrule
+参数量 & 约2.6M & 约11.2M & 约86.6M \\
+单张推理耗时 & 约15 ms & 约8 ms & 约40 ms \\
+部署内存（FP32） & 约10 MB & 约45 MB & 约346 MB \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+表\ref{tab:efficiency}表明，面向频谱图的小型Transformer编码器在参数量和存储上可能具备边缘部署潜力\cite{lwm}，但进一步降低延迟和功耗仍然重要。未来可以结合模型剪枝、量化、知识蒸馏、低秩分解和早退机制，将基础模型压缩到更适合边缘设备运行的规模。
+
+\subsection{可解释性与安全鲁棒性}
+在频谱监管、工业控制和应急通信中，模型输出不仅要准确，还要可信。若模型判断某频段受到干扰，工程人员需要知道该判断依据是能量突增、周期结构异常还是协议特征变化。当前深度模型通常只能输出类别和置信度，缺少对决策依据的直观解释。未来可以引入注意力可视化、频谱显著性图、特征归因和规则约束模型，使频谱AI更可解释。
+
+安全性也是重要问题。恶意节点可能通过伪装信号、对抗扰动或频谱欺骗诱导模型误判。例如，攻击者可以生成看似空闲但实际会造成干扰的频谱模式，或伪装成合法协议逃避检测。频谱认知系统一旦被欺骗，可能导致错误接入、通信中断或资源浪费。因此，未来需要研究鲁棒训练、异常检测、可信认证和安全频谱学习机制。
+
+\subsection{未来发展方向}
+综合以上问题，频谱认知未来可能沿四个方向发展。第一是跨域泛化，通过域自适应、元学习和更丰富预训练数据，使模型适应不同频段、协议、设备和信道条件。第二是多模态频谱感知，将通信信号、雷达回波、定位信息、环境地图和网络状态共同建模，形成更完整的电磁环境理解。第三是边缘轻量化部署，通过压缩和软硬件协同优化，让模型在低功耗设备上实时运行。第四是智能体化频谱管理，即由大语言模型或任务规划模型负责理解需求和调度流程，由多个轻量频谱专家模型完成具体检测、分类和估计任务，形成“通用调度+专业感知”的体系。
+
+\clearpage
+\section{结论}
+频谱认知是6G物联网实现动态频谱共享、干扰监测和网络自优化的重要基础技术。本文围绕频谱认知的技术演进展开分析，指出其发展经历了传统信号处理、机器学习、深度学习和无线基础模型四个阶段。传统方法具有较强可解释性，但依赖人工特征；机器学习提升了分类能力，却仍受特征工程限制；深度学习实现了自动特征提取，但依赖大量标注数据且多为单任务模型；无线基础模型则通过大规模预训练和迁移学习，尝试构建跨任务、跨协议的通用频谱表征\cite{rf-gpt,wirelessgpt,lwm}。
+
+以LWM-Spectro为例可以看到，新一代频谱认知方法正在借鉴视觉Transformer和自监督学习思想，将无线信号转换为时频谱图，通过Patch Embedding、Transformer编码、掩码频谱建模和下游任务适配实现频谱理解。这一路线为6G AI原生网络提供了新的技术可能：模型可以在预训练阶段学习通用无线结构，在应用阶段服务于协议识别、调制分类、SNR估计和干扰监测等多种任务。
+
+同时，频谱认知距离大规模落地仍有不少挑战。真实无线数据难以获取，跨场景泛化能力仍然不足，边缘部署受到算力和功耗限制，模型可解释性与安全鲁棒性也需要进一步提升。未来，随着无线数据集建设、轻量化模型、多模态感知和智能体式网络管理的发展，频谱认知有望成为6G物联网从“连接万物”走向“理解环境、自主优化”的关键支撑技术。
+
+\clearpage
+\begin{thebibliography}{99}
+\bibitem{itu2030} ITU-R. Framework and overall objectives of the future development of IMT for 2030 and beyond[S]. 2023.
+\bibitem{mitola} Mitola J, Maguire G Q. Cognitive radio: making software radios more personal[J]. IEEE Personal Communications, 1999, 6(4): 13-18.
+\bibitem{haykin} Haykin S. Cognitive radio: brain-empowered wireless communications[J]. IEEE Journal on Selected Areas in Communications, 2005, 23(2): 201-220.
+\bibitem{oshea} O'Shea T J, Corgan J, Clancy T C. Convolutional radio modulation recognition networks[C]//International Conference on Engineering Applications of Neural Networks. 2016.
+\bibitem{rajendran} Rajendran S, Meert W, Giustiniano D, et al. Deep learning models for wireless signal classification with distributed low-cost spectrum sensors[J]. IEEE Transactions on Cognitive Communications and Networking, 2018, 4(3): 433-445.
+\bibitem{vaswani} Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need[C]//Advances in Neural Information Processing Systems. 2017.
+\bibitem{dosovitskiy} Dosovitskiy A, Beyer L, Kolesnikov A, et al. An image is worth 16x16 words: Transformers for image recognition at scale[C]//International Conference on Learning Representations. 2021.
+\bibitem{devlin} Devlin J, Chang M W, Lee K, et al. BERT: Pre-training of deep bidirectional transformers for language understanding[C]//NAACL-HLT. 2019.
+\bibitem{mae} He K, Chen X, Xie S, et al. Masked autoencoders are scalable vision learners[C]//CVPR. 2022.
+\bibitem{rf-gpt} Maatouk A, Piovesan N, Ayed F, et al. Large language models for telecom: the next big thing?[J]. IEEE Communications Magazine, 2024.
+\bibitem{lwm} Kim et al. LWM-Spectro: A wireless foundation model for spectrum cognition[EB/OL]. 2026.
+\bibitem{wirelessgpt} WirelessGPT: A foundation model for wireless communication and sensing[EB/OL]. 2025.
+\end{thebibliography}
+
+\end{document}

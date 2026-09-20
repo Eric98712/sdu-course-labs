@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="100" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="100" fill="#CC0000"/>
+  <text x="640" y="280" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="bold" fill="#003366">Thank You</text>
+  <text x="640" y="340" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="32" fill="#333333">Q &amp; A</text>
+  <rect x="540" y="370" width="200" height="2" fill="#CC0000"/>
+  <text x="640" y="430" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" fill="#666666">射频大模型的范式之争</text>
+  <text x="640" y="460" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#999999">基于 VLM 的内化感知 vs 基于智能体的工具协同</text>
+  <rect x="0" y="650" width="1280" height="70" fill="#F5F7FA"/>
+</svg>

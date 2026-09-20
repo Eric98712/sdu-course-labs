@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">合成数据：六种无线技术</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+
+  <!-- 2x3 grid of tech cards -->
+  <!-- Row 1 -->
+  <rect x="60" y="140" width="370" height="150" rx="10" fill="#E3F2FD"/>
+  <text x="245" y="180" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">5G NR</text>
+  <text x="245" y="210" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">蜂窝通信 · 子载波间隔</text>
+  <text x="245" y="235" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">资源块分配 · SSB模式</text>
+  <text x="245" y="260" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">CSI-RS / SRS / PDCCH</text>
+
+  <rect x="455" y="140" width="370" height="150" rx="10" fill="#E3F2FD"/>
+  <text x="640" y="180" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">LTE</text>
+  <text x="640" y="210" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">4G 蜂窝 · 带宽配置</text>
+  <text x="640" y="235" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">帧结构 · 参考信号</text>
+  <text x="640" y="260" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">物理层完整实现</text>
+
+  <rect x="850" y="140" width="370" height="150" rx="10" fill="#E8F5E9"/>
+  <text x="1035" y="180" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#2E7D32">UMTS</text>
+  <text x="1035" y="210" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">3G 蜂窝 · 码分多址</text>
+  <text x="1035" y="235" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">WCDMA 配置</text>
+  <text x="1035" y="260" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">3GPP 标准符合</text>
+
+  <!-- Row 2 -->
+  <rect x="60" y="315" width="370" height="150" rx="10" fill="#E8F5E9"/>
+  <text x="245" y="355" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#2E7D32">WLAN</text>
+  <text x="245" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">802.11ax / 802.11be</text>
+  <text x="245" y="410" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">OFDMA 资源单元</text>
+  <text x="245" y="435" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">MU-MIMO 配置</text>
+
+  <rect x="455" y="315" width="370" height="150" rx="10" fill="#FFF3E0"/>
+  <text x="640" y="355" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#E65100">DVB-S2</text>
+  <text x="640" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">卫星通信</text>
+  <text x="640" y="410" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">调制编码方案配置</text>
+  <text x="640" y="435" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">DVB-S2X 标准</text>
+
+  <rect x="850" y="315" width="370" height="150" rx="10" fill="#FFF3E0"/>
+  <text x="1035" y="355" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#E65100">Bluetooth</text>
+  <text x="1035" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">短距离通信</text>
+  <text x="1035" y="410" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">跳频模式</text>
+  <text x="1035" y="435" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">BR/EDR 与 LE</text>
+
+  <!-- Key numbers banner -->
+  <rect x="60" y="500" width="1160" height="100" rx="10" fill="#1565C0"/>
+  <text x="640" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF">~12,000</text>
+  <text x="640" y="580" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#BBDEFB">RF 场景数</text>
+
+  <text x="640" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF" transform="translate(280,0)">~625,000</text>
+  <text x="920" y="580" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#BBDEFB">指令-答案对</text>
+
+  <text x="640" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF" transform="translate(-280,0)">0</text>
+  <text x="360" y="580" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#BBDEFB">人工标注</text>
+
+  <!-- Footer -->
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">07 / 15</text>
+</svg>

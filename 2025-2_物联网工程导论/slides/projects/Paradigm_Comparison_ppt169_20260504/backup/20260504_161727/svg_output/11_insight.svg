@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">核心洞见与判断</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">为什么智能体路线在工程上更占优？</text>
+  <rect x="60" y="150" width="560" height="180" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="85" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#CC0000">洞见一：LLM 的长板不在信号处理</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">LLM擅长的是推理、编排、对话、知识检索</text>
+  <text x="85" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">信号分析是传统方法和小模型的优势领域</text>
+  <text x="85" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">→ 扬长避短，让LLM做大脑，让工具做感知</text>
+  <rect x="660" y="150" width="560" height="180" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="685" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#CC0000">洞见二：现实世界的信号是开放的</text>
+  <text x="685" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">真实RF环境有无穷多种干扰和异常模式</text>
+  <text x="685" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">VLM无法通过有限训练数据覆盖所有情况</text>
+  <text x="685" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">→ 工具调用的灵活性是端到端模型做不到的</text>
+  <rect x="60" y="360" width="1160" height="180" rx="8" fill="#E8F4FC"/>
+  <rect x="60" y="360" width="6" height="180" fill="#0066CC"/>
+  <text x="85" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">结论</text>
+  <text x="85" y="428" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">1. VLM内化感知路线：学术上有价值，证明了"VLM可以学会看频谱"，</text>
+  <text x="85" y="455" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">   但距离真实工程部署还有较大差距</text>
+  <text x="85" y="485" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">2. 智能体协同路线：产业上更务实，已有商用产品落地</text>
+  <text x="85" y="515" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">3. 两条路线不是互斥的，未来属于 Agent + VLM + 传统工具的融合架构</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">11 / 14</text>
+</svg>

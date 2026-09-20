@@ -1,0 +1,3 @@
+- **Contributions**: 三个核心贡献概括
+- **Limitations**: 坦诚地说——合成数据、单输入、粗粒度
+- **Future**: 真实数据、MIMO、6G 集成

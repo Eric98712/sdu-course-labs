@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="100" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="100" fill="#CC0000"/>
+  <text x="1240" y="35" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#FFFFFF">物联网工程 | 文献综述</text>
+  <rect x="200" y="250" width="6" height="120" fill="#CC0000"/>
+  <text x="220" y="300" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="48" font-weight="bold" fill="#003366">射频大模型的范式之争</text>
+  <text x="220" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" fill="#333333">基于 VLM 的内化感知 vs 基于智能体的工具协同</text>
+  <rect x="220" y="380" width="400" height="2" fill="#0066CC"/>
+  <text x="220" y="430" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">总览 · 路线A（RF-GPT/Seeing Radio）· 路线B（WirelessAgent/AICEBERG/raNora）· 对比</text>
+  <rect x="0" y="650" width="1280" height="70" fill="#F5F7FA"/>
+  <text x="640" y="688" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">2026</text>
+</svg>

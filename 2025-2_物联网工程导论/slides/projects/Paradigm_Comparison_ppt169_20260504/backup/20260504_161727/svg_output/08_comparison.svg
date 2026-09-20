@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">多维度对比分析</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">10个关键维度 · 两条路线的系统对比</text>
+  <rect x="60" y="150" width="300" height="36" rx="4" fill="#003366"/>
+  <text x="210" y="174" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">对比维度</text>
+  <rect x="360" y="150" width="440" height="36" rx="4" fill="#003366"/>
+  <text x="580" y="174" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">路线A：VLM内化感知</text>
+  <rect x="800" y="150" width="420" height="36" rx="4" fill="#CC0000"/>
+  <text x="1010" y="174" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">路线B：智能体协同</text>
+  <rect x="60" y="186" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="212" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">核心假设</text>
+  <rect x="360" y="186" width="440" height="38" rx="4" fill="#F5F7FA"/><text x="580" y="212" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">让LLM学会看频谱</text>
+  <rect x="800" y="186" width="420" height="38" rx="4" fill="#F5F7FA"/><text x="1010" y="212" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">让LLM调用工具分析频谱</text>
+  <rect x="60" y="224" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="250" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">数据需求</text>
+  <rect x="360" y="224" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="250" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">高（625K合成对）</text>
+  <rect x="800" y="224" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="250" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">低（工具已有能力）</text>
+  <rect x="60" y="262" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="288" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">真实信号泛化</text>
+  <rect x="360" y="262" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="288" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">差（合成→真实gap）</text>
+  <rect x="800" y="262" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="288" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">好（工具直接处理）</text>
+  <rect x="60" y="300" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="326" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">硬件控制</text>
+  <rect x="360" y="300" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="326" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">不支持</text>
+  <rect x="800" y="300" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="326" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">支持（SCPI/API）</text>
+  <rect x="60" y="338" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="364" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">可解释性</text>
+  <rect x="360" y="338" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="364" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">黑箱</text>
+  <rect x="800" y="338" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="364" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">可审计推理链</text>
+  <rect x="60" y="376" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="402" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">扩展新任务</text>
+  <rect x="360" y="376" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="402" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">需重新微调</text>
+  <rect x="800" y="376" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="402" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">加工具即可</text>
+  <rect x="60" y="414" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="440" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">安全可控</text>
+  <rect x="360" y="414" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="440" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">模型可能幻觉</text>
+  <rect x="800" y="414" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="440" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">工具调用可校验</text>
+  <rect x="60" y="452" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="478" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">系统复杂度</text>
+  <rect x="360" y="452" width="440" height="38" rx="4" fill="#E8F4FC"/><text x="580" y="478" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">低（单一模型）</text>
+  <rect x="800" y="452" width="420" height="38" rx="4" fill="#FFF0F0"/><text x="1010" y="478" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">中高（多组件）</text>
+  <rect x="60" y="490" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="516" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">产业落地</text>
+  <rect x="360" y="490" width="440" height="38" rx="4" fill="#FFF0F0"/><text x="580" y="516" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">无</text>
+  <rect x="800" y="490" width="420" height="38" rx="4" fill="#E8F4FC"/><text x="1010" y="516" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">已有商用（raNora）</text>
+  <rect x="60" y="528" width="300" height="38" rx="4" fill="#F5F7FA"/><text x="210" y="554" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">学术发表</text>
+  <rect x="360" y="528" width="440" height="38" rx="4" fill="#E8F4FC"/><text x="580" y="554" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#003366">容易（新微调方法）</text>
+  <rect x="800" y="528" width="420" height="38" rx="4" fill="#FFF0F0"/><text x="1010" y="554" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#CC0000">较难（偏工程）</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">08 / 14</text>
+</svg>

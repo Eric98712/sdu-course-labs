@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">路线A：RF-GPT 数据合成管线</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">12,000个RF场景 · 625,000条指令对 · 零人工标注</text>
+  <rect x="60" y="150" width="560" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="40" fill="#003366"/>
+  <text x="85" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">六种无线技术（MATLAB合成）</text>
+  <text x="85" y="218" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">5G NR · LTE · UMTS · WLAN · DVB-S2 · Bluetooth</text>
+  <text x="85" y="248" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">每样本附带完整配置元数据</text>
+  <text x="85" y="273" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">（带宽/调制/子载波间隔/时频位置）</text>
+  <text x="85" y="303" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">拒绝采样保证所有波形符合3GPP/ETSI/IEEE标准</text>
+  <rect x="660" y="150" width="560" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="150" width="6" height="40" fill="#003366"/>
+  <text x="685" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">自动化标注管线</text>
+  <text x="685" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">① 元数据提取 → 确定性技术描述</text>
+  <text x="685" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">② 5个信息层级：摘要/全局视觉/上下文</text>
+  <text x="685" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">③ GPT-OSS-120B生成多样化指令对</text>
+  <text x="685" y="295" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">使用了前3个层级（摘要+全局视觉+信号视觉）</text>
+  <rect x="60" y="380" width="1160" height="100" rx="8" fill="#FFF0F0" stroke="#CC0000" stroke-width="1"/>
+  <rect x="60" y="380" width="6" height="100" fill="#CC0000"/>
+  <text x="85" y="410" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">关键问题：全合成数据</text>
+  <text x="85" y="438" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">• MATLAB 合成信号 vs 真实空口信号之间存在巨大鸿沟（信道模型数学化、噪声AWGN、无真实硬件损伤）</text>
+  <text x="85" y="462" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">• 语音识别 Whisper 用了68万小时真实数据才能zero-shot泛化；12K合成场景的泛化能力存疑</text>
+  <rect x="60" y="510" width="1160" height="110" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="510" width="6" height="110" fill="#0066CC"/>
+  <text x="85" y="540" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">训练配置</text>
+  <text x="85" y="565" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">基座：Qwen2.5-VL (3B/7B) | 训练：3 epoch, AdamW | 硬件：8×NVIDIA H200 (140GB)</text>
+  <text x="85" y="590" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">频谱图：STFT (Blackman), 512×512, 1369 tokens | 精度：BF16 mixed precision</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 路线A</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">05 / 15</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="qaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#qaBg)"/>
+
+  <!-- Decorative -->
+  <circle cx="1100" cy="100" r="200" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+  <circle cx="1100" cy="100" r="140" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+  <circle cx="200" cy="620" r="120" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Question mark decoration -->
+  <text x="640" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#FFFFFF" fill-opacity="0.15">?</text>
+
+  <!-- Main text -->
+  <text x="640" y="340" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF">Thank You</text>
+
+  <text x="640" y="400" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="36" fill="#BBDEFB">Q &amp; A</text>
+
+  <rect x="540" y="425" width="200" height="3" fill="#FF6F00"/>
+
+  <text x="640" y="480" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#90CAF9">RF-GPT: Teaching AI to See the Wireless World</text>
+  <text x="640" y="515" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#64B5F6">Hang Zou et al. | arXiv:2602.14833 | 2026</text>
+
+  <!-- Paper URL -->
+  <text x="640" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#64B5F6">github.com / arXiv:2602.14833</text>
+</svg>

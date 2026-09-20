@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">三大挑战与核心思路</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <rect x="60" y="140" width="370" height="280" rx="10" fill="#FFEBEE"/><rect x="60" y="140" width="370" height="5" rx="2.5" fill="#C62828"/>
+  <text x="85" y="185" font-family="Arial, sans-serif" font-size="29" font-weight="bold" fill="#C62828">01</text>
+  <text x="125" y="185" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">时序性</text>
+  <text x="85" y="220" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">RF信号捕捉动态细节（目标运动、</text>
+  <text x="85" y="242" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">信道变化），扩散模型原为静态</text>
+  <text x="85" y="264" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">图像设计</text>
+  <rect x="455" y="140" width="370" height="280" rx="10" fill="#FFEBEE"/><rect x="455" y="140" width="370" height="5" rx="2.5" fill="#C62828"/>
+  <text x="480" y="185" font-family="Arial, sans-serif" font-size="29" font-weight="bold" fill="#C62828">02</text>
+  <text x="520" y="185" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">频域信息</text>
+  <text x="480" y="220" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">多普勒频移、chirp等关键信息在</text>
+  <text x="480" y="242" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">频域，视频扩散模型也主要关注</text>
+  <text x="480" y="264" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">空域（像素亮度）</text>
+  <rect x="850" y="140" width="370" height="280" rx="10" fill="#FFEBEE"/><rect x="850" y="140" width="370" height="5" rx="2.5" fill="#C62828"/>
+  <text x="875" y="185" font-family="Arial, sans-serif" font-size="29" font-weight="bold" fill="#C62828">03</text>
+  <text x="915" y="185" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">复数域</text>
+  <text x="875" y="220" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">RF信号是复数值（幅度+相位），</text>
+  <text x="875" y="242" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">现有扩散模型只处理实数值</text>
+  <text x="875" y="264" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">（如像素亮度）</text>
+  <rect x="60" y="455" width="1160" height="130" rx="10" fill="#E3F2FD"/>
+  <text x="640" y="495" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">核心思路：三层改造扩散模型</text>
+  <text x="640" y="530" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">理论层 · Time-Frequency Diffusion → 时域加噪+频域模糊</text>
+  <text x="640" y="558" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">架构层 · Hierarchical Diffusion Transformer → 分层架构</text>
+  <text x="640" y="586" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">算子层 · Complex-valued Operator → 幅度+相位双编码</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">04 / 12</text>
+</svg>

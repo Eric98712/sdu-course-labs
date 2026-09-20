@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bgDecor" x1="85%" y1="15%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1565C0" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#1565C0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect width="1280" height="720" fill="url(#bgDecor)"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+
+  <!-- Title -->
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">RF-GPT 核心架构</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+
+  <!-- Architecture flow diagram -->
+  <!-- Box 1: RF Encoder -->
+  <rect x="80" y="160" width="280" height="180" rx="10" fill="#E3F2FD"/>
+  <rect x="80" y="160" width="280" height="5" rx="2.5" fill="#1565C0"/>
+  <text x="220" y="205" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">RF 编码器</text>
+  <text x="220" y="235" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">IQ 信号 → 频谱图</text>
+  <text x="220" y="260" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">↓</text>
+  <text x="220" y="285" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">视觉编码器 (ViT)</text>
+  <text x="220" y="310" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#90A4AE">→ RF Tokens (1369个)</text>
+
+  <!-- Arrow 1 -->
+  <line x1="360" y1="250" x2="430" y2="250" stroke="#1565C0" stroke-width="3"/>
+  <polygon points="430,242 448,250 430,258" fill="#1565C0"/>
+
+  <!-- Box 2: RF Adapter -->
+  <rect x="450" y="160" width="280" height="180" rx="10" fill="#E8F5E9"/>
+  <rect x="450" y="160" width="280" height="5" rx="2.5" fill="#2E7D32"/>
+  <text x="590" y="205" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#2E7D32">RF 适配器</text>
+  <text x="590" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">线性投影层</text>
+  <text x="590" y="270" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">d → dLM 维度映射</text>
+  <text x="590" y="310" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#90A4AE">类似 LLaVA 投影模块</text>
+
+  <!-- Arrow 2 -->
+  <line x1="730" y1="250" x2="800" y2="250" stroke="#1565C0" stroke-width="3"/>
+  <polygon points="800,242 818,250 800,258" fill="#1565C0"/>
+
+  <!-- Box 3: LLM -->
+  <rect x="820" y="160" width="360" height="180" rx="10" fill="#FFF3E0"/>
+  <rect x="820" y="160" width="360" height="5" rx="2.5" fill="#FF6F00"/>
+  <text x="1000" y="205" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#E65100">Decoder-only LLM</text>
+  <text x="1000" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">RF Tokens 作为前缀</text>
+  <text x="1000" y="265" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">+ 文本指令</text>
+  <text x="1000" y="290" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">→ RF-grounded 文本输出</text>
+  <text x="1000" y="315" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#90A4AE">Qwen2.5-VL (3B / 7B)</text>
+
+  <!-- Key insight box -->
+  <rect x="80" y="380" width="1120" height="100" rx="10" fill="#F5F7FA" stroke="#1565C0" stroke-width="1"/>
+  <text x="110" y="420" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#1565C0">关键洞察</text>
+  <text x="110" y="452" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">RF信号 → 频谱图(图像) → 复用VLM视觉编码能力 → 轻量适配器注入LLM</text>
+
+  <!-- Analogy box -->
+  <rect x="80" y="510" width="1120" height="120" rx="10" fill="#FFF8E1" stroke="#FF6F00" stroke-width="1"/>
+  <text x="110" y="548" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#FF6F00">类比理解</text>
+  <text x="110" y="580" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">就像医生看心电图（将心脏电信号转为二维图）来诊断病情，RF-GPT 将无线电波转为</text>
+  <text x="110" y="608" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">频谱图来"诊断"无线环境。传统方法好比每个病都要重新学一套诊断工具。</text>
+
+  <!-- Footer -->
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">05 / 15</text>
+</svg>

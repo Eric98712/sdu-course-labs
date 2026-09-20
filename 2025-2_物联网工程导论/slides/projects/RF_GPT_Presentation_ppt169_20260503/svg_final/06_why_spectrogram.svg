@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">为什么选频谱图而非原始IQ？</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  
+  <path fill="#F5F7FA" d="M70,140 H610 A10,10 0 0 1 620,150 V220 A10,10 0 0 1 610,230 H70 A10,10 0 0 1 60,220 V150 A10,10 0 0 1 70,140 Z" />
+  <circle cx="90" cy="185" r="18" fill="#1565C0" />
+  <text x="90" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="125" y="180" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" font-weight="bold" fill="#263238">计算可行性</text>
+  <text x="125" y="210" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">IQ采样率过高，直接输入Transformer计算不可行</text>
+
+  
+  <path fill="#F5F7FA" d="M70,245 H610 A10,10 0 0 1 620,255 V325 A10,10 0 0 1 610,335 H70 A10,10 0 0 1 60,325 V255 A10,10 0 0 1 70,245 Z" />
+  <circle cx="90" cy="290" r="18" fill="#1565C0" />
+  <text x="90" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="125" y="285" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" font-weight="bold" fill="#263238">天然时频表示</text>
+  <text x="125" y="315" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">调制方式、带宽、重叠呈现为几何特征</text>
+
+  
+  <path fill="#F5F7FA" d="M70,350 H610 A10,10 0 0 1 620,360 V430 A10,10 0 0 1 610,440 H70 A10,10 0 0 1 60,430 V360 A10,10 0 0 1 70,350 Z" />
+  <circle cx="90" cy="395" r="18" fill="#1565C0" />
+  <text x="90" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="125" y="390" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" font-weight="bold" fill="#263238">复用预训练能力</text>
+  <text x="125" y="420" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">视觉编码器可提取频谱图的通用语义结构</text>
+
+  
+  <path fill="#FFF3E0" stroke="#FF6F00" stroke-width="1" d="M70,465 H610 A10,10 0 0 1 620,475 V535 A10,10 0 0 1 610,545 H70 A10,10 0 0 1 60,535 V475 A10,10 0 0 1 70,465 Z" />
+  <text x="90" y="495" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#E65100">局限性</text>
+  <text x="90" y="522" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">丢失绝对相位信息；本文感知任务不依赖相位</text>
+
+  
+  <path fill="#F5F7FA" d="M670,140 H1210 A10,10 0 0 1 1220,150 V620 A10,10 0 0 1 1210,630 H670 A10,10 0 0 1 660,620 V150 A10,10 0 0 1 670,140 Z" />
+  <text x="940" y="178" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">六种无线技术频谱图</text>
+  <rect x="660" y="190" width="560" height="1" fill="#ECEFF1" />
+
+  
+  <path fill="#E3F2FD" d="M698,210 H922 A8,8 0 0 1 930,218 V282 A8,8 0 0 1 922,290 H698 A8,8 0 0 1 690,282 V218 A8,8 0 0 1 698,210 Z" />
+  <text x="810" y="258" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">5G NR</text>
+
+  <path fill="#E3F2FD" d="M958,210 H1182 A8,8 0 0 1 1190,218 V282 A8,8 0 0 1 1182,290 H958 A8,8 0 0 1 950,282 V218 A8,8 0 0 1 958,210 Z" />
+  <text x="1070" y="258" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">LTE</text>
+
+  <path fill="#E8F5E9" d="M698,310 H922 A8,8 0 0 1 930,318 V382 A8,8 0 0 1 922,390 H698 A8,8 0 0 1 690,382 V318 A8,8 0 0 1 698,310 Z" />
+  <text x="810" y="358" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">UMTS</text>
+
+  <path fill="#E8F5E9" d="M958,310 H1182 A8,8 0 0 1 1190,318 V382 A8,8 0 0 1 1182,390 H958 A8,8 0 0 1 950,382 V318 A8,8 0 0 1 958,310 Z" />
+  <text x="1070" y="358" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">WLAN</text>
+
+  <path fill="#FFF3E0" d="M698,410 H922 A8,8 0 0 1 930,418 V482 A8,8 0 0 1 922,490 H698 A8,8 0 0 1 690,482 V418 A8,8 0 0 1 698,410 Z" />
+  <text x="810" y="458" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#E65100">DVB-S2</text>
+
+  <path fill="#FFF3E0" d="M958,410 H1182 A8,8 0 0 1 1190,418 V482 A8,8 0 0 1 1182,490 H958 A8,8 0 0 1 950,482 V418 A8,8 0 0 1 958,410 Z" />
+  <text x="1070" y="458" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#E65100">Bluetooth</text>
+
+  <text x="940" y="550" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#90A4AE">STFT变换 → 512×512像素 → 1369个RF token</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">06 / 15</text>
+</svg>

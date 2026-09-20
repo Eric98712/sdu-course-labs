@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="coverBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="50%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+    <linearGradient id="coverGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="coverRadial" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#42A5F5" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0D47A1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#coverBg)"/>
+  <rect width="1280" height="720" fill="url(#coverGlow)"/>
+  <rect width="1280" height="720" fill="url(#coverRadial)"/>
+
+  <!-- Decorative wave lines -->
+  <path d="M0 620 Q320 560 640 620 T1280 620" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="2"/>
+  <path d="M0 650 Q320 600 640 660 T1280 640" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1.5"/>
+  <path d="M0 680 Q320 640 640 690 T1280 670" fill="none" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="120" r="180" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <circle cx="1100" cy="120" r="120" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+  <circle cx="200" cy="580" r="100" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#FF6F00"/>
+
+  <!-- Main title -->
+  <text x="640" y="310" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="77" font-weight="bold" fill="#FFFFFF">
+    RF-GPT: Teaching AI to See
+  </text>
+  <text x="640" y="395" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="77" font-weight="bold" fill="#FFFFFF">
+    the Wireless World
+  </text>
+
+  <!-- Subtitle -->
+  <rect x="540" y="430" width="200" height="3" fill="#FF6F00"/>
+  <text x="640" y="470" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="29" fill="#BBDEFB">
+    射频大模型 —— 让AI"看懂"无线电
+  </text>
+
+  <!-- Bottom info -->
+  <text x="640" y="600" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#90CAF9">
+    Hang Zou, Yu Tian, Bohao Wang, Lina Bariah, Samson Lasaulce, Chongwen Huang, Merouane Debbah
+  </text>
+  <text x="640" y="635" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#64B5F6">
+    arXiv:2602.14833 | Khalifa University / Zhejiang University / Universite de Lorraine
+  </text>
+  <text x="640" y="670" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#64B5F6">
+    2026
+  </text>
+</svg>

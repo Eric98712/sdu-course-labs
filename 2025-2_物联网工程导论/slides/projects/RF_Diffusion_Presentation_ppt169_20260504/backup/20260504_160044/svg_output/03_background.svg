@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">从 AIGC 到射频生成</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">Stable Diffusion / ChatGPT 的成功 → 能否用于无线领域？已有方法有何不足？</text>
+  <rect x="60" y="150" width="360" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="120" height="36" rx="4" fill="#003366"/>
+  <text x="120" y="175" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#FFFFFF">CV 领域</text>
+  <text x="80" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">Stable Diffusion</text>
+  <text x="80" y="238" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">Midjourney / DALL-E</text>
+  <text x="80" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">图像生成革命</text>
+  <rect x="455" y="150" width="360" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="455" y="150" width="120" height="36" rx="4" fill="#003366"/>
+  <text x="515" y="175" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#FFFFFF">NLP 领域</text>
+  <text x="475" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">ChatGPT / GPT-4</text>
+  <text x="475" y="238" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">Claude / LLaMA</text>
+  <text x="475" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">文本生成突破</text>
+  <rect x="850" y="150" width="370" height="200" rx="8" fill="#FFF0F0" stroke="#CC0000" stroke-width="1"/>
+  <rect x="850" y="150" width="120" height="36" rx="4" fill="#CC0000"/>
+  <text x="910" y="175" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#FFFFFF">RF 领域</text>
+  <text x="870" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">尚无成熟的AIGC方案</text>
+  <text x="870" y="245" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">数据增强 / 信道估计</text>
+  <text x="870" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">AIGC的下一个前沿</text>
+  <text x="80" y="395" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#003366">现有方法的局限</text>
+  <rect x="60" y="415" width="560" height="110" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="415" width="6" height="110" fill="#CC0000"/>
+  <text x="85" y="445" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">环境建模法</text>
+  <text x="85" y="470" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">射线追踪 + 3D模型 → 成本高、忽略材料特性、难生成时序数据</text>
+  <rect x="660" y="415" width="560" height="110" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="415" width="6" height="110" fill="#CC0000"/>
+  <text x="685" y="445" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#333333">数据驱动法</text>
+  <text x="685" y="470" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">GAN/VAE → 表征有限、训练不稳定、任务特定</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">03 / 12</text>
+</svg>

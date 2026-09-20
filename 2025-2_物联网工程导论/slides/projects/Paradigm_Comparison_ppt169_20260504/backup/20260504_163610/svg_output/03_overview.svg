@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">总览：背景与两条路线</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">大模型浪潮 → 射频智能需求 → 两条技术路线的分歧</text>
+  <rect x="60" y="150" width="360" height="200" rx="8" fill="#E3F2FD" stroke="#0066CC" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="200" fill="#0066CC"/>
+  <text x="240" y="185" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">LLM / VLM 的成功</text>
+  <text x="80" y="218" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">• 文本：ChatGPT/GPT-4/Claude</text>
+  <text x="80" y="243" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">• 视觉：Qwen2.5-VL/GPT-4o</text>
+  <text x="80" y="268" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">• Agent：工具调用/多步推理</text>
+  <text x="80" y="298" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">→ 射频领域能否受益？</text>
+  <rect x="455" y="150" width="360" height="200" rx="8" fill="#FFF3E0" stroke="#FFA500" stroke-width="1"/>
+  <rect x="455" y="150" width="6" height="200" fill="#FFA500"/>
+  <text x="635" y="185" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#E65100">射频智能面临的挑战</text>
+  <text x="475" y="218" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">• RF数据高采样率/复数域/时变</text>
+  <text x="475" y="243" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">• 真实标注数据极度匮乏</text>
+  <text x="475" y="268" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">• 需要硬件控制能力</text>
+  <text x="475" y="298" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">→ 需要AI与RF的深度融合</text>
+  <rect x="850" y="150" width="370" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="850" y="150" width="6" height="200" fill="#666666"/>
+  <text x="1035" y="185" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333">核心分歧</text>
+  <text x="870" y="225" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">路线A：VLM内化感知</text>
+  <text x="885" y="248" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">让LLM学会看频谱图</text>
+  <text x="870" y="278" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#CC0000">路线B：智能体协同</text>
+  <text x="885" y="301" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">让LLM调用工具分析频谱</text>
+  <rect x="60" y="380" width="1160" height="130" rx="8" fill="#E8F4FC"/>
+  <rect x="60" y="380" width="6" height="130" fill="#0066CC"/>
+  <text x="640" y="415" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#003366">文献全景</text>
+  <text x="640" y="448" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#003366">路线A：RF-GPT (Khalifa) · Seeing Radio · Multimodal Wireless FM</text>
+  <text x="640" y="478" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#CC0000">路线B：WirelessAgent · AICEBERG · raNora · Multi-LLM Agent DRL</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">03 / 15</text>
+</svg>

@@ -1,0 +1,4 @@
+- **RF foundation models**: 都需要任务特定输出头
+- **Telecom LLMs**: 文本中心，看不到物理层
+- **VLA parallels**: 思想一脉相承——VLM + 适配器 + 新模态
+- **Table**: RF-GPT 是唯一同时具备 RF感知 + 语言交互 + 统一架构 + 多任务的方案

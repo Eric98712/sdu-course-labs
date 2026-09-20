@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">三大挑战与核心思路</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">RF信号的独特性 → 三方面改进扩散模型</text>
+  <rect x="60" y="150" width="370" height="240" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="80" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#333333">01 时序性</text>
+  <text x="80" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">RF信号捕捉动态细节（目标运动、</text>
+  <text x="80" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">信道变化），扩散模型原为静态</text>
+  <text x="80" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">图像设计</text>
+  <rect x="455" y="150" width="370" height="240" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="455" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="475" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#333333">02 频域信息</text>
+  <text x="475" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">多普勒频移、chirp等关键信息在</text>
+  <text x="475" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">频域，现有扩散模型只关注空域</text>
+  <rect x="850" y="150" width="370" height="240" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="850" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="870" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#333333">03 复数域</text>
+  <text x="870" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">RF信号是复数值（幅度+相位），</text>
+  <text x="870" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">现有扩散模型只处理实数值</text>
+  <rect x="60" y="420" width="1160" height="100" rx="8" fill="#E8F4FC"/>
+  <rect x="60" y="420" width="6" height="100" fill="#0066CC"/>
+  <text x="85" y="450" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#003366">解决方案：三层改造扩散模型</text>
+  <text x="85" y="480" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">① TFD理论：时域加噪 + 频域模糊 → ② HDT架构：分层Transformer → ③ 复数算子</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">04 / 12</text>
+</svg>

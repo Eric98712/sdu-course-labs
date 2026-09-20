@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">文献全景地图</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">两条路线 · 8 项工作 · 从学术到产业</text>
+  <rect x="60" y="150" width="560" height="42" rx="4" fill="#003366"/>
+  <text x="340" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">路线A：VLM内化感知</text>
+  <rect x="660" y="150" width="560" height="42" rx="4" fill="#CC0000"/>
+  <text x="940" y="178" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">路线B：智能体协同</text>
+  <rect x="60" y="205" width="560" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="205" width="6" height="100" fill="#003366"/>
+  <text x="85" y="233" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#003366">RF-GPT</text>
+  <text x="85" y="258" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">Khalifa University | arXiv 2026.02</text>
+  <text x="85" y="278" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">频谱图→VLM微调，625K合成数据，基准99.64%</text>
+  <rect x="660" y="205" width="560" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="205" width="6" height="100" fill="#CC0000"/>
+  <text x="685" y="233" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">AICEBERG</text>
+  <text x="685" y="258" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">MDPI Smart Cities | 2026.04</text>
+  <text x="685" y="278" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">LLM+MCP+SCPI控制频谱仪，双服务器架构</text>
+  <rect x="60" y="315" width="560" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="315" width="6" height="100" fill="#003366"/>
+  <text x="85" y="343" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#003366">Seeing Radio</text>
+  <text x="85" y="368" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">同团队前序工作 | arXiv 2026.01</text>
+  <text x="85" y="388" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">VLM 10%→90%调制识别，RF-GPT的前身</text>
+  <rect x="660" y="315" width="560" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="315" width="6" height="100" fill="#CC0000"/>
+  <text x="685" y="343" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">WirelessAgent</text>
+  <text x="685" y="368" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">arXiv | 2025.05 + 2026.04</text>
+  <text x="685" y="388" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">LangGraph Agent，带宽+44.4%，CSI预测RMSE-67%</text>
+  <rect x="60" y="425" width="560" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="425" width="6" height="100" fill="#003366"/>
+  <text x="85" y="453" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#003366">Multimodal Wireless FM</text>
+  <text x="85" y="478" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">arXiv | 2025.11</text>
+  <text x="85" y="498" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">多模态基础模型（IQ+频谱图），掩码建模</text>
+  <rect x="660" y="425" width="560" height="100" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="425" width="6" height="100" fill="#CC0000"/>
+  <text x="685" y="453" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">raNora + Multi-LLM DRL</text>
+  <text x="685" y="478" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">Aircom商用 | KTH学术</text>
+  <text x="685" y="498" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">产业已商用落地；LLM+DRL混合架构</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">04 / 14</text>
+</svg>

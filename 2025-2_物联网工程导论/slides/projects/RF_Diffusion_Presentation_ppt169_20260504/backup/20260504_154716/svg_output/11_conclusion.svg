@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">总结与展望</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="80" y="160" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">三大贡献</text>
+  <rect x="60" y="180" width="370" height="150" rx="10" fill="#E3F2FD"/>
+  <circle cx="90" cy="215" r="18" fill="#1565C0"/>
+  <text x="90" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="120" y="210" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">首个RF扩散模型</text>
+  <text x="85" y="240" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">首个适配RF信号特性的</text>
+  <text x="85" y="262" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">扩散生成模型</text>
+  <text x="85" y="284" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">MobiCom 2024 CCF-A</text>
+  <rect x="455" y="180" width="370" height="150" rx="10" fill="#E3F2FD"/>
+  <circle cx="485" cy="215" r="18" fill="#1565C0"/>
+  <text x="485" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="515" y="210" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">TFD + HDT</text>
+  <text x="480" y="240" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">时频域扩散理论</text>
+  <text x="480" y="262" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">分层 Diffusion Transformer</text>
+  <text x="480" y="284" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">支持复数域运算</text>
+  <rect x="850" y="180" width="370" height="150" rx="10" fill="#E3F2FD"/>
+  <circle cx="880" cy="215" r="18" fill="#1565C0"/>
+  <text x="880" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="910" y="210" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">全面实验验证</text>
+  <text x="875" y="240" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">Wi-Fi + FMCW 实测</text>
+  <text x="875" y="262" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">手势识别 + 信道估计</text>
+  <text x="875" y="284" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">代码+预训练模型开源</text>
+  <text x="80" y="375" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#C62828">局限</text>
+  <circle cx="85" cy="405" r="5" fill="#C62828"/>
+  <text x="100" y="410" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">生成长度受限</text>
+  <circle cx="85" cy="435" r="5" fill="#C62828"/>
+  <text x="100" y="440" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">计算开销大（扩散模型通病）</text>
+  <circle cx="85" cy="465" r="5" fill="#C62828"/>
+  <text x="100" y="470" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">仅验证 Wi-Fi 和 FMCW 两类信号</text>
+  <text x="640" y="375" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#1565C0">未来方向</text>
+  <rect x="640" y="395" width="580" height="35" rx="6" fill="#E3F2FD"/>
+  <text x="660" y="419" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#1565C0">扩展到 5G NR / LoRa / 蓝牙等更多信号类型</text>
+  <rect x="640" y="440" width="580" height="35" rx="6" fill="#E3F2FD"/>
+  <text x="660" y="464" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#1565C0">加速采样（扩散模型加速技术）</text>
+  <rect x="640" y="485" width="580" height="35" rx="6" fill="#E3F2FD"/>
+  <text x="660" y="509" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#1565C0">与 LLM/Agent 结合 → 频谱监测与自动决策</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">11 / 12</text>
+</svg>

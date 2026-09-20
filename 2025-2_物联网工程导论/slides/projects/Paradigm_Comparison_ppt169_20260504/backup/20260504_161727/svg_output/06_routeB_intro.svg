@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">路线B：基于智能体的工具协同</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">核心假设：LLM不做RF理解，而是通过工具调用获取专业分析结果</text>
+  <text x="80" y="160" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">AICEBERG：LLM + MCP + SCPI 控制频谱仪</text>
+  <rect x="60" y="180" width="1160" height="140" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="180" width="6" height="140" fill="#CC0000"/>
+  <text x="85" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">架构：三层次 + 双服务器</text>
+  <text x="85" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">用户自然语言 → LLM推理层 → MCP桥接层 → SCPI硬件控制层 → 频谱分析仪</text>
+  <text x="85" y="268" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">双服务器设计：执行服务器(操作) + 安全服务器(参数校验/边界检查)</text>
+  <text x="85" y="296" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">意义：第一次把 LLM + 硬件控制 完整打通，实现了"说人话操控频谱仪"</text>
+  <text x="80" y="360" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">WirelessAgent：LangGraph 驱动的无线网络 Agent</text>
+  <rect x="60" y="380" width="560" height="140" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="380" width="6" height="140" fill="#CC0000"/>
+  <text x="85" y="410" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">四模块认知架构</text>
+  <text x="85" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">感知 → 记忆 → 规划 → 行动</text>
+  <text x="85" y="468" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">网络切片带宽利用率 +44.4%</text>
+  <text x="85" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">仅低于最优解 4.3%，代码开源</text>
+  <rect x="660" y="380" width="560" height="140" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="380" width="6" height="140" fill="#CC0000"/>
+  <text x="685" y="410" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">WirelessAgent R1</text>
+  <text x="685" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">CSI缺失条件下 + Agent + 预测模型</text>
+  <text x="685" y="468" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">RMSE 降低 67% (vs 传统方法)</text>
+  <text x="685" y="496" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">基于 Coze 平台搭建</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 文献综述</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">06 / 14</text>
+</svg>

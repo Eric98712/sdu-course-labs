@@ -1,0 +1,6 @@
+﻿# 归档仓库：禁止任何行尾/编码转换，避免破坏二进制原件的字节
+* -text
+*.docx binary
+*.doc binary
+*.pdf binary
+*.pptx binary

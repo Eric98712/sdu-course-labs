@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">路线B：产业落地 + 混合架构</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">从学术到产业 — 路线B的多元化进展</text>
+  <rect x="60" y="150" width="560" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="85" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#CC0000">raNora — 首个商用电信Agent（2026.03）</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 开发商：Aircom（电信AI领域厂商）</text>
+  <text x="85" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 多 Agent 协作系统</text>
+  <text x="85" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 已上线功能：</text>
+  <text x="100" y="288" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">- 数据库Agent：合规审计、差异分析</text>
+  <text x="100" y="310" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">- 覆盖Agent：站点推荐、覆盖分析</text>
+  <text x="85" y="335" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">基于电信领域训练的LLM推理引擎</text>
+  <rect x="660" y="150" width="560" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="685" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#CC0000">Multi-LLM Agent DRL（KTH, 2025-26）</text>
+  <text x="685" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 每个基站/UE 部署一个 LLM Agent</text>
+  <text x="685" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">• 混合架构：</text>
+  <text x="700" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">LLM → 高层协商、合作、策略适配</text>
+  <text x="700" y="290" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">DRL → 低层功率分配、波束赋形</text>
+  <text x="685" y="320" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">面向6G的可扩展混合方案</text>
+  <rect x="60" y="380" width="1160" height="200" rx="8" fill="#E8F4FC"/>
+  <rect x="60" y="380" width="6" height="200" fill="#0066CC"/>
+  <text x="640" y="415" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#003366">路线B小结</text>
+  <text x="640" y="450" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#003366">✅ 优势</text>
+  <text x="640" y="475" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">调用现成工具 | 可审计推理链 | 灵活扩展 | 硬件控制 | 已有商用落地</text>
+  <text x="640" y="505" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#CC0000">❌ 劣势</text>
+  <text x="640" y="530" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">系统复杂 | 延迟较高 | LLM幻觉风险（需校验） | 学术发表较难</text>
+  <text x="640" y="565" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">整体评价：产业上更务实，在工程落地和真实场景泛化上明显领先路线A</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 路线B</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">10 / 15</text>
+</svg>

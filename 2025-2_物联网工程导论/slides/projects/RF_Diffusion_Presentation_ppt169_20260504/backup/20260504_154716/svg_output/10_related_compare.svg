@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">与 RF-GPT 的对比</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="80" y="155" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">同为 "AI × RF" 方向的工作，差距在哪里？</text>
+  <rect x="60" y="180" width="380" height="42" rx="4" fill="#1565C0"/>
+  <text x="250" y="208" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">对比维度</text>
+  <rect x="440" y="180" width="400" height="42" rx="4" fill="#2E7D32"/>
+  <text x="640" y="208" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">RF-Diffusion ✅</text>
+  <rect x="840" y="180" width="380" height="42" rx="4" fill="#C62828"/>
+  <text x="1030" y="208" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">RF-GPT ❌</text>
+  <rect x="60" y="222" width="380" height="45" rx="4" fill="#F5F7FA"/>
+  <text x="250" y="251" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">发表会议</text>
+  <rect x="440" y="222" width="400" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="640" y="251" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">MobiCom 2024 CCF-A</text>
+  <rect x="840" y="222" width="380" height="45" rx="4" fill="#FFEBEE"/>
+  <text x="1030" y="251" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">arXiv only</text>
+  <rect x="60" y="267" width="380" height="45" rx="4" fill="#F5F7FA"/>
+  <text x="250" y="296" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">技术贡献</text>
+  <rect x="440" y="267" width="400" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="640" y="296" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">新理论 TFD + 新架构 HDT</text>
+  <rect x="840" y="267" width="380" height="45" rx="4" fill="#FFEBEE"/>
+  <text x="1030" y="296" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">现成 VLM + 线性投影</text>
+  <rect x="60" y="312" width="380" height="45" rx="4" fill="#F5F7FA"/>
+  <text x="250" y="341" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">数据来源</text>
+  <rect x="440" y="312" width="400" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="640" y="341" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">真实 Wi-Fi / FMCW 实测</text>
+  <rect x="840" y="312" width="380" height="45" rx="4" fill="#FFEBEE"/>
+  <text x="1030" y="341" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">MATLAB 全合成</text>
+  <rect x="60" y="357" width="380" height="45" rx="4" fill="#F5F7FA"/>
+  <text x="250" y="386" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">对比基线</text>
+  <rect x="440" y="357" width="400" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="640" y="386" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">DDPM / DCGAN / CVAE</text>
+  <rect x="840" y="357" width="380" height="45" rx="4" fill="#FFEBEE"/>
+  <text x="1030" y="386" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">仅与基模 Qwen-VL</text>
+  <rect x="60" y="402" width="380" height="45" rx="4" fill="#F5F7FA"/>
+  <text x="250" y="431" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">真实场景验证</text>
+  <rect x="440" y="402" width="400" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="640" y="431" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">3场景 + 2下游任务 ✅</text>
+  <rect x="840" y="402" width="380" height="45" rx="4" fill="#FFEBEE"/>
+  <text x="1030" y="431" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">仅合成测试 ❌</text>
+  <rect x="60" y="447" width="380" height="45" rx="4" fill="#F5F7FA"/>
+  <text x="250" y="476" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">代码开源</text>
+  <rect x="440" y="447" width="400" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="640" y="476" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">GitHub 可复现 ✅</text>
+  <rect x="840" y="447" width="380" height="45" rx="4" fill="#E8F5E9"/>
+  <text x="1030" y="476" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">GitHub 可复现 ✅</text>
+  <rect x="60" y="520" width="1160" height="100" rx="10" fill="#E3F2FD"/>
+  <text x="640" y="555" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#1565C0">小结</text>
+  <text x="640" y="585" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">RF-Diffusion 是 CCF-A 类顶会论文，有新的理论贡献、真实数据验证、全面的基线对比；</text>
+  <text x="640" y="610" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#263238">RF-GPT 思路有亮点（VLM看频谱图），但论文完整度距离顶会标准还有明显差距。</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">10 / 12</text>
+</svg>

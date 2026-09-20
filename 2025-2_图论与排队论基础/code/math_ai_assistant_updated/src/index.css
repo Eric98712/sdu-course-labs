@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Global styles — Math Exam AI Assistant
+   ============================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  background-color: #0f1729;
+  color: #e8e4db;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   Custom scrollbar — gold on dark
+   ============================================================ */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(240, 192, 96, 0.2);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 192, 96, 0.4);
+}
+
+/* Firefox scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(240, 192, 96, 0.2) transparent;
+}
+
+/* ============================================================
+   Textarea / input global reset
+   ============================================================ */
+textarea,
+input {
+  font-family: inherit;
+}
+
+/* ============================================================
+   KaTeX overrides for dark theme
+   ============================================================ */
+.katex {
+  color: #e8e4db !important;
+  font-size: 1.1em !important;
+}
+
+.katex-display {
+  margin: 0.6em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.4em 0;
+}
+
+.katex-display > .katex {
+  color: #f0c060 !important;
+  text-align: center !important;
+}
+
+.katex .mathdefault {
+  color: #e8e4db;
+}
+
+/* Error state for unparseable math */
+.math-parse-error {
+  color: #f87171;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+/* ============================================================
+   Prose styles inside message bubbles
+   ============================================================ */
+.prose-custom {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.prose-custom p {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+.prose-custom p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-custom strong {
+  color: #f0c060;
+  font-weight: 600;
+}
+
+.prose-custom em {
+  font-style: italic;
+  color: #b0b8c1;
+}
+
+/* Code blocks */
+.prose-custom code {
+  background: rgba(240, 192, 96, 0.08);
+  border: 1px solid rgba(240, 192, 96, 0.12);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  color: #e2b04a;
+}
+
+.prose-custom pre {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 0.6em 0;
+  overflow-x: auto;
+}
+
+.prose-custom pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.8em;
+  color: #b0b8c1;
+}
+
+/* Lists */
+.prose-custom ul,
+.prose-custom ol {
+  padding-left: 1.2em;
+  margin: 0.4em 0;
+}
+
+.prose-custom li {
+  margin-bottom: 0.2em;
+  line-height: 1.6;
+}
+
+/* Blockquotes (theorem-like) */
+.prose-custom blockquote {
+  border-left: 2px solid rgba(240, 192, 96, 0.3);
+  padding-left: 12px;
+  margin: 0.6em 0;
+  color: #b0b8c1;
+  font-style: italic;
+}
+
+/* Headings */
+.prose-custom h1,
+.prose-custom h2,
+.prose-custom h3,
+.prose-custom h4 {
+  color: #f0c060;
+  font-weight: 600;
+  margin: 0.6em 0 0.3em;
+}
+
+/* ============================================================
+   Selection color
+   ============================================================ */
+::selection {
+  background: rgba(240, 192, 96, 0.2);
+  color: #e8e4db;
+}
+
+/* ============================================================
+   Animation keyframes (supplement to tailwind)
+   ============================================================ */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* ============================================================
+   Focus ring global
+   ============================================================ */
+*:focus-visible {
+  outline: none;
+  ring: 1px solid rgba(240, 192, 96, 0.4);
+}
+
+/* ============================================================
+   Smooth transitions for theme
+   ============================================================ */
+* {
+  transition-property: background-color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}

@@ -1,0 +1,25 @@
+ORG 0000H
+AJMP MAIN
+ORG 0030H
+MAIN:
+	MOV SP,#60H
+	MOV P0,#0FEH
+	MOV 20H,#0FEH
+	
+MAIN_LOOP:
+	MOV P0,20H
+	LCALL DELAY_250MS
+	MOV A,20H
+	RL A
+	MOV 20H,A
+	SJMP MAIN_LOOP
+
+DELAY_250MS:
+        MOV R6, #250        ; 外层循环次数 (100次)
+DELAY_LOOP1:
+        MOV R7, #248        ; 内层循环次数 (248次)
+DELAY_LOOP2:
+        DJNZ R7, DELAY_LOOP2 ; 2周期 × 248次 = 496μs
+        DJNZ R6, DELAY_LOOP1 ; 外层循环控制
+		RET
+END

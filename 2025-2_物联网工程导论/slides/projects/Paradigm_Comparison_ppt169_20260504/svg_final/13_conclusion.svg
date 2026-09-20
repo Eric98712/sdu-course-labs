@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">核心洞见与结论</text>
+  <path fill="#E8F4FC" d="M66,90 H1214 A6,6 0 0 1 1220,96 V124 A6,6 0 0 1 1214,130 H66 A6,6 0 0 1 60,124 V96 A6,6 0 0 1 66,90 Z" />
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC" />
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">三条结论 · 一个预判 · 四个开放问题</text>
+  <path fill="#E8F4FC" d="M68,150 H1212 A8,8 0 0 1 1220,158 V272 A8,8 0 0 1 1212,280 H68 A8,8 0 0 1 60,272 V158 A8,8 0 0 1 68,150 Z" />
+  <rect x="60" y="150" width="6" height="130" fill="#0066CC" />
+  <text x="85" y="183" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">结论一：两条路线不是互斥的，是互补的</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">路线A适合纯识别任务（调制分类、技术识别），路线B适合需要推理+决策+控制的任务</text>
+  <path fill="#E8F4FC" d="M68,300 H1212 A8,8 0 0 1 1220,308 V422 A8,8 0 0 1 1212,430 H68 A8,8 0 0 1 60,422 V308 A8,8 0 0 1 68,300 Z" />
+  <rect x="60" y="300" width="6" height="130" fill="#0066CC" />
+  <text x="85" y="333" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">结论二：智能体路线在工程落地和真实泛化上明显领先</text>
+  <text x="85" y="365" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">已有商用产品（raNora）、真实数据验证（WirelessAgent）、硬件控制能力（AICEBERG）</text>
+  <path fill="#E8F4FC" d="M68,450 H1212 A8,8 0 0 1 1220,458 V572 A8,8 0 0 1 1212,580 H68 A8,8 0 0 1 60,572 V458 A8,8 0 0 1 68,450 Z" />
+  <rect x="60" y="450" width="6" height="130" fill="#0066CC" />
+  <text x="85" y="483" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">结论三：未来融合架构 — Agent为主，VLM为辅</text>
+  <text x="85" y="515" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">LLM Agent做推理编排，VLM作为Agent的一个"工具"处理频谱图，传统模型和数据库作为其他工具</text>
+  <text x="85" y="545" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">开放问题：VLM能否在真实RF数据上达到可用准确率？Agent如何保证LLM幻觉不导致误操作？</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA" />
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 结论</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">13 / 15</text>
+</svg>

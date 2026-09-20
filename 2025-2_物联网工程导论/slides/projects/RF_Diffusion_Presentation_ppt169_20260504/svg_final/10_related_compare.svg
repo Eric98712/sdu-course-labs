@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">与 RF-GPT 的对比</text>
+  <path fill="#E8F4FC" d="M66,90 H1214 A6,6 0 0 1 1220,96 V124 A6,6 0 0 1 1214,130 H66 A6,6 0 0 1 60,124 V96 A6,6 0 0 1 66,90 Z" />
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC" />
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">同为 "AI × RF" 方向，顶会标准 vs arXiv 的差距</text>
+  <path fill="#003366" d="M64,150 H396 A4,4 0 0 1 400,154 V182 A4,4 0 0 1 396,186 H64 A4,4 0 0 1 60,182 V154 A4,4 0 0 1 64,150 Z" />
+  <text x="230" y="174" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">对比维度</text>
+  <path fill="#003366" d="M404,150 H816 A4,4 0 0 1 820,154 V182 A4,4 0 0 1 816,186 H404 A4,4 0 0 1 400,182 V154 A4,4 0 0 1 404,150 Z" />
+  <text x="610" y="174" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">RF-Diffusion ✅</text>
+  <path fill="#CC0000" d="M824,150 H1216 A4,4 0 0 1 1220,154 V182 A4,4 0 0 1 1216,186 H824 A4,4 0 0 1 820,182 V154 A4,4 0 0 1 824,150 Z" />
+  <text x="1020" y="174" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">RF-GPT ❌</text>
+  <path fill="#F5F7FA" d="M64,186 H396 A4,4 0 0 1 400,190 V222 A4,4 0 0 1 396,226 H64 A4,4 0 0 1 60,222 V190 A4,4 0 0 1 64,186 Z" /><text x="230" y="212" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">发表会议</text>
+  <path fill="#E8F4FC" d="M404,186 H816 A4,4 0 0 1 820,190 V222 A4,4 0 0 1 816,226 H404 A4,4 0 0 1 400,222 V190 A4,4 0 0 1 404,186 Z" /><text x="610" y="212" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366" font-weight="bold">MobiCom 2024 CCF-A</text>
+  <path fill="#FFF0F0" d="M824,186 H1216 A4,4 0 0 1 1220,190 V222 A4,4 0 0 1 1216,226 H824 A4,4 0 0 1 820,222 V190 A4,4 0 0 1 824,186 Z" /><text x="1020" y="212" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#CC0000">arXiv only</text>
+  <path fill="#F5F7FA" d="M64,226 H396 A4,4 0 0 1 400,230 V262 A4,4 0 0 1 396,266 H64 A4,4 0 0 1 60,262 V230 A4,4 0 0 1 64,226 Z" /><text x="230" y="252" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">技术贡献</text>
+  <path fill="#E8F4FC" d="M404,226 H816 A4,4 0 0 1 820,230 V262 A4,4 0 0 1 816,266 H404 A4,4 0 0 1 400,262 V230 A4,4 0 0 1 404,226 Z" /><text x="610" y="252" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">新理论 TFD + 新架构 HDT</text>
+  <path fill="#FFF0F0" d="M824,226 H1216 A4,4 0 0 1 1220,230 V262 A4,4 0 0 1 1216,266 H824 A4,4 0 0 1 820,262 V230 A4,4 0 0 1 824,226 Z" /><text x="1020" y="252" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">现成 VLM + 线性投影</text>
+  <path fill="#F5F7FA" d="M64,266 H396 A4,4 0 0 1 400,270 V302 A4,4 0 0 1 396,306 H64 A4,4 0 0 1 60,302 V270 A4,4 0 0 1 64,266 Z" /><text x="230" y="292" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">数据来源</text>
+  <path fill="#E8F4FC" d="M404,266 H816 A4,4 0 0 1 820,270 V302 A4,4 0 0 1 816,306 H404 A4,4 0 0 1 400,302 V270 A4,4 0 0 1 404,266 Z" /><text x="610" y="292" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">真实 Wi-Fi / FMCW 实测</text>
+  <path fill="#FFF0F0" d="M824,266 H1216 A4,4 0 0 1 1220,270 V302 A4,4 0 0 1 1216,306 H824 A4,4 0 0 1 820,302 V270 A4,4 0 0 1 824,266 Z" /><text x="1020" y="292" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">MATLAB 全合成</text>
+  <path fill="#F5F7FA" d="M64,306 H396 A4,4 0 0 1 400,310 V342 A4,4 0 0 1 396,346 H64 A4,4 0 0 1 60,342 V310 A4,4 0 0 1 64,306 Z" /><text x="230" y="332" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">对比基线</text>
+  <path fill="#E8F4FC" d="M404,306 H816 A4,4 0 0 1 820,310 V342 A4,4 0 0 1 816,346 H404 A4,4 0 0 1 400,342 V310 A4,4 0 0 1 404,306 Z" /><text x="610" y="332" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">DDPM / DCGAN / CVAE</text>
+  <path fill="#FFF0F0" d="M824,306 H1216 A4,4 0 0 1 1220,310 V342 A4,4 0 0 1 1216,346 H824 A4,4 0 0 1 820,342 V310 A4,4 0 0 1 824,306 Z" /><text x="1020" y="332" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">仅与基模对比</text>
+  <path fill="#F5F7FA" d="M64,346 H396 A4,4 0 0 1 400,350 V382 A4,4 0 0 1 396,386 H64 A4,4 0 0 1 60,382 V350 A4,4 0 0 1 64,346 Z" /><text x="230" y="372" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">真实场景验证</text>
+  <path fill="#E8F4FC" d="M404,346 H816 A4,4 0 0 1 820,350 V382 A4,4 0 0 1 816,386 H404 A4,4 0 0 1 400,382 V350 A4,4 0 0 1 404,346 Z" /><text x="610" y="372" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">3 场景 + 2 下游任务</text>
+  <path fill="#FFF0F0" d="M824,346 H1216 A4,4 0 0 1 1220,350 V382 A4,4 0 0 1 1216,386 H824 A4,4 0 0 1 820,382 V350 A4,4 0 0 1 824,346 Z" /><text x="1020" y="372" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">仅合成测试</text>
+  <path fill="#F5F7FA" d="M64,386 H396 A4,4 0 0 1 400,390 V422 A4,4 0 0 1 396,426 H64 A4,4 0 0 1 60,422 V390 A4,4 0 0 1 64,386 Z" /><text x="230" y="412" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#333333">代码开源</text>
+  <path fill="#E8F4FC" d="M404,386 H816 A4,4 0 0 1 820,390 V422 A4,4 0 0 1 816,426 H404 A4,4 0 0 1 400,422 V390 A4,4 0 0 1 404,386 Z" /><text x="610" y="412" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">GitHub ✅</text>
+  <path fill="#E8F4FC" d="M824,386 H1216 A4,4 0 0 1 1220,390 V422 A4,4 0 0 1 1216,426 H824 A4,4 0 0 1 820,422 V390 A4,4 0 0 1 824,386 Z" /><text x="1020" y="412" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#003366">GitHub ✅</text>
+  <path fill="#E8F4FC" d="M68,455 H1212 A8,8 0 0 1 1220,463 V547 A8,8 0 0 1 1212,555 H68 A8,8 0 0 1 60,547 V463 A8,8 0 0 1 68,455 Z" />
+  <rect x="60" y="455" width="6" height="100" fill="#0066CC" />
+  <text x="85" y="490" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">小结</text>
+  <text x="85" y="520" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">RF-Diffusion：CCF-A 顶会论文，新理论贡献，真实数据验证，全面基线对比</text>
+  <text x="85" y="545" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">RF-GPT：思路有亮点（VLM + 频谱图），但论文完整度距离顶会标准有明显差距</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA" />
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">10 / 12</text>
+</svg>

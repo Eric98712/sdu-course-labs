@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bgDecor" cx="85%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#1565C0" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#1565C0" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect width="1280" height="720" fill="url(#bgDecor)" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+
+  
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">大模型的成功与缺失的一环</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  
+  <path fill="#F5F7FA" d="M70,150 H410 A10,10 0 0 1 420,160 V590 A10,10 0 0 1 410,600 H70 A10,10 0 0 1 60,590 V160 A10,10 0 0 1 70,150 Z" />
+  <path fill="#1565C0" d="M70,150 H410 A10,10 0 0 1 420,160 V320 A10,10 0 0 1 410,330 H70 A10,10 0 0 1 60,320 V160 A10,10 0 0 1 70,150 Z" />
+  <rect x="60" y="320" width="360" height="10" fill="#1565C0" />
+  <text x="240" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF">LLM</text>
+  <text x="240" y="290" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">大规模语言模型</text>
+  <text x="85" y="370" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">GPT-4o、Gemini、LLaMA</text>
+  <text x="85" y="400" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">文本生成、代码合成</text>
+  <text x="85" y="430" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">多步推理、工具使用</text>
+  <text x="85" y="470" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">自然语言交互界面</text>
+
+  
+  <path fill="#F5F7FA" d="M470,150 H810 A10,10 0 0 1 820,160 V590 A10,10 0 0 1 810,600 H470 A10,10 0 0 1 460,590 V160 A10,10 0 0 1 470,150 Z" />
+  <path fill="#0D47A1" d="M470,150 H810 A10,10 0 0 1 820,160 V320 A10,10 0 0 1 810,330 H470 A10,10 0 0 1 460,320 V160 A10,10 0 0 1 470,150 Z" />
+  <rect x="460" y="320" width="360" height="10" fill="#0D47A1" />
+  <text x="640" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF">VLM</text>
+  <text x="640" y="290" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">视觉语言模型</text>
+  <text x="485" y="370" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">Qwen2.5-VL、InternVL</text>
+  <text x="485" y="400" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">"看懂"图像与视频</text>
+  <text x="485" y="430" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">Whisper"听懂"音频</text>
+  <text x="485" y="470" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">多模态推理能力</text>
+
+  
+  <path fill="#F5F7FA" d="M870,150 H1210 A10,10 0 0 1 1220,160 V590 A10,10 0 0 1 1210,600 H870 A10,10 0 0 1 860,590 V160 A10,10 0 0 1 870,150 Z" />
+  <path fill="#C62828" d="M870,150 H1210 A10,10 0 0 1 1220,160 V320 A10,10 0 0 1 1210,330 H870 A10,10 0 0 1 860,320 V160 A10,10 0 0 1 870,150 Z" />
+  <rect x="860" y="320" width="360" height="10" fill="#C62828" />
+  <text x="1040" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF">RF</text>
+  <text x="1040" y="290" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">射频信号缺席</text>
+  <text x="885" y="370" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#263238">无线通信物理层信号</text>
+  <text x="885" y="400" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="21" fill="#C62828">尚未被大模型原生支持</text>
+  <text x="885" y="440" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">现有方法：</text>
+  <text x="885" y="465" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">任务特定 + 领域专用模型</text>
+  <text x="885" y="490" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">缺少统一框架</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">03 / 15</text>
+</svg>

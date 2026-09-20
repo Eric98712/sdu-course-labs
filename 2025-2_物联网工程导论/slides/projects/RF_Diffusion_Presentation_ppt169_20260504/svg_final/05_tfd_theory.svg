@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">Time-Frequency Diffusion 理论</text>
+  <path fill="#E8F4FC" d="M66,90 H1214 A6,6 0 0 1 1220,96 V124 A6,6 0 0 1 1214,130 H66 A6,6 0 0 1 60,124 V96 A6,6 0 0 1 66,90 Z" />
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC" />
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">前向：时域加噪 + 频域模糊 → 反向：去噪 + 去模糊 → 条件生成</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M68,150 H612 A8,8 0 0 1 620,158 V342 A8,8 0 0 1 612,350 H68 A8,8 0 0 1 60,342 V158 A8,8 0 0 1 68,150 Z" />
+  <rect x="60" y="150" width="6" height="200" fill="#CC0000" />
+  <text x="85" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#333333">传统扩散模型</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">前向：x₀ → x₁ → ... → x_T（只加高斯噪声）</text>
+  <text x="85" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">反向：x_T → ... → x₁ → x₀（去噪恢复）</text>
+  <text x="85" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#CC0000">问题：只破坏幅度，忽略频域</text>
+  <path fill="#E8F4FC" d="M68,375 H612 A8,8 0 0 1 620,383 V637 A8,8 0 0 1 612,645 H68 A8,8 0 0 1 60,637 V383 A8,8 0 0 1 68,375 Z" />
+  <rect x="60" y="375" width="6" height="270" fill="#0066CC" />
+  <text x="85" y="410" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">RF-Diffusion TFD</text>
+  <text x="85" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">前向破坏：</text>
+  <text x="100" y="465" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">• 时域：复数高斯噪声 → 破坏幅度精度</text>
+  <text x="100" y="490" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">• 频域：高斯核模糊频谱 → 破坏分辨率</text>
+  <text x="85" y="520" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">反向恢复：去噪(Denoise) + 去模糊(Deblur)</text>
+  <text x="85" y="555" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">条件生成：p(x₀ | c) 条件分布</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M668,150 H1212 A8,8 0 0 1 1220,158 V637 A8,8 0 0 1 1212,645 H668 A8,8 0 0 1 660,637 V158 A8,8 0 0 1 668,150 Z" />
+  <text x="940" y="185" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#003366">TFD 前向过程</text>
+  <path fill="#FFFFFF" stroke="#D0D7E0" stroke-width="1" d="M686,200 H1194 A6,6 0 0 1 1200,206 V304 A6,6 0 0 1 1194,310 H686 A6,6 0 0 1 680,304 V206 A6,6 0 0 1 686,200 Z" />
+  <text x="695" y="230" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">数学形式（第 t 步）：</text>
+  <text x="695" y="260" font-family="Consolas, monospace" font-size="14" fill="#003366">xₜ = √αₜ · ℱ⁻¹(Gₜ ∗ ℱ(xₜ₋₁)) + √(1-αₜ) · ε</text>
+  <text x="695" y="285" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">  频域模糊              时域加噪</text>
+  <path fill="#FFFFFF" stroke="#D0D7E0" stroke-width="1" d="M686,320 H1194 A6,6 0 0 1 1200,326 V394 A6,6 0 0 1 1194,400 H686 A6,6 0 0 1 680,394 V326 A6,6 0 0 1 686,320 Z" />
+  <text x="695" y="350" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">根据卷积定理可简化为标准形式：</text>
+  <text x="695" y="380" font-family="Consolas, monospace" font-size="14" fill="#CC0000">xₜ = √ᾱₜ · x₀ + √(1-ᾱₜ) · ε</text>
+  <text x="695" y="415" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">→ 任意步 t 可一步计算，无需迭代</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA" />
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">05 / 12</text>
+</svg>

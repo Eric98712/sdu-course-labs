@@ -1,0 +1,56 @@
+,,,        ORG 0000H
+0000,21 00,,        AJMP MAIN
+,,,        ORG 000BH
+000B,61 00,,        AJMP T0INT
+,,,        ORG 0100H
+0100,,MAIN,MAIN:
+0100,75 81 60,,        MOV SP,#60H
+0103,75 89 01,,        MOV TMOD,#01H
+0106,75 8C D8,,        MOV TH0,#0D8H
+0109,75 8A F0,,        MOV TL0,#0F0H
+010C,75 A8 82,,        MOV IE,#82H
+010F,D2 8C,,        SETB TR0
+,,,
+,,,
+0111,75 20 01,,        MOV 20H,#01H
+,,,
+0114,,MAIN_LOOP,MAIN_LOOP:
+0114,80 FE,,        SJMP MAIN_LOOP
+,,,        ORG 0300H
+0300,,T0INT,T0INT:
+0300,75 80 FF,,        MOV P0,#0FFH
+0303,E5 20,,        MOV A,20H
+0305,23,,        RL A
+0306,F5 20,,        MOV 20H,A
+0308,85 20 A0,,        MOV P2,20H
+,,,
+030B,0F,,        INC R7
+030C,EF,,        MOV A,R7
+030D,54 07,,        ANL A,#07H
+030F,FF,,        MOV R7,A
+0310,12 03 1A,,        LCALL DISPLAY
+,,,
+,,,
+0313,75 8C D8,,        MOV TH0,#0D8H
+0316,75 8A F0,,        MOV TL0,#0F0H
+0319,32,,        RETI
+,,,
+031A,,DISPLAY,DISPLAY:
+031A,EF,,        MOV A,R7
+031B,90 03 2E,,        MOV DPTR,#TABLE
+031E,93,,        MOVC A,@A+DPTR
+031F,F5 21,,        MOV 21H,A
+0321,85 21 80,,        MOV P0,21H
+0324,22,,        RET
+0325,,DELAY_1MS,DELAY_1MS:
+0325,7E 01,,        MOV R6, #1       ; 外层循环次数 (100次)
+0327,,DELAY_LOOP1,DELAY_LOOP1:
+0327,7F F8,,        MOV R7, #248        ; 内层循环次数 (248次)
+0329,,DELAY_LOOP2,DELAY_LOOP2:
+0329,DF FE,,        DJNZ R7, DELAY_LOOP2 ; 2周期 × 248次 = 496μs
+032B,DE FA,,        DJNZ R6, DELAY_LOOP1 ; 外层循环控制
+032D,22,,                RET
+032E,F9 A4 B0 99,TABLE,TABLE: DB 0F9H,0A4H,0B0H,99H
+0332,92 82 F8 80,,           DB 92H,82H,0F8H,80H
+0336,80 FE,, SJMP $
+000E,,, END

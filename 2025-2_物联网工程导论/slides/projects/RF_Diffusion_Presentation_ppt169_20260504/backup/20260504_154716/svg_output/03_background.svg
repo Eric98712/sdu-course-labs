@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">从 AIGC 到射频生成</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <rect x="60" y="140" width="360" height="220" rx="10" fill="#E3F2FD"/><rect x="60" y="140" width="360" height="5" rx="2.5" fill="#1565C0"/>
+  <text x="240" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="bold" fill="#1565C0">CV</text>
+  <text x="240" y="215" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">Stable Diffusion</text>
+  <text x="240" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">Midjourney / DALL-E</text>
+  <text x="240" y="275" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">图像生成革命</text>
+  <rect x="460" y="140" width="360" height="220" rx="10" fill="#E3F2FD"/><rect x="460" y="140" width="360" height="5" rx="2.5" fill="#1565C0"/>
+  <text x="640" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="bold" fill="#1565C0">NLP</text>
+  <text x="640" y="215" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">ChatGPT / GPT-4</text>
+  <text x="640" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">Claude / LLaMA</text>
+  <text x="640" y="275" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">文本生成突破</text>
+  <rect x="860" y="140" width="360" height="220" rx="10" fill="#FFF3E0"/><rect x="860" y="140" width="360" height="5" rx="2.5" fill="#FF6F00"/>
+  <text x="1040" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="29" font-weight="bold" fill="#E65100">RF ?</text>
+  <text x="1040" y="215" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">无线信号生成</text>
+  <text x="1040" y="240" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">数据增强 / 信道估计</text>
+  <text x="1040" y="275" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">AIGC的下一个前沿</text>
+  <text x="80" y="400" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">现有 RF 生成方法的局限</text>
+  <rect x="60" y="420" width="560" height="120" rx="10" fill="#FFEBEE"/><rect x="60" y="420" width="560" height="5" rx="2.5" fill="#C62828"/>
+  <text x="85" y="455" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#C62828">环境建模法</text>
+  <text x="85" y="480" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">射线追踪+3D模型 → 成本高、忽略材料特性、难生成时序数据</text>
+  <rect x="660" y="420" width="560" height="120" rx="10" fill="#FFEBEE"/><rect x="660" y="420" width="560" height="5" rx="2.5" fill="#C62828"/>
+  <text x="685" y="455" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#C62828">数据驱动法</text>
+  <text x="685" y="480" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">GAN/VAE → 表征有限、训练不稳定、任务特定</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">03 / 12</text>
+</svg>

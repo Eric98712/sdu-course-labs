@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">路线A：RF-GPT 核心架构</text>
+  <path fill="#E8F4FC" d="M66,90 H1214 A6,6 0 0 1 1220,96 V124 A6,6 0 0 1 1214,130 H66 A6,6 0 0 1 60,124 V96 A6,6 0 0 1 66,90 Z" />
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC" />
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">RF-GPT: Teaching AI to See the Wireless World | Khalifa University | arXiv 2026.02</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M68,150 H422 A8,8 0 0 1 430,158 V622 A8,8 0 0 1 422,630 H68 A8,8 0 0 1 60,622 V158 A8,8 0 0 1 68,150 Z" />
+  <rect x="60" y="150" width="6" height="40" fill="#003366" />
+  <text x="85" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">核心思路</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">将 RF 信号转为频谱图，利用 VLM</text>
+  <text x="85" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">已有的视觉编码能力来处理</text>
+  <text x="85" y="275" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">三大组件：</text>
+  <text x="85" y="305" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">① RF 编码器</text>
+  <text x="100" y="328" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">IQ → STFT频谱图 → ViT</text>
+  <text x="100" y="348" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">→ 1369个RF token</text>
+  <text x="85" y="378" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">② RF 适配器</text>
+  <text x="100" y="401" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">线性投影 d → dLM</text>
+  <text x="85" y="431" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">③ Decoder-only LLM</text>
+  <text x="100" y="454" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">Qwen2.5-VL (3B/7B)</text>
+  <text x="100" y="474" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">RF token为前缀生成文本</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M468,150 H1212 A8,8 0 0 1 1220,158 V372 A8,8 0 0 1 1212,380 H468 A8,8 0 0 1 460,372 V158 A8,8 0 0 1 468,150 Z" />
+  <rect x="460" y="150" width="6" height="40" fill="#003366" />
+  <text x="485" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">为什么选频谱图而非原始IQ？</text>
+  <text x="485" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">① IQ 采样率过高，直接输入 Transformer 计算不可行</text>
+  <text x="485" y="240" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">② 频谱图是天然时频表示，调制/带宽/重叠=几何特征</text>
+  <text x="485" y="265" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#333333">③ 视觉编码器预训练后可提取通用语义结构</text>
+  <text x="485" y="295" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">局限：丢失相位信息，但本文感知任务不依赖相位</text>
+  <path fill="#FFF0F0" stroke="#CC0000" stroke-width="1" d="M468,405 H1212 A8,8 0 0 1 1220,413 V497 A8,8 0 0 1 1212,505 H468 A8,8 0 0 1 460,497 V413 A8,8 0 0 1 468,405 Z" />
+  <rect x="460" y="405" width="6" height="100" fill="#CC0000" />
+  <text x="485" y="435" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#CC0000">关键批评</text>
+  <text x="485" y="462" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">无新架构——视觉编码器+线性投影+现成LLM，零架构创新</text>
+  <text x="485" y="485" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="15" fill="#666666">技术贡献仅在于"RF-grounded instruction tuning"微调配方</text>
+  <path fill="#FFEBEE" d="M468,525 H1212 A8,8 0 0 1 1220,533 V577 A8,8 0 0 1 1212,585 H468 A8,8 0 0 1 460,577 V533 A8,8 0 0 1 468,525 Z" />
+  <text x="485" y="553" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#CC0000">类比：就像给一个眼科医生配了副眼镜，不是发明了新的视觉系统</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA" />
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 路线A</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">04 / 15</text>
+</svg>

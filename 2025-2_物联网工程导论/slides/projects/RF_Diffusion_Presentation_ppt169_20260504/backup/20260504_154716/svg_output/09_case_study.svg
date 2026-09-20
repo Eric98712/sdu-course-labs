@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">下游应用案例</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+  <rect x="60" y="140" width="560" height="500" rx="10" fill="#E3F2FD"/>
+  <rect x="60" y="140" width="560" height="5" rx="2.5" fill="#1565C0"/>
+  <text x="340" y="185" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">案例 1：Wi-Fi 手势识别增强</text>
+  <rect x="80" y="205" width="520" height="80" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="95" y="235" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">任务：用 RF-Diffusion 生成的数据做数据增强</text>
+  <text x="95" y="260" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">数据集：Widar3.0 手势识别</text>
+  <text x="80" y="310" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">效果：</text>
+  <rect x="80" y="330" width="520" height="70" rx="8" fill="#E8F5E9"/>
+  <text x="340" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#2E7D32">+4% ~ +11%</text>
+  <text x="340" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">手势识别准确率提升（取决于识别模型）</text>
+  <rect x="80" y="420" width="520" height="110" rx="8" fill="#F5F7FA"/>
+  <text x="95" y="448" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">原理：</text>
+  <text x="95" y="472" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">传统数据增强（旋转/裁剪/加噪）无法改变</text>
+  <text x="95" y="494" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">信号的物理含义；RF-Diffusion 生成全新</text>
+  <text x="95" y="516" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">样本来扩充数据分布的真实覆盖</text>
+  <rect x="660" y="140" width="560" height="500" rx="10" fill="#FFF3E0"/>
+  <rect x="660" y="140" width="560" height="5" rx="2.5" fill="#FF6F00"/>
+  <text x="940" y="185" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#E65100">案例 2：5G FDD 信道估计</text>
+  <rect x="680" y="205" width="520" height="80" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="695" y="235" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">任务：用 RF-Diffusion 增强信道估计</text>
+  <text x="695" y="260" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">数据集：Argos 5G 实测数据</text>
+  <text x="680" y="310" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">效果：</text>
+  <rect x="680" y="330" width="520" height="70" rx="8" fill="#E8F5E9"/>
+  <text x="940" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="#2E7D32">+5.97 dB</text>
+  <text x="940" y="385" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">SNR 提升 vs. 当前最优方法</text>
+  <rect x="680" y="420" width="520" height="110" rx="8" fill="#F5F7FA"/>
+  <text x="695" y="448" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">原理：</text>
+  <text x="695" y="472" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">FDD 下行信道估计难题：基站发 → UE收</text>
+  <text x="695" y="494" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">→ 反馈 → 基站获知，反馈开销大</text>
+  <text x="695" y="516" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="15" fill="#546E7A">RF-Diffusion 生成的信号辅助信道重建</text>
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-Diffusion Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">09 / 12</text>
+</svg>

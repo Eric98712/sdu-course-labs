@@ -1,0 +1,2 @@
+- **Read the numbers**: 通用 VLM 个位数，RF-GPT 70-90%
+- **Emphasize**: 尤其是信号数量识别 98% vs <5%，说明 RF grounding 确实学到了时频结构

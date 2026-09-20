@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">汇报提纲</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">从 AIGC 到射频生成 · Time-Frequency Diffusion · Hierarchical Diffusion Transformer · 实验验证 · 总结</text>
+  <rect x="60" y="150" width="370" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="80" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#333333">01 背景与动机</text>
+  <text x="80" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">AIGC浪潮 &amp; RF信号生成需求</text>
+  <text x="80" y="238" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">现有方法的不足</text>
+  <rect x="455" y="150" width="370" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="455" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="475" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#333333">02 核心方法</text>
+  <text x="475" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">三大挑战与时频扩散理论</text>
+  <text x="475" y="238" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">分层 Diffusion Transformer</text>
+  <rect x="850" y="150" width="370" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="850" y="150" width="6" height="40" fill="#CC0000"/>
+  <text x="870" y="178" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#333333">03 实验验证</text>
+  <text x="870" y="210" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">Wi-Fi / FMCW 实测数据</text>
+  <text x="870" y="238" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">手势识别 + 5G信道估计</text>
+  <rect x="60" y="380" width="370" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="380" width="6" height="40" fill="#CC0000"/>
+  <text x="80" y="408" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#333333">04 相关工作对比</text>
+  <text x="80" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">与 RF-GPT 对比</text>
+  <text x="80" y="468" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">顶会标准 vs arXiv</text>
+  <rect x="455" y="380" width="370" height="200" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="455" y="380" width="6" height="40" fill="#CC0000"/>
+  <text x="475" y="408" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#333333">05 总结展望</text>
+  <text x="475" y="440" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">贡献 + 局限 + 未来方向</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">02 / 12</text>
+</svg>

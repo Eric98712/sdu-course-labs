@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="100" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="100" fill="#CC0000"/>
+  <text x="1240" y="35" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#FFFFFF">ACM MobiCom 2024</text>
+  <text x="1240" y="55" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#FFFFFF">CCF-A | Best Artifact Award</text>
+  <rect x="200" y="280" width="6" height="100" fill="#CC0000"/>
+  <text x="220" y="330" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="56" font-weight="bold" fill="#003366">RF-Diffusion</text>
+  <text x="220" y="380" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" fill="#333333">Radio Signal Generation via Time-Frequency Diffusion</text>
+  <rect x="220" y="405" width="400" height="2" fill="#0066CC"/>
+  <circle cx="625" cy="406" r="4" fill="#0066CC"/>
+  <text x="220" y="450" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" fill="#666666">Guoxuan Chi, Zheng Yang, Chenshu Wu, Jingao Xu, Yuchong Gao, Yunhao Liu, Tony Xiao Han</text>
+  <text x="220" y="490" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#666666">清华大学 | 香港大学 | 北京邮电大学 | 华为</text>
+  <rect x="0" y="650" width="1280" height="70" fill="#F5F7FA"/>
+  <text x="640" y="688" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#999999">arXiv:2404.09140 | github.com/mobicom24/RF-Diffusion</text>
+</svg>

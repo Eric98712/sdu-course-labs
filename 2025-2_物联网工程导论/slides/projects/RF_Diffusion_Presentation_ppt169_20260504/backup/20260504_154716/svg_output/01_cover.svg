@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="coverBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="50%" stop-color="#1565C0"/>
+      <stop offset="100%" stop-color="#1976D2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#coverBg)"/>
+  <path d="M0 620 Q320 560 640 620 T1280 620" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="2"/>
+  <path d="M0 650 Q320 600 640 660 T1280 640" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1.5"/>
+  <rect x="0" y="0" width="6" height="720" fill="#FF6F00"/>
+  <text x="640" y="290" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="77" font-weight="bold" fill="#FFFFFF">RF-Diffusion</text>
+  <text x="640" y="370" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#BBDEFB">Radio Signal Generation via</text>
+  <text x="640" y="420" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#BBDEFB">Time-Frequency Diffusion</text>
+  <rect x="540" y="455" width="200" height="3" fill="#FF6F00"/>
+  <text x="640" y="495" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="29" fill="#90CAF9">ACM MobiCom 2024 CCF-A Best Artifact Award</text>
+  <text x="640" y="590" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#64B5F6">清华大学 | 香港大学 | 北京邮电大学 | 华为</text>
+  <text x="640" y="620" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#64B5F6">Guoxuan Chi, Zheng Yang, Chenshu Wu, Jingao Xu, Yuchong Gao, Yunhao Liu, Tony Xiao Han</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><linearGradient id="qaBg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0D47A1"/><stop offset="100%" stop-color="#1565C0"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#qaBg)"/>
+  <text x="640" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#FFFFFF" fill-opacity="0.15">?</text>
+  <text x="640" y="340" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="55" font-weight="bold" fill="#FFFFFF">Thank You</text>
+  <text x="640" y="400" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="36" fill="#BBDEFB">Q &amp; A</text>
+  <rect x="540" y="425" width="200" height="3" fill="#FF6F00"/>
+  <text x="640" y="480" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#90CAF9">RF-Diffusion: Radio Signal Generation via Time-Frequency Diffusion</text>
+  <text x="640" y="515" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#64B5F6">ACM MobiCom 2024 | Best Artifact Award</text>
+  <text x="640" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#64B5F6">github.com/mobicom24/RF-Diffusion | arXiv:2404.09140</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0" />
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0" />
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">与相关工作对比</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1" />
+
+  
+  <path fill="#F5F7FA" d="M70,135 H420 A10,10 0 0 1 430,145 V365 A10,10 0 0 1 420,375 H70 A10,10 0 0 1 60,365 V145 A10,10 0 0 1 70,135 Z" />
+  <path fill="#1565C0" d="M62.50,135 H427.50 A2.50,2.50 0 0 1 430,137.50 V137.50 A2.50,2.50 0 0 1 427.50,140 H62.50 A2.50,2.50 0 0 1 60,137.50 V137.50 A2.50,2.50 0 0 1 62.50,135 Z" />
+  <text x="245" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#1565C0">RF 基础模型</text>
+  <text x="85" y="205" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">WFM</text>
+  <text x="85" y="228" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">通用RF表征 + 任务特定头</text>
+  <text x="85" y="258" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">LWM</text>
+  <text x="85" y="281" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">信道建模基础模型</text>
+  <text x="85" y="311" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">WirelessGPT</text>
+  <text x="85" y="334" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">多任务学习框架</text>
+  <text x="85" y="360" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">每任务仍需单独微调或输出头</text>
+
+  
+  <path fill="#F5F7FA" d="M465,135 H815 A10,10 0 0 1 825,145 V365 A10,10 0 0 1 815,375 H465 A10,10 0 0 1 455,365 V145 A10,10 0 0 1 465,135 Z" />
+  <path fill="#FF6F00" d="M457.50,135 H822.50 A2.50,2.50 0 0 1 825,137.50 V137.50 A2.50,2.50 0 0 1 822.50,140 H457.50 A2.50,2.50 0 0 1 455,137.50 V137.50 A2.50,2.50 0 0 1 457.50,135 Z" />
+  <text x="640" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#E65100">Telecom LLMs</text>
+  <text x="480" y="205" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">TelecomGPT</text>
+  <text x="480" y="228" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">告警、KPI、日志、配置表</text>
+  <text x="480" y="258" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">LLM4Telecom 系列</text>
+  <text x="480" y="281" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">OSS/BSS 数据、网络管理</text>
+  <text x="480" y="320" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">文本中心，无法处理物理层RF信号</text>
+  <text x="480" y="342" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#C62828">与RF-GPT形成互补</text>
+
+  
+  <path fill="#F5F7FA" d="M860,135 H1210 A10,10 0 0 1 1220,145 V365 A10,10 0 0 1 1210,375 H860 A10,10 0 0 1 850,365 V145 A10,10 0 0 1 860,135 Z" />
+  <path fill="#2E7D32" d="M852.50,135 H1217.50 A2.50,2.50 0 0 1 1220,137.50 V137.50 A2.50,2.50 0 0 1 1217.50,140 H852.50 A2.50,2.50 0 0 1 850,137.50 V137.50 A2.50,2.50 0 0 1 852.50,135 Z" />
+  <text x="1035" y="175" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">VLA 模型的启示</text>
+  <text x="875" y="205" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#263238">RT-2 / PaLM-E</text>
+  <text x="875" y="228" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">将VLM扩展到机器人控制</text>
+  <text x="875" y="258" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">核心理念一致：</text>
+  <text x="875" y="281" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">预训练VLM + 轻量适配器</text>
+  <text x="875" y="304" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#546E7A">注入新模态（动作/RF）</text>
+  <text x="875" y="340" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#2E7D32">RF-GPT 借鉴了 VLA 范式</text>
+
+  
+  <path fill="#E3F2FD" d="M70,410 H1210 A10,10 0 0 1 1220,420 V500 A10,10 0 0 1 1210,510 H70 A10,10 0 0 1 60,500 V420 A10,10 0 0 1 70,410 Z" />
+  <text x="640" y="450" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">RF-GPT 的突破</text>
+  <text x="640" y="485" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" fill="#263238">首个通过语言指令统一多种 RF 任务的模型，无需修改架构，只需改变 prompt</text>
+
+  
+  <text x="80" y="555" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">对比总结</text>
+
+  <path fill="#1565C0" d="M64,575 H336 A4,4 0 0 1 340,579 V611 A4,4 0 0 1 336,615 H64 A4,4 0 0 1 60,611 V579 A4,4 0 0 1 64,575 Z" />
+  <text x="200" y="602" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">方法</text>
+  <path fill="#1565C0" d="M344,575 H511 A4,4 0 0 1 515,579 V611 A4,4 0 0 1 511,615 H344 A4,4 0 0 1 340,611 V579 A4,4 0 0 1 344,575 Z" />
+  <text x="427" y="602" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">RF感知</text>
+  <path fill="#1565C0" d="M519,575 H686 A4,4 0 0 1 690,579 V611 A4,4 0 0 1 686,615 H519 A4,4 0 0 1 515,611 V579 A4,4 0 0 1 519,575 Z" />
+  <text x="602" y="602" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">语言交互</text>
+  <path fill="#1565C0" d="M694,575 H861 A4,4 0 0 1 865,579 V611 A4,4 0 0 1 861,615 H694 A4,4 0 0 1 690,611 V579 A4,4 0 0 1 694,575 Z" />
+  <text x="777" y="602" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">统一架构</text>
+  <path fill="#1565C0" d="M869,575 H1036 A4,4 0 0 1 1040,579 V611 A4,4 0 0 1 1036,615 H869 A4,4 0 0 1 865,611 V579 A4,4 0 0 1 869,575 Z" />
+  <text x="952" y="602" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">多任务</text>
+
+  <path fill="#F5F7FA" d="M64,615 H336 A4,4 0 0 1 340,619 V646 A4,4 0 0 1 336,650 H64 A4,4 0 0 1 60,646 V619 A4,4 0 0 1 64,615 Z" />
+  <text x="200" y="639" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">传统RF模型</text>
+  <path fill="#E8F5E9" d="M344,615 H511 A4,4 0 0 1 515,619 V646 A4,4 0 0 1 511,650 H344 A4,4 0 0 1 340,646 V619 A4,4 0 0 1 344,615 Z" />
+  <text x="427" y="639" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <path fill="#FFEBEE" d="M519,615 H686 A4,4 0 0 1 690,619 V646 A4,4 0 0 1 686,650 H519 A4,4 0 0 1 515,646 V619 A4,4 0 0 1 519,615 Z" />
+  <text x="602" y="639" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">✗</text>
+  <path fill="#FFEBEE" d="M694,615 H861 A4,4 0 0 1 865,619 V646 A4,4 0 0 1 861,650 H694 A4,4 0 0 1 690,646 V619 A4,4 0 0 1 694,615 Z" />
+  <text x="777" y="639" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">✗</text>
+  <path fill="#FFEBEE" d="M869,615 H1036 A4,4 0 0 1 1040,619 V646 A4,4 0 0 1 1036,650 H869 A4,4 0 0 1 865,646 V619 A4,4 0 0 1 869,615 Z" />
+  <text x="952" y="639" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#C62828">✗</text>
+
+  <path fill="#F5F7FA" d="M64,650 H336 A4,4 0 0 1 340,654 V681 A4,4 0 0 1 336,685 H64 A4,4 0 0 1 60,681 V654 A4,4 0 0 1 64,650 Z" />
+  <text x="200" y="674" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">RF-GPT</text>
+  <path fill="#E8F5E9" d="M344,650 H511 A4,4 0 0 1 515,654 V681 A4,4 0 0 1 511,685 H344 A4,4 0 0 1 340,681 V654 A4,4 0 0 1 344,650 Z" />
+  <text x="427" y="674" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <path fill="#E8F5E9" d="M519,650 H686 A4,4 0 0 1 690,654 V681 A4,4 0 0 1 686,685 H519 A4,4 0 0 1 515,681 V654 A4,4 0 0 1 519,650 Z" />
+  <text x="602" y="674" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <path fill="#E8F5E9" d="M694,650 H861 A4,4 0 0 1 865,654 V681 A4,4 0 0 1 861,685 H694 A4,4 0 0 1 690,681 V654 A4,4 0 0 1 694,650 Z" />
+  <text x="777" y="674" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <path fill="#E8F5E9" d="M869,650 H1036 A4,4 0 0 1 1040,654 V681 A4,4 0 0 1 1036,685 H869 A4,4 0 0 1 865,681 V654 A4,4 0 0 1 869,650 Z" />
+  <text x="952" y="674" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+
+  
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1" />
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">13 / 15</text>
+</svg>

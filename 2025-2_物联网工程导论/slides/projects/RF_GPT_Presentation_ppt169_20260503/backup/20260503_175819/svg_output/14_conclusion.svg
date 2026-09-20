@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">总结与展望</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+
+  <!-- Three contributions -->
+  <text x="80" y="160" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="24" font-weight="bold" fill="#1565C0">三大贡献</text>
+
+  <rect x="60" y="180" width="370" height="160" rx="10" fill="#E3F2FD"/>
+  <circle cx="90" cy="220" r="20" fill="#1565C0"/>
+  <text x="90" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="130" y="215" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">RFLM 概念</text>
+  <text x="85" y="248" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">提出射频语言模型概念</text>
+  <text x="85" y="272" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">RF-GPT 首次实现：</text>
+  <text x="85" y="296" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">频谱图 + VLM → RFLM</text>
+
+  <rect x="455" y="180" width="370" height="160" rx="10" fill="#E3F2FD"/>
+  <circle cx="485" cy="220" r="20" fill="#1565C0"/>
+  <text x="485" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="525" y="215" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">合成数据管线</text>
+  <text x="480" y="248" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">6种技术 × 自动化标注</text>
+  <text x="480" y="272" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">12K场景 / 625K指令</text>
+  <text x="480" y="296" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">零人工标注</text>
+
+  <rect x="850" y="180" width="370" height="160" rx="10" fill="#E3F2FD"/>
+  <circle cx="880" cy="220" r="20" fill="#1565C0"/>
+  <text x="880" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="920" y="215" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="20" font-weight="bold" fill="#1565C0">全面超越</text>
+  <text x="875" y="248" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">多任务统一架构</text>
+  <text x="875" y="272" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">全面超越通用VLM</text>
+  <text x="875" y="296" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" fill="#263238">数据效率超CNN/Transformer</text>
+
+  <!-- Limitations -->
+  <text x="80" y="385" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#C62828">当前局限</text>
+
+  <circle cx="85" cy="415" r="5" fill="#C62828"/>
+  <text x="100" y="420" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">纯合成数据，未在真实空口验证</text>
+
+  <circle cx="85" cy="445" r="5" fill="#C62828"/>
+  <text x="100" y="450" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">仅单输入频谱图，不支持MIMO/ISAC</text>
+
+  <circle cx="85" cy="475" r="5" fill="#C62828"/>
+  <text x="100" y="480" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#546E7A">细粒度NR特征（PTRS/CORESET）尚未覆盖</text>
+
+  <!-- Future -->
+  <text x="640" y="385" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#1565C0">未来方向</text>
+
+  <rect x="640" y="405" width="580" height="35" rx="6" fill="#E3F2FD"/>
+  <text x="660" y="429" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#1565C0">真实空口数据 + 合成预训练联合训练</text>
+
+  <rect x="640" y="450" width="580" height="35" rx="6" fill="#E3F2FD"/>
+  <text x="660" y="474" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#1565C0">多天线MIMO频谱图、ISAC通感一体化</text>
+
+  <rect x="640" y="495" width="580" height="35" rx="6" fill="#E3F2FD"/>
+  <text x="660" y="519" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" fill="#1565C0">O-RAN集成 → 6G AI-native网络RF推理引擎</text>
+
+  <!-- Footer -->
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">14 / 15</text>
+</svg>

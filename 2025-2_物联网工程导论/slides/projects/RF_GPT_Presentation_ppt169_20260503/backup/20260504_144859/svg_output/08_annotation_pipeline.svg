@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1565C0"/>
+  <rect x="60" y="50" width="6" height="36" fill="#1565C0"/>
+  <text x="80" y="78" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="40" font-weight="bold" fill="#263238">自动化标注与指令合成管线</text>
+  <rect x="60" y="115" width="1160" height="1" fill="#ECEFF1"/>
+
+  <!-- Left column: Paper figure -->
+  <!-- Paper Fig 4: Instruction synthesis pipeline -->
+  <image href="../images/paper_figures/page8-08.png" x="60" y="125" width="750" height="565" preserveAspectRatio="xMidYMin slice"/>
+  <rect x="60" y="125" width="750" height="565" rx="4" fill="none" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="435" y="708" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">论文 Fig. 3 (标注策略) + Fig. 4 (指令合成管线)</text>
+
+  <!-- Right column: 5-level funnel hierarchy -->
+  <text x="880" y="148" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="22" font-weight="bold" fill="#263238">5 个信息层级</text>
+  <text x="880" y="172" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#90A4AE">从宏观到微观的递进结构</text>
+
+  <!-- Funnel pyramid - each level is a centered trapezoid with decreasing width -->
+
+  <!-- Level 1: Summary (widest) -->
+  <polygon points="810,200 950,200 980,248 780,248" fill="#1565C0" opacity="0.9"/>
+  <text x="880" y="230" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">摘要 Summary</text>
+
+  <!-- Arrow 1 -->
+  <line x1="880" y1="248" x2="880" y2="265" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="874,263 880,270 886,263" fill="#1565C0"/>
+
+  <!-- Level 2: Global Visual -->
+  <polygon points="825,270 935,270 960,315 800,315" fill="#1976D2" opacity="0.9"/>
+  <text x="880" y="298" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">全局视觉 Global Visual</text>
+
+  <!-- Arrow 2 -->
+  <line x1="880" y1="315" x2="880" y2="332" stroke="#1976D2" stroke-width="2"/>
+  <polygon points="874,330 880,337 886,330" fill="#1976D2"/>
+
+  <!-- Level 3: Global Context -->
+  <polygon points="840,337 920,337 940,378 820,378" fill="#42A5F5" opacity="0.9"/>
+  <text x="880" y="363" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">全局上下文 Global Context</text>
+
+  <!-- Arrow 3 -->
+  <line x1="880" y1="378" x2="880" y2="393" stroke="#42A5F5" stroke-width="2"/>
+  <polygon points="874,391 880,398 886,391" fill="#42A5F5"/>
+
+  <!-- Level 4: Signal Visual -->
+  <polygon points="850,398 910,398 925,435 835,435" fill="#FFA726" opacity="0.9"/>
+  <text x="880" y="422" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">信号视觉 Signal Visual</text>
+
+  <!-- Arrow 4 -->
+  <line x1="880" y1="435" x2="880" y2="450" stroke="#FFA726" stroke-width="2"/>
+  <polygon points="874,448 880,455 886,448" fill="#FFA726"/>
+
+  <!-- Level 5: Signal Context (narrowest) -->
+  <polygon points="858,450 902,450 913,485 847,485" fill="#E65100" opacity="0.9"/>
+  <text x="880" y="473" text-anchor="middle" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">信号上下文 Signal Context</text>
+
+  <!-- Side labels: breadth vs depth -->
+  <text x="785" y="505" text-anchor="end" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#1565C0" font-weight="bold">宏观 ▸</text>
+  <text x="785" y="530" text-anchor="end" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" fill="#E65100" font-weight="bold">微观 ▸</text>
+
+  <!-- Right side labels -->
+  <text x="983" y="230" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#546E7A">场景级高层描述</text>
+  <text x="983" y="298" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#546E7A">SSB / CSI-RS / 占用</text>
+  <text x="983" y="363" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#546E7A">带宽 / SCS / 时长</text>
+  <text x="983" y="422" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#546E7A">SNR / 时频占用</text>
+  <text x="983" y="473" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#546E7A">DM-RS / PTRS 等</text>
+
+  <!-- Usage range indicator -->
+  <rect x="810" y="560" width="340" height="85" rx="8" fill="#F5F7FA"/>
+  <text x="820" y="585" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="14" font-weight="bold" fill="#263238">本文使用的层级</text>
+  <!-- Colored dots -->
+  <rect x="820" y="598" width="14" height="14" rx="2" fill="#1565C0"/>
+  <text x="842" y="610" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="13" fill="#546E7A">摘要</text>
+  <rect x="898" y="598" width="14" height="14" rx="2" fill="#1976D2"/>
+  <text x="920" y="610" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="13" fill="#546E7A">全局视觉</text>
+  <rect x="820" y="620" width="14" height="14" rx="2" fill="#FFA726"/>
+  <text x="842" y="632" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="13" fill="#546E7A">信号视觉</text>
+  <text x="820" y="655" font-family="Arial, &quot;Microsoft YaHei&quot;, sans-serif" font-size="12" fill="#90A4AE">全局上下文与信号上下文留待未来</text>
+
+  <!-- Footer -->
+  <rect x="60" y="700" width="1160" height="1" fill="#ECEFF1"/>
+  <text x="60" y="714" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">RF-GPT Presentation | Fig.3 caption strategy  &amp; Fig.4 instruction pipeline</text>
+  <text x="1260" y="714" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#90A4AE">08 / 15</text>
+</svg>

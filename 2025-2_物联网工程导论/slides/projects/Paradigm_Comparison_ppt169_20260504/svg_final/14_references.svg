@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">参考文献</text>
+  <text x="80" y="115" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#003366">路线A：VLM内化感知</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M66,130 H614 A6,6 0 0 1 620,136 V214 A6,6 0 0 1 614,220 H66 A6,6 0 0 1 60,214 V136 A6,6 0 0 1 66,130 Z" />
+  <text x="75" y="155" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[1] Zou et al. RF-GPT: Teaching AI to See the Wireless World.</text>
+  <text x="75" y="175" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2602.14833, 2026.</text>
+  <text x="75" y="200" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[2] Zou et al. Seeing Radio: From Zero RF Priors to Explainable</text>
+  <text x="80" y="218" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Modulation Recognition with VLM. arXiv:2601.13157, 2026.</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M666,130 H1214 A6,6 0 0 1 1220,136 V214 A6,6 0 0 1 1214,220 H666 A6,6 0 0 1 660,214 V136 A6,6 0 0 1 666,130 Z" />
+  <text x="675" y="155" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[3] Multimodal Wireless Foundation Models.</text>
+  <text x="675" y="175" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2511.15162, 2025.</text>
+  <text x="80" y="280" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">路线B：智能体协同</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M66,295 H614 A6,6 0 0 1 620,301 V449 A6,6 0 0 1 614,455 H66 A6,6 0 0 1 60,449 V301 A6,6 0 0 1 66,295 Z" />
+  <text x="75" y="318" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[4] Tong et al. WirelessAgent: LLM Agents for Intelligent</text>
+  <text x="80" y="336" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Wireless Networks. arXiv:2505.01074, 2025.</text>
+  <text x="75" y="360" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[5] WirelessAgent R1: Unified Agent for Resource Allocation.</text>
+  <text x="80" y="378" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">arXiv:2604.17440, 2026.</text>
+  <text x="75" y="402" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[6] Popescu &amp; Stanescu. AICEBERG: Agentic AI for Autonomous</text>
+  <text x="80" y="420" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Radio Monitoring. MDPI Smart Cities, 2026.</text>
+  <text x="75" y="444" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[7] Aircom. raNora: Agentic AI for Autonomous Radio Planning.</text>
+  <text x="80" y="462" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">商用平台, 2026.03.</text>
+  <path fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1" d="M666,295 H1214 A6,6 0 0 1 1220,301 V449 A6,6 0 0 1 1214,455 H666 A6,6 0 0 1 660,449 V301 A6,6 0 0 1 666,295 Z" />
+  <text x="675" y="318" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[8] Li et al. Multi-LLM Agent DRL for Next-Generation</text>
+  <text x="680" y="336" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Wireless Communication Systems. KTH/NAISS, 2025-2026.</text>
+  <text x="675" y="370" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#333333">[9] Chi et al. RF-Diffusion: Radio Signal Generation via</text>
+  <text x="680" y="388" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="13" fill="#666666">Time-Frequency Diffusion. MobiCom 2024.</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA" />
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">范式之争 | 参考文献</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">14 / 15</text>
+</svg>

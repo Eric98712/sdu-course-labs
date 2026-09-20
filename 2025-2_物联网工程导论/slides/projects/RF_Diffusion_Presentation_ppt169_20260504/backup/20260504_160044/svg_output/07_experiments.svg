@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="60" y="44" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">实验设置与生成质量</text>
+  <rect x="60" y="90" width="1160" height="40" rx="6" fill="#E8F4FC"/>
+  <rect x="60" y="90" width="6" height="40" fill="#0066CC"/>
+  <text x="80" y="116" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" fill="#333333">33,000+ 实测序列 · 3 种场景 · Wi-Fi &amp; FMCW · 对比 DDPM/DCGAN/CVAE</text>
+  <rect x="60" y="150" width="560" height="150" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="60" y="150" width="6" height="150" fill="#0066CC"/>
+  <text x="85" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">Wi-Fi CSI 信号</text>
+  <text x="85" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">Intel IWL5300 · 5.825GHz · 40MHz · 20,000+ 序列</text>
+  <rect x="660" y="150" width="560" height="150" rx="8" fill="#F5F7FA" stroke="#D0D7E0" stroke-width="1"/>
+  <rect x="660" y="150" width="6" height="150" fill="#0066CC"/>
+  <text x="685" y="185" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="20" font-weight="bold" fill="#003366">FMCW 雷达信号</text>
+  <text x="685" y="215" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" fill="#666666">自制 FMCW 平台 · 13,000+ 序列 · 3 种场景</text>
+  <text x="80" y="340" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="22" font-weight="bold" fill="#003366">Wi-Fi 信号生成质量</text>
+  <rect x="60" y="360" width="280" height="36" rx="4" fill="#003366"/>
+  <text x="200" y="384" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">模型</text>
+  <rect x="340" y="360" width="160" height="36" rx="4" fill="#003366"/>
+  <text x="420" y="384" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">SSIM ↑</text>
+  <rect x="500" y="360" width="160" height="36" rx="4" fill="#003366"/>
+  <text x="580" y="384" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">FID ↓</text>
+  <rect x="60" y="396" width="280" height="40" rx="4" fill="#E8F4FC"/>
+  <text x="200" y="423" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="16" font-weight="bold" fill="#003366">RF-Diffusion</text>
+  <rect x="340" y="396" width="160" height="40" rx="4" fill="#E8F4FC"/>
+  <text x="420" y="423" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">0.81</text>
+  <rect x="500" y="396" width="160" height="40" rx="4" fill="#E8F4FC"/>
+  <text x="580" y="423" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">4.42</text>
+  <rect x="60" y="436" width="280" height="32" rx="4" fill="#F5F7FA"/>
+  <text x="200" y="458" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">DDPM</text><rect x="340" y="436" width="160" height="32" rx="4" fill="#F5F7FA"/><text x="420" y="458" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">0.65</text><rect x="500" y="436" width="160" height="32" rx="4" fill="#F5F7FA"/><text x="580" y="458" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">7.68</text>
+  <rect x="60" y="468" width="280" height="32" rx="4" fill="#F5F7FA"/>
+  <text x="200" y="490" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">DCGAN</text><rect x="340" y="468" width="160" height="32" rx="4" fill="#F5F7FA"/><text x="420" y="490" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">0.68</text><rect x="500" y="468" width="160" height="32" rx="4" fill="#F5F7FA"/><text x="580" y="490" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">11.95</text>
+  <rect x="60" y="500" width="280" height="32" rx="4" fill="#F5F7FA"/>
+  <text x="200" y="522" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">CVAE</text><rect x="340" y="500" width="160" height="32" rx="4" fill="#F5F7FA"/><text x="420" y="522" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">0.47</text><rect x="500" y="500" width="160" height="32" rx="4" fill="#F5F7FA"/><text x="580" y="522" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">10.35</text>
+  <rect x="60" y="555" width="1160" height="60" rx="8" fill="#E8F4FC"/>
+  <rect x="60" y="555" width="6" height="60" fill="#0066CC"/>
+  <text x="640" y="580" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="24" font-weight="bold" fill="#003366">SSIM 超越最强基线 18.6% · FID 降低 42.4%</text>
+  <text x="640" y="602" text-anchor="middle" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="14" fill="#666666">(对比 DDPM)</text>
+  <rect x="0" y="665" width="1280" height="55" fill="#F5F7FA"/>
+  <text x="60" y="698" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">RF-Diffusion Presentation | MobiCom 2024</text>
+  <text x="1240" y="698" text-anchor="end" font-family="&quot;Microsoft YaHei&quot;, Arial, sans-serif" font-size="12" fill="#999999">07 / 12</text>
+</svg>

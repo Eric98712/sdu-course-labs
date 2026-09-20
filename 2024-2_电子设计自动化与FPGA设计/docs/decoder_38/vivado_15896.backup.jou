@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 16 09:31:43 2025
+# Process ID: 15896
+# Current directory: C:/Users/Eric/Desktop/decoder_38
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5204 C:\Users\Eric\Desktop\decoder_38\decoder_38.xpr
+# Log file: C:/Users/Eric/Desktop/decoder_38/vivado.log
+# Journal file: C:/Users/Eric/Desktop/decoder_38\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Eric/Desktop/decoder_38/decoder_38.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
