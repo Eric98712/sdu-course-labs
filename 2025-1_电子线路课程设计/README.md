@@ -38,3 +38,5 @@
 
 > `reports/` `code/` `slides/` `docs/` 会进入 Git；
 > `courseware/` `media/` `archives/` 因体积或第三方版权仅作本地归档，已被 `.gitignore` 排除。
+
+> ⚠️ 结题 PPT 有 144 MB，超过 GitHub 单文件 100 MB 硬限制，未放进仓库；请到 https://github.com/Eric98712/sdu-course-labs/releases 下载。

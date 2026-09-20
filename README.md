@@ -67,6 +67,9 @@
 后三者通过 [`.gitignore`](.gitignore) 排除：它们只服务于本地完整归档，
 公开仓库里只保留本人原创内容，避免第三方版权与仓库体积问题。
 
+个别超过 GitHub 单文件 100 MB 硬限制的原创材料（如「电子线路课程设计」的结题 PPT），
+改为通过 [Releases](https://github.com/Eric98712/sdu-course-labs/releases) 附件分发。
+
 ---
 
 ## 关于去标识化
